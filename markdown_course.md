@@ -20,15 +20,15 @@ Insere 2 espaços no fim do parágrafo OU enter 2x, isso faz ter um espaçamento
 
 ## Ênfase:
 
-\*\*negrito\*\* ou \__negrito__
+\*\*negrito\*\* ou \_\_negrito\_\_
 
-\*itálico\* ou \_itálico_
+\*itálico\* ou \_itálico\_
 
 \*\*\*negritoEitalico\*\*\* ou \_\_\*negritoEitalico\*\_\_ ou \*\*\_negritoEitalico\_\*\*
 
 \~\~riscado\~\~
 
-\ > citação
+\> citação
 
 
 ## Linhas horizontais:
@@ -80,9 +80,7 @@ imagem com link: coloca a imagem toda dentro do colchete e depois o parênteses 
 
 \| :- | :-: | -: |
 
-alinha a esquerda
-alinha ao centro
-alinha a direita
+alinha a esquerda | alinha ao centro | alinha a direita
 
 
 ## Código:
