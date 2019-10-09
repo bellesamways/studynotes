@@ -23,7 +23,7 @@ Para termos uma ideia dessa distância, um nanômetro equivale a um bilionésimo
 
 A lei de Moore surgiu em 1965 através de um conceito estabelecido por Gordon Earl Moore, cofundador da Intel. Essa lei dizia que a capacidade de processamento dos processadores dobraria a cada 18 meses. Moore não tinha essa certeza em 1965, mas imaginava que isso seria possível.
 
-![Lei de Moore](media/lei_de_moore.png)
+![Lei de Moore](/media/lei_de_moore.png)
 
 Como podemos ver no gráfico, isso realmente tem acontecido. Nos últimos anos, chegando a menos que do isso, de forma que já se discute se esta lei irá se perpetuar mesmo.
 Isso tudo se deve ao desenvolvimento acelerado de toda tecnologia de computação.
