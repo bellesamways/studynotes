@@ -16,4 +16,10 @@ Criei esse repositório que depois alimentará um blogzinho com tudo isso, por i
 - Commite suas alterações `git commit -am "mensagem breve sobre o que você alterou"`
 - Submeta um PR, colocando no título `Resolve Issue #{id}` e na descrição do PR `Closes #{id}`
 
-Eu e a comunidade agradecemos a sua ajuda 💜
+## Dúvidas?
+
+Na pasta `Cursos`, tenho o curso de git e github e o de Markdown. Caso você tenha dúvidas de como uilizá-los, pode consultar ali ou me consultar.
+
+Estou disponível no twitter como [@bellesamways](https://twitter.com/bellesamways)
+
+#### Eu e a comunidade agradecemos a sua ajuda 💜
