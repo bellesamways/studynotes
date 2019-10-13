@@ -30,7 +30,7 @@ Métodos: Incluir Aluno, Matricular em curso, Incluir Disciplina
 
 São softwares que permitem a operação e programação de computador, como as linguagens de programação e o sistema operacional. Exemplos de sistemas operacionais: Windows, MacOs, Ios, Android
 
-![software básico](/media/software_basico.png)
+![software básico](/media/processos_dev_software/software_basico.png)
 
 - **Monotarefa:** Executa somente um processo de cada vez.
 - **Monousuário:** Somente é permitida a utilização de um usuário de cada vez.
@@ -42,7 +42,7 @@ São softwares que permitem a operação e programação de computador, como as 
 
 O software aplicativo, como diz o nome, revela alguma utilidade (aplicativo) ao usuário, como por exemplo: editores de texto, planilhas eletrônicas, folha de pagamento, contas a pagar, aplicativos diversos de celulares e etc.
 
-![software aplicativo](/media/software_aplicativo.png)
+![software aplicativo](/media/processos_dev_software/software_aplicativo.png)
 
 ### Características e aplicações do software
 
@@ -58,7 +58,7 @@ O software pode ser classificado de acordo com a sua forma de cópia e distribui
 
 #### O processo de desenvolvimento de software
 
-![processo de desenvolvimento de software](/media/processo_desenvolvimento_software.png)
+![processo de desenvolvimento de software](/media/processos_dev_software/processo_desenvolvimento_software.png)
 
 - **Concepção:** fase onde o sistema é concebido e avaliada a sua viabilidade (técnica, econômica, tempo). Caso viável o desenvolvimento segue nas fases seguintes e caso contrário é interrompido.
 - **Requisitos:** Em muitos modelos de processos de desenvolvimento, a fase de requisitos pode estar junta com a de Analise, mas a finalidade é identificar as necessidades dos usuários para definir os requisitos do sistema.
