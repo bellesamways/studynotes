@@ -204,3 +204,39 @@ ele reverte o commit e apaga o que vc fez nele, mas não sumiu com o commit ante
 
 ## Apagando tags e branches de repositórios remotos
 - git push origin :[tag ou branch que quero apagar]
+
+
+## Emoticons em commits
+Emoticons em commit pode trazer uma visibilidade instantânea sobre o que se trata o mesmo.
+Nos commits ele pode trazer os seguintes significados:
+
+:art: Ao melhorar o formato / estrutura do código
+
+:rocket: Ao melhorar o desempenho
+
+:pencil2: Ao escrever documentos
+
+:bulb: Nova ideia
+
+:construction: Trabalho em andamento
+
+:heavy_plus_sign: Ao adicionar recurso
+
+:heavy_minus_sign: Ao remover o recurso
+
+:speaker: Ao adicionar log
+
+:mute: Ao reduzir o log
+
+:bug: Ao corrigir um bug
+
+:white_check_mark: Ao adicionar testes
+
+:lock: Quando se lida com segurança
+
+:arrow_up: Ao atualizar dependências
+
+:arrow_down: Ao desatualizar dependências
+
+###### O.B.S.: Nem todas plataformas aceitam emojis.
+
