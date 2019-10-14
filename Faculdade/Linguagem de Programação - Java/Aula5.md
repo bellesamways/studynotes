@@ -29,6 +29,34 @@ Pode especializar métodos da super classe e especificar novas operações e dad
 6. declarar um método como abstrato é uma forma de obrigar o programador a redefinir esse método em todas as subclasses para as quais se deseja criar objetos.
 7. como um método abstrato deve ser redefinido nas subclasses, na superclasse ele não precisa ter implementação alguma.
 *exemplo*:
+```Java
+// Class abstrata Empregado
+public abstract class Empregado{ //Como a classe contém um método abstrado, ela deve ser declarada como abstrata.
+
+    private String nome;
+    private String familia;
+
+    public Empregado(String n, String f){
+        nome = n;
+        familia = f;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+    public String getFamilia() {
+        return familia;
+    }
+
+    public String toString(){
+        return nome + ' ' + familia;
+    }
+
+    public abstract double ganha(); //Método abstrato. Deve ser implementado na subclasse
+
+
+}
+```
 ![Print de tela do código de uma classe abstrata](/media/Linguagem_de_Programacao-Java/Aula5/ExemploClasseAbstrata.png)
 
 #### Polimorfismo
