@@ -10,6 +10,11 @@ A internet atualmente está buscada no conceito de rede de arquitetura aberta.
 
 A partir da possibilidade dos negócios eletrônicos, muitas oportunidades foram criadas com base na internet, subvertendo a lógica de funcionamento dos mercados existentes, entre elas:
 
+* Fácil acesso à informação;
+* Redução dos custos de transação;
+* Surgimento de novos agentes na ponta da cadeia produtiva, substituindo os tradicionais intermediários;
+* Eliminação das distâncias físicas;
+* Funcionamento ininterrupto
 
 ## Conhecimento Digitalizado
 
@@ -19,12 +24,12 @@ Digitalizar o conhecimento é um processo complexo e que exige ferramentas tecno
 ## Tecnologia Onipresente
 
 Essa geração de nativos digitais possui algumas características importantes, como:
-- Independência e forte interação em rede;
-- Abertura intelectual;
-- Colaboração;
-- Interligação dos intelectos para a conscientização organizacional;
-- Cultura de Inovação;
-- Empresa em tempo real.
+* Independência e forte interação em rede;
+* Abertura intelectual;
+* Colaboração;
+* Interligação dos intelectos para a conscientização organizacional;
+* Cultura de Inovação;
+* Empresa em tempo real.
 
 ## Inclusão e Exclusão Digital
 
