@@ -14,7 +14,9 @@ A partir da possibilidade dos negócios eletrônicos, muitas oportunidades foram
 * Redução dos custos de transação;
 * Surgimento de novos agentes na ponta da cadeia produtiva, substituindo os tradicionais intermediários;
 * Eliminação das distâncias físicas;
-* Funcionamento ininterrupto
+* Funcionamento ininterrupto.
+
+![Imagem 1](../../media/../studynotes/media/Tecnologia_da_Informacao_e_&#32;Comunicacao/aula_4_imagem_1.png)
 
 ## Conhecimento Digitalizado
 
