@@ -14,8 +14,45 @@ A evolução social e tecnológica é um processo dialético no qual a sociedade
 
 A democratização da informação, quando possibilita a inclusão digital, pode trazer aos cidadãos as mesmas oportunidades de acesso à foramção e qualificação, bem como auxiliar no desenvolvimento de uma consciência crítica em relação ao uso das TIC, com proveito de suas vantagens e atenção às suas desvantagens para a sociedade.
 
-Síndrome do toque fantasma: achar que o celular tocou quando não tocou.
-Nomofobia: fobia de uma pessoa ficar sem aparelho celular.
-Depressão do facebook: ninguém mostra coisa ruim e você acha que só você tem problemas e que a vida de todos é perfeita.
-Jogos online: dependência de jogos online, vício.
-Hipocondria digital: você sintomas nos outros e acha que tem também.
+**Síndrome do toque fantasma:** achar que o celular tocou quando não tocou.
+
+**Nomofobia:** fobia de uma pessoa ficar sem aparelho celular.
+
+**Depressão do facebook:** ninguém mostra coisa ruim e você acha que só você tem problemas e que a vida de todos é perfeita.
+
+**Jogos online:** dependência de jogos online, vício.
+
+**Hipocondria digital:** você sintomas nos outros e acha que tem também.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" align="center">As TIC constituem-se em uma grande força em áreas, como:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Educação</td>
+      <td>Engenharia</td>
+    </tr>
+    <tr>
+      <td>Finanças</td>
+      <td>Produção de bens</td>
+    </tr>
+    <tr>
+      <td>Indústria</td>
+      <td>Imprensa</td>
+    </tr>
+    <tr>
+      <td>Planejamento</td>
+      <td>Biblioteca</td>
+    </tr>
+    <tr>
+      <td>Transporte</td>
+      <td>Centros de documentação</td>
+    </tr>
+    <tr>
+      <th colspan="2">Possibilitando novas formas de organização e acesso às informações e ao conhecimento, baseadas numa arquitetura de rede e âmbito global.</th>
+    </tr>
+  </tbody>
+</table>
