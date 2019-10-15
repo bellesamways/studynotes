@@ -1,4 +1,4 @@
-## Aula 2
+# Aula 2
 
 **Conceito da neutralidade:** O conceito da neutralidade do conhecimento científico ou da tecnologia tem sua origem nas próprias condições e seu surgimento como tal, a partir do século XV, como uma oposição ao conhecimento (ou pensamento) religioso.
 
