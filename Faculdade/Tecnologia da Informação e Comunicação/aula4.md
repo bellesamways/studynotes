@@ -16,7 +16,7 @@ A partir da possibilidade dos negócios eletrônicos, muitas oportunidades foram
 * Eliminação das distâncias físicas;
 * Funcionamento ininterrupto.
 
-![Imagem 1](../../media/../studynotes/media/Tecnologia_da_Informacao_e_&#32;Comunicacao/aula_4_imagem_1.png)
+![Imagem 1](../../media/Tecnologia_da_Informacao_e_&#32;Comunicacao/aula_4_imagem_1.png)
 
 ## Conhecimento Digitalizado
 
