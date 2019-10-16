@@ -49,7 +49,7 @@ Uma rede social é aberta, pode se fazer e desfazer com rapidez e possibilita re
 Numa rede social podem ser compartilhados informações e conhecimentos, interesses, ações para o alcance de objetivos comuns etc.
 Essa disseminação das redes sociais somente pode ser alcançada devido às tecnologias desenvolvidas pela área de TI.
 
-![Imagem 1](../media/Tecnologia_da_informacao_e_Comunicacao/aula_3_imagem_1.png)
+![Imagem 1](../../media/Tecnologia_da_informacao_e_Comunicacao/aula_3_imagem_1.png)
 
 ### Reestruturação Produtiva e Sociedade
 
