@@ -1,4 +1,4 @@
-#Aula 3 - NOÇÕES DE DIREITO PENAL
+# Aula 3 - NOÇÕES DE DIREITO PENAL
 
 **Artigo 18 - I (crime doloso) e II (crime culposo)**
 
@@ -11,7 +11,7 @@ ação penal é publica, salvo quando a lei declara privativa do ofendido.
 ação penal pública: São lesados direitos dos indivíduos e da sociedade. Cabe ao Estado o “jus puniendi” (direito de punir).
 ação penal privada: O direito do ofendido se sobrepõe ao interesse público. O Estado transfere ao particular o “jus acusationis” (direito de acusar).
 
-****Artigos 138, 139 e 140  - Dos crimes contra a honra**
+**Artigos 138, 139 e 140  - Dos crimes contra a honra**
 
 Calúnia:
        *Art. 138 - Caluniar alguém, imputando-lhe falsamente fato definido como crime:

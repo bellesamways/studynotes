@@ -1,4 +1,4 @@
-Aula 5 - NOÇÕES DO DIREITO DO CONSUMIDOR
+# Aula 5 - NOÇÕES DO DIREITO DO CONSUMIDOR
 Lei 8078, de 11 de setembro de 1990
 
 **Artigo 2º - Definição de consumidor**
@@ -19,7 +19,7 @@ Bem móvel ou imóvel
 Material ou imaterial
 Durável ou não durável
 
-![Tipos produto](/media/tipos_produto.png)
+![Tipos produto](/media/propriedade_intelectual-direito-etica/tipos_produto.png)
 
 **Artigo 2º - Definição de Serviço**
 Qualquer atividade prestada no mercado de consumo.

@@ -4,7 +4,7 @@
 DECRETO-LEI N.º 5.452 - Definição de empregador
 empregador = empresa
 
-![Tipos empresa](/media/tipos_empresa.png)
+![Tipos empresa](/media/propriedade_intelectual-direito-etica/tipos_empresa.png)
 
 empregado = pessoa física
 

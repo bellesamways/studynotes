@@ -1,4 +1,4 @@
-#Aula 2 - Noções de Direito Constitucional (II)
+# Aula 2 - Noções de Direito Constitucional (II)
 **Artigo 5º, X -  Inviolabilidade da intimidade, da vida privada, da honra e da imagem das pessoas**
 Em caso de violação -> indenização.
 A indenização poderá ser cumulativa, o que significa que poderá ser reconhecido o direito de indenização pelo dano material e moral.
