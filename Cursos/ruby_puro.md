@@ -80,7 +80,7 @@ A.contexto  # >> "classe"
 ### Operadores Matemáticos
 Para resolver operações matemáticas no ruby contamos com a seguinte lista de operadores aritméticos:
 * \+ (Adição)
-* \– (Subtração)
+* – (Subtração)
 * \* (Multiplicação)
 * \/ (Divisão)
 * \% (Módulo)
@@ -1084,7 +1084,7 @@ O que aconteceu?
 - Depois utilizou **Nokogiri::HTML** para parsear o documento HTML
 - Por fim, você fez uso do método at para buscar a tag h1 e imprimir o seu conteúdo.
 
-O último post do onebitcode encontra-se dentro das tags <h3> <a href=’/ultimo-post’>Título Ultimo Post</a></h3>. Para buscar este post faça:
+O último post do onebitcode encontra-se dentro das tags \<h3>\<a href=’/ultimo-post’>Título Ultimo Post\</a>\</h3>. Para buscar este post faça:
 ```Ruby
 last_post = doc.at('h3 a')
 puts last_post.content
