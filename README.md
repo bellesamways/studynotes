@@ -1,4 +1,14 @@
-# Study Notes (Notas de estudo)
+# Cursos
+
+- [Git e Github](Cursos/git_and_github_course.md)
+- [Markdown](Cursos/markdown_course.md)
+- [Ruby Puro](Cursos/ruby_puro.md)
+
+# Faculdade
+
+
+
+# O que é o Study Notes?
 
 Eu tenho costume de fazer resuminhos quando estou estudando algo, isso sempre foi muito útil na hora de consultar alguma coisa. Isso já me ajudou muito e alguns colegas de faculdade aproveitaram disso também.
 
@@ -6,7 +16,7 @@ Então pensei, por que não compartilhar?
 
 Criei esse repositório que depois alimentará um blogzinho com tudo isso, por isso já estou fazendo os resumos em Markdown.
 
-## Repositório para armazenar todas as anotações de cursos feitos para minha própria consulta ou de outros.
+## Repositório para armazenar todas as anotações de cursos.
 
 ## Para contribuir com issues abertas
 
