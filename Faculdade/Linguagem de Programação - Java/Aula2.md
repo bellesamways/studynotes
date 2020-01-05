@@ -31,15 +31,15 @@ Linguagem fortemente **tipada**, ou seja, necessidade que todas as variáveis te
 Inicia a declaração indicando o **tipo da variável e o nome desejado**.
 ```Java
 int x, y; //declarando duas variáveis inteiras
-                   x = 6; //atribuindo valores a variáveis
-                   y = 1000;
- 
-                   float f = 3,141516f; //ponto flutuante
-                   double w = 3,2310834; //ponto flutuante de dupla precisão
+x = 6; //atribuindo valores a variáveis
+y = 1000;
 
-                   char ch = ‘a’; //Caractere
- 
-                   final int MAX = 9; //Define a constante MAX com o valor de 9
+float f = 3,141516f; //ponto flutuante
+double w = 3,2310834; //ponto flutuante de dupla precisão
+
+char ch = ‘a’; //Caractere
+
+final int MAX = 9; //Define a constante MAX com o valor de 9
 ```
 ##### Operadores aritméticos e relacionais
 
