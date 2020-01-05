@@ -1,10 +1,12 @@
-# Cursos
+# Sumário
+
+## Cursos
 
 - [Git e Github](Cursos/git_and_github_course.md)
 - [Markdown](Cursos/markdown_course.md)
 - [Ruby Puro](Cursos/ruby_puro.md)
 
-# Faculdade
+## Faculdade
 
 - [Engenharia de Software](Faculdade/Engenharia-de-Software/eng_software_compilado.md)
 - [Estrutura de Dados](Faculdade/Estrutura-de-Dados/estrutura_dados_compilado.md)
@@ -25,7 +27,6 @@ Então pensei, por que não compartilhar?
 
 Criei esse repositório que depois alimentará um blogzinho com tudo isso, por isso já estou fazendo os resumos em Markdown.
 
-## Repositório para armazenar todas as anotações de cursos.
 
 ## Para contribuir com issues abertas
 
