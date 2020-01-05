@@ -6,7 +6,16 @@
 
 # Faculdade
 
-
+- [Engenharia de Software](Faculdade/Engenharia de Software/eng_software_compilado.md)
+- [Estrutura de Dados](Faculdade/Estrutura de Dados/estrutura_dados_compilado.md)
+- [Inovação tecnológica](Faculdade/Inovação Tecnológica/inovacao_tecnologica_compilado.md)
+- [Linguagem de Programação - Java](Faculdade/Linguagem de Programação - Java/java_compilado.md)
+- [Modelagem de Sistemas](Faculdade/Modelagem de Sistemas/modelagem_sistemas_compilado.md)
+- [Organização de Computadores](Faculdade/Organização de computadores/org_computadores_compilado.md)
+- [Processos de Desenvolvimento de Software](Faculdade/Processos de Desenvolvimento de Software/pds_compilado.md)
+- [propriedade Intelectual, Direito e Ética](Faculdade/Propriedade Intelectual, Direito e Ética/pide_compilado.md)
+- [Sistemas de Informação](Faculdade/Sistemas de Informação/sistemas_informacao_compilado.md)
+- [Tecnologia da Informação e Comunicação](Faculdade/Tecnologia da Informação e Comunicação/tic_compilado.md)
 
 # O que é o Study Notes?
 
