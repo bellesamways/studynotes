@@ -1,94 +1,89 @@
+# Markdown
+
 ## Cabeçalhos
 
-\# Título 1
+`# Título 1`
 
-\## Título 2
+`## Título 2`
 
-\### Título 3
+`### Título 3`
 
-\#### Título 4
+`#### Título 4`
 
-\##### Título 5
+`##### Título 5`
 
-\###### Título 6
+`###### Título 6`
 
-
-## Parágrafo:
+## Parágrafo
 
 Insere 2 espaços no fim do parágrafo OU enter 2x, isso faz ter um espaçamento entre os parágrafos.
 
+## Ênfase
 
-## Ênfase:
+`**negrito**` ou `__negrito__`
 
-\*\*negrito\*\* ou \_\_negrito\_\_
+`*itálico*` ou `_itálico_`
 
-\*itálico\* ou \_itálico\_
+`***negritoEitalico***` ou `__*negritoEitalico*__` ou `**_negritoEitalico_**`
 
-\*\*\*negritoEitalico\*\*\* ou \_\_\*negritoEitalico\*\_\_ ou \*\*\_negritoEitalico\_\*\*
+`~~riscado~~`
 
-\~\~riscado\~\~
+`> citação`
 
-\> citação
+## Linhas horizontais
 
+`***` ou `* * *` ou a partir do 3o caracter, quantos quiser
 
-## Linhas horizontais:
+`---` ou `- - -` ou a partir do 3o, quantos quiser
 
-\*\*\* ou \* \* \* ou a partir do 3o caracter, quantos quiser
+`___` ou `_ _ _` ou a partir do 3o, quantos quiser
 
---- ou - - - ou a partir do 3o, quantos quiser
+## Listas não-ordenadas
 
-___ ou _ _ _ ou a partir do 3o, quantos quiser
+Asterisco ou menos ou mais
 
+`*` ou `-` ou `+`
 
-## Listas não-ordenadas:
+Para sub item: dê um tab
 
-asterisco ou menos ou mais
+## Lista ordenada
 
-subitem: tab
+Posso colocar o `1. 2. 3.` ou só tudo `1.` e ele vai identificar como lista ordenada.
 
+## Links
 
-## Lista ordenada:
+`[texto do link](endereço do link "alt")`
 
-posso colocar o 1. 2. 3. ou só tudo 1. e ele vai identificar como lista ordenada
+`[site-url]: link`
 
+`[clique aqui][site-url]`
 
-## Links:
-\[texto do link](endereço do link "alt")
+## Imagem
 
-\[site-url]: link
+`![imagem](caminho da imagem)`
 
-\[clique aqui][site-url]
+Mesmo jeito de criar variável para o link, tem pra imagem.
 
+Imagem com **link**: coloca a imagem toda dentro do colchete e depois o parênteses com o link
 
-## Imagem:
+## Tabela
 
-\! \[imagem](caminho da imagem)
+```md
+| Nome | Idade |
+| - | - |
+| Isabelle | 24 |
 
-mesmo jeito de criar variável para o link, tem pra imagem
+| :- | :-: | -: |
+```
 
-imagem com link: coloca a imagem toda dentro do colchete e depois o parênteses com o link
+Alinha a esquerda | Alinha ao centro | Alinha a direita
 
+## Código
 
-## Tabela:
+Usando uma crase antes da palavra e outra depois, identifica que é código.
 
-\| Nome | Idade |
+Duas crases antes e duas depois pra por uma frase como código em linha.
 
-\| - | - |
+Em bloco, usa 2 tabs na frente de tudo ou 3 crases antes da linha do código e 3 depois.
 
-\| Isabelle | 24 |
-
-
-\| :- | :-: | -: |
-
-alinha a esquerda | alinha ao centro | alinha a direita
-
-
-## Código:
-
-Usando uma crase antes da palavra e outra depois, identifica que é código
-
-duas crases antes e duas depois pra por uma frase como código em linha
-
-em bloco, usa 2 tabs na frente de tudo ou 3 crases antes da linha do código e 3 depois
-
-se colocar depois das 3 crases o nome da lang, ele faz os highlights
+Se colocar depois das 3 crases o nome da linguagem, ele faz os highlights.
