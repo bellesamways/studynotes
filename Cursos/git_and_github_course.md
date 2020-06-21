@@ -1,6 +1,6 @@
 # Git e Github
 
-Anotações do curso: https://www.udemy.com/share/1000cwBUEdeV1XRXg=/
+[Anotações do curso](https://www.udemy.com/share/1000cwBUEdeV1XRXg=/)
 
 ## Instalando o git
 
@@ -8,15 +8,16 @@ Anotações do curso: https://www.udemy.com/share/1000cwBUEdeV1XRXg=/
 - no linux já vem instado, geralmente.
 
 ## Config inicial do git
+
 - guarda as infos no git config do sistema todo, do usuário e do projeto.
 - config global é do usuário
 
-    - `git config --global user.name "Seu nome"`
-    - `git config --global user.email "seuemail@gmail.com"`
-    - `git config --global core.editor [comando do editor]`
-    - `git config user.name` (responde com o seu nome)
-    - `git config user.email` (responde com o seu nome)
-    - `git config --lis` (mostra uma lista de informações do seu git)
+- `git config --global user.name "Seu nome"`
+- `git config --global user.email "seuemail@gmail.com"`
+- `git config --global core.editor [comando do editor]`
+- `git config user.name` (responde com o seu nome)
+- `git config user.email` (responde com o seu nome)
+- `git config --lis` (mostra uma lista de informações do seu git)
 
 ## Inicializando um repositório
 
@@ -77,8 +78,8 @@ Anotações do curso: https://www.udemy.com/share/1000cwBUEdeV1XRXg=/
 ## Criando e adicionando uma chave SSH
 
 Links de referência: 
-- https://help.github.com/en/articles/connecting-to-github-with-ssh
-- https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- [Github help 1](https://help.github.com/en/articles/connecting-to-github-with-ssh)
+- [Github help 2](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 ### Gerando uma nova chave SSH
 
@@ -179,9 +180,9 @@ Vantagens:
 
 - Ignorar e não trackear alguns arquivos.
 
-https://git-scm.com/docs/gitignore
+[Git SCM](https://git-scm.com/docs/gitignore)
 
-https://github.com/github/gitignore
+[Github](https://github.com/github/gitignore)
 
 ## Git stash é lindo
 
@@ -252,5 +253,7 @@ Nos commits ele pode trazer os seguintes significados:
 :arrow_up: Ao atualizar dependências
 
 :arrow_down: Ao desatualizar dependências
+
+Para ver mais, acesse [aqui](https://gitmoji.carloscuesta.me/).
 
 ###### O.B.S.: Nem todas plataformas aceitam emojis.
