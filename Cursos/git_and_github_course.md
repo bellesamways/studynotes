@@ -17,7 +17,7 @@
 - `git config --global core.editor [comando do editor]`
 - `git config user.name` (responde com o seu nome)
 - `git config user.email` (responde com o seu nome)
-- `git config --lis` (mostra uma lista de informações do seu git)
+- `git config --list` (mostra uma lista de informações do seu git)
 
 ## Inicializando um repositório
 
