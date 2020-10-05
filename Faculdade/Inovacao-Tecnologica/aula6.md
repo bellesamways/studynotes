@@ -27,7 +27,7 @@ O Brasil participa da pesquisa GEM desde do ano de 2000. A pesquisa é realizada
 
 O GEM divide a apresentação dos seus resultados em **3 categorias de países**:
 
-#### *1. Factor-driven*
+#### *1) Factor-driven*
 Economias baseadas na extração e comercialização de recursos naturais.
 
 Os países que pertencem a este grupo possuem grande parte da população vivendo no campo e, por isso, podemos afirmar terem um setor agrícola forte, que fornece subsistência para a grande maioria de sua população.
