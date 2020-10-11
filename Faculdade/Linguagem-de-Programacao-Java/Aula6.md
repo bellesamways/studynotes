@@ -1,6 +1,6 @@
-##Aula 6 - Encapsulamento e associações de classes
+## Aula 6 - Encapsulamento e associações de classes
 
-####Encapsulamento 
+#### Encapsulamento 
 
 Mecanismo utilizado na Programação Orientada a Objetos, que visa obter segurança, modularidade e autonomia para os objetos; 
 
@@ -8,16 +8,16 @@ Conseguido, através da definição de visibilidade privada dos atributos, ganha
 
 Sempre defina os atributos de uma classe como privados, a não ser que tenha uma boa justificativa para isso. 
 
-#######O Encapsulamento protege os atributos de acesso direto e permite apenas acesso através de métodos públicos. 
+##### O Encapsulamento protege os atributos de acesso direto e permite apenas acesso através de métodos públicos. 
 
-####Modificadores de visibilidade 
+#### Modificadores de visibilidade 
 
 Um modificador de acesso determina como será a visibilidade de uma classe, método ou atributo a partir de outras classes.  
 
 Modificadores de acesso 
 ![Modificadores de acesso](/media/Linguagem_de_Programacao-Java/Aula6/ModificadoresDeAcesso.png)
 
-public: atributos e métodos são acessíveis em ######todos os métodos de todas as classes.###### esse é o ######nível menos rígido de encapsulamento,###### que dizemos que o encapsulamento é rompido. 
+public: atributos e métodos são acessíveis em ##### todos os métodos de todas as classes. ##### esse é o ######nível menos rígido de encapsulamento,###### que dizemos que o encapsulamento é rompido. 
 
 protected: atributos e métodos são acessíveis no pacote, nos ######métodos da própria classe e suas subclasses.#######
 
