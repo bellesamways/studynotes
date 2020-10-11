@@ -17,29 +17,29 @@ Um modificador de acesso determina como será a visibilidade de uma classe, mét
 Modificadores de acesso 
 ![Modificadores de acesso](/media/Linguagem_de_Programacao-Java/Aula6/ModificadoresDeAcesso.png)
 
-public: atributos e métodos são acessíveis em ##### todos os métodos de todas as classes. ##### esse é o ######nível menos rígido de encapsulamento,###### que dizemos que o encapsulamento é rompido. 
+public: atributos e métodos são acessíveis em ##### todos os métodos de todas as classes. ##### esse é o ##### nível menos rígido de encapsulamento, ##### que dizemos que o encapsulamento é rompido. 
 
-protected: atributos e métodos são acessíveis no pacote, nos ######métodos da própria classe e suas subclasses.#######
+protected: atributos e métodos são acessíveis no pacote, nos ##### métodos da própria classe e suas subclasses.
 
-sem modificador: a visibilidade nas ######classes do mesmo pacote e a própria classe.###### 
+sem modificador: a visibilidade nas ##### classes do mesmo pacote e a própria classe. ###### 
 
-private: atributos e métodos são acessíveis ######somente nos métodos da própria classe.###### este é o nível ######mais rígido de encapsulamento.######
+private: atributos e métodos são acessíveis ##### somente nos métodos da própria classe. ##### este é o nível ##### mais rígido de encapsulamento. #####
 
-######Abstract:###### Um método abstrato não implementa nenhuma funcionalidade, somente assina o método e faz com que a primeira subclasse concreta seja obrigada a implementar. Uma classe que possui um método abstrato deve ser obrigatoriamente abstrata, como vimos na aula passada. 
+##### Abstract: ##### Um método abstrato não implementa nenhuma funcionalidade, somente assina o método e faz com que a primeira subclasse concreta seja obrigada a implementar. Uma classe que possui um método abstrato deve ser obrigatoriamente abstrata, como vimos na aula passada. 
 
-######Final:###### Pode ser aplicado em classes, métodos e atributos. Indica que esta é a última atribuição ou definição da estrutura. Não será permitida uma nova re-escrita. Para uma classe, não há herança em classes final. Um método não pode ser sobrescrito; e um atributo é considerado uma constante. 
+##### Final: ##### Pode ser aplicado em classes, métodos e atributos. Indica que esta é a última atribuição ou definição da estrutura. Não será permitida uma nova re-escrita. Para uma classe, não há herança em classes final. Um método não pode ser sobrescrito; e um atributo é considerado uma constante. 
 
-####Métodos Get’s e Set’s 
+#### Métodos Get’s e Set’s 
 
-O método set atribui valores ao atributo, enquanto que o método ######get obtém seus valores.###### 
+O método set atribui valores ao atributo, enquanto que o método ##### get obtém seus valores.##### 
 
-A composição do nome destes métodos é sempre com o nome set + ######<nome atributo> ou get + <nome atributo>. ######
+A composição do nome destes métodos é sempre com o nome set + ##### <nome atributo> ou get + <nome atributo>. #####
 
-####Associação de Classes#####
+#### Associação de Classes
 
 É um vínculo que permite que objetos de uma ou mais classes se relacionem. Através destes vínculos, é possível que um objeto troque mensagens ou chame os métodos de outros objetos. 
 
-####Composição ####
+#### Composição 
 
 Tipo de associação onde uma nova classe usa classes existentes como atributos;  
 Relacionamento “tem um”. 
