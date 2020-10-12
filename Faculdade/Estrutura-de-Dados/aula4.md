@@ -196,4 +196,4 @@ O for mais externo começa na primeira posição do vetor e o for interno sempre
 Pesquisa sequencial: simples, mas ineficiente. Busca em todo o arquivo mesmo que já tenha achado. 
 
 Pesquisa binária: a matriz tem que estar ordenada.
-![](../../media/estrutura_dados/pesquisa.png)
+![](/media/estrutura_dados/pesquisa.png)
