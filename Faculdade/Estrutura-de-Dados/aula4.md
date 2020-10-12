@@ -27,12 +27,14 @@ Ordenar significa dispor elementos de um conjunto seguindo um determinado crité
 ##### Selection Sort: ordenação por seleção. 
 
 Sempre buscar o menor e posicionar no início. 
-![]('../../media/estrutura_dados/SelectionSort.png')
+
+![](/media/estrutura_dados/SelectionSort.png)
 
 Você terá que construir um algoritmo que tenha uma repetição dentro de outra repetição, visto que você percorreu o vetor quatro vezes (2,4,6,8) para identificar o menor  e, a cada vez que percorria o vetor, você comparava os elementos para encontrar o menor. Supondo que você usará duas estruturas de repetição( for), poderemos afirmar que cada vez que o for mais interno terminar, o algoritmo identificará o menor número e fará a troca. 
 
 A cada nova busca, o número de comparações diminuirá e esses procedimentos se repetirão até que o vetor esteja ordenado.
-![]('../../media/estrutura_dados/vetorSort.png') 
+
+![](/media/estrutura_dados/vetorSort.png) 
 
 void selecao(int vet[], int tam) 
 
@@ -85,7 +87,8 @@ void selecao(int vet[], int tam)
 } 
 
 **Insertion Sort: ordenação por inserção.**
-![]('../../media/estrutura_dados/insertionSort.png')
+
+![](/media/estrutura_dados/insertionSort.png)
 
 void insercao(int vet[], int tam) 
 
@@ -119,7 +122,7 @@ void insercao(int vet[], int tam)
 
 O for mais externo começa com a segunda posição do vetor porque o for de dentro sempre compara com os elementos anteriores. O teste de j>0 se justifica porque dentro dos colchetes, ele subtrai de 1 o valor de j e se deixasse j chegar a zero, o índice ficaria negativo o que não é permitido na linguagem C++. O elemento fundamental do for interno é o teste: j>0 && aux <vet[j-1] porque  incorpora um teste interrompendo a repetição quando a condição aux <vet[j-1] não for mais atendida. 
 
-![]('../../media/estrutura_dados/bubbleSort.png')
+![](/media/estrutura_dados/bubbleSort.png)
 
 Você terá que construir um algoritmo que tenha uma repetição dentro de outra repetição. Na repetição interna, toda vez que dois valores de posições adjacentes forem encontrados fora de ordem, deverão ser trocados de posições.  
 
@@ -196,4 +199,5 @@ O for mais externo começa na primeira posição do vetor e o for interno sempre
 Pesquisa sequencial: simples, mas ineficiente. Busca em todo o arquivo mesmo que já tenha achado. 
 
 Pesquisa binária: a matriz tem que estar ordenada.
+
 ![](/media/estrutura_dados/pesquisa.png)
