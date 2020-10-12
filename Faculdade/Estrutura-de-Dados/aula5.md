@@ -12,14 +12,12 @@ A estrutura que permite representar um conjunto de dados de forma a preservar a 
 
 ### Agrupamento
 * **Sequencial**: apresenta os nós em posições contíguas de memória, isto é, um após o outro. Sendo assim, fica fácil identificarmos o endereço de qualquer nó de uma Lista Sequencial. 
-
 * **Encadeado**: um conjunto de nós (nodos) encadeados onde cada nó contém o dado e um apontamento para o próximo nó, visto que eles não estão alocados de forma contígua. 
 
 
 O agrupamento é a forma como os dados são armazenados na memória principal. Pode ser confundido com alocação estática ou alocação dinâmica.  
 
 * **Estática**: determinada durante a compilação. 
-
 * **Dinâmica**: você poderá determinar o tamanho, ou acrescentar, durante a execução. 
 
 ![](/media/estrutura_dados/agrupamento.png)
