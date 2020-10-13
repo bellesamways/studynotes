@@ -24,6 +24,7 @@ Um modificador de acesso determina como será a visibilidade de uma classe, mét
   * _private_: atributos e métodos são acessíveis __somente nos métodos da própria classe__. Este é o __nível mais rígido de encapsulamento__. 
   
  __Abstract__: Um método abstrato não implementa nenhuma funcionalidade, somente assina o método e faz com que a primeira subclasse concreta seja obrigada a implementar. Uma classe que possui um método abstrato deve ser obrigatoriamente abstrata, como vimos na aula passada. 
+
 __Final__: Pode ser aplicado em classes, métodos e atributos. Indica que esta é a última atribuição ou definição da estrutura. Não será permitida uma nova re-escrita. Para uma classe, não há herança em classes final. Um método não pode ser sobrescrito; e um atributo é considerado uma constante. 
 
 **Métodos Get’s e Set’s**
