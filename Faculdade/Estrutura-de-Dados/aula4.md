@@ -36,6 +36,7 @@ A cada nova busca, o número de comparações diminuirá e esses procedimentos s
 
 ![](/media/estrutura_dados/vetorSort.png) 
 
+```
 void selecao(int vet[], int tam) 
 
 { 
@@ -85,11 +86,12 @@ void selecao(int vet[], int tam)
     } 
 
 } 
+```
 
 **Insertion Sort: ordenação por inserção.**
 
 ![](/media/estrutura_dados/insertionSort.png)
-
+```
 void insercao(int vet[], int tam) 
 
 { 
@@ -115,7 +117,7 @@ void insercao(int vet[], int tam)
     } 
 
 } 
-
+```
  
 
  
@@ -128,7 +130,7 @@ Você terá que construir um algoritmo que tenha uma repetição dentro de outra
 
  
  
-
+```
 void bolha(int vet[], int tam) 
 
 { 
@@ -157,7 +159,7 @@ void bolha(int vet[], int tam)
 
 } 
 
- 
+ ```
 
  
 
