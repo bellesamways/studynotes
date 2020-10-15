@@ -19,7 +19,7 @@ Os componentes que geram eventos permitem que sejam adicionados ou removidos lis
 
 O modelo de eventos do Java funciona da seguinte forma: O componente que produz eventos possui métodos especiais do tipo addXXListener(XXListener) que permite adicionar ou remover listeners. XX representa o nome do evento. O método addXXListener recebe, por parâmetro, o objeto que implementa a interface XXListener. A implementação do método addXXListener no componente apenas adiciona o objeto, passado por parâmetro a uma lista interna. **Sempre que ocorrer um evento (exp.: botão pressionado), o componente percorre a lista e invoca, para cada elemento, o método definido na interface XXListener.**
 
-![](/media/Linguagem_de_Programacao-Java/Aula8/listener.png)
+![](/media/Linguagem_de_Programacao-Java/Aula8/listener.PNG)
 
 Resumindo:  
 
@@ -41,12 +41,12 @@ O swing oferece um conjunto de diálogos simples, pré-definidos, para uso em in
 **Classe JOptionPane**
 
 Estrutura básica: 
-![](/media/Linguagem_de_Programacao-Java/Aula8/estruturaJOptionPane.png)
+![](/media/Linguagem_de_Programacao-Java/Aula8/estruturaJOptionPane.PNG)
 
 
 **MessageDialog** 
 Exibe uma mensagem e aguarda um ok do usuário.  
-![](/media/Linguagem_de_Programacao-Java/Aula8/messageDialog.png)
+![](/media/Linguagem_de_Programacao-Java/Aula8/messageDialog.PNG)
 
 
 **ConfirmDialog**
@@ -59,7 +59,7 @@ Conjuntos de botões de opção(optionType):
 - JOptionPane.YES_NO_CANCEL_OPTION  
 - JOptionPane.OK_CANCEL_OPTION 
 
-![](/media/Linguagem_de_Programacao-Java/Aula8/confirmDialog.png)
+![](/media/Linguagem_de_Programacao-Java/Aula8/confirmDialog.PNG)
 
 
 **InputDialog** 
@@ -67,7 +67,7 @@ Exibe uma mensagem e obtém um valor de entrada do usuário:
 * Campo de texto editável 
 * Combo box 
 
-![](/media/Linguagem_de_Programacao-Java/Aula8/inputDialog.png)
+![](/media/Linguagem_de_Programacao-Java/Aula8/inputDialog.PNG)
 
  
 
