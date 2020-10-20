@@ -5,7 +5,9 @@ Lei 9279, de 14 de maio de 1996
 A lei proíbe o registro de sinais acessíveis apenas a outros sentidos humanos que não a visão, não abrangendo os conceitos de marcas olfativas, gustativas, sonoras e táteis. 
 
 **Marca de produto ou serviço:** utilizada para distinguir um produto ou serviço de outro idêntico, semelhante ou afim, de origem distinta.
+
 **Marca de certificação:** Utilizada para atestar a conformidade de um produto ou serviço com determinadas normas ou especificações técnicas, quanto à qualidade, natureza, material utilizado e metodologia empregada.
+
 **Marca coletiva:** Utilizada para identificar produtos ou serviços que provêm de membros de uma determinada entidade. 
 
 ## Concorrência desleal 
