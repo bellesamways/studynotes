@@ -7,6 +7,7 @@ Evento é um acontecimento relevante no meio externo ao sistema relevante. Pode 
 
 
 Eventos também podem ser gerados em resposta a modificações do ambiente. Em outras palavras, definem-se eventos GUI como mensagens (chamadas a métodos) que indicam que o usuário do programa interagiu com um dos componentes GUI. 
+
 **Um sistema orientado a objetos é definido como um conjunto de objetos interagindo ou trocando mensagens**. Os eventos representam as ações dos atores nesse processo ou alguma resposta a uma mudança de estado. 
  
 
@@ -24,6 +25,7 @@ O modelo de eventos do Java funciona da seguinte forma: O componente que produz 
 Resumindo:  
 
 **ActionEvent** - gerado pelo botão quando pressionado. sempre que o botão for pressionado, este irá percorrer a sua lista interna de listeners, chamando para cada um o método actionPerformed. 
+
 **ActionListener** - interface que especifica os objetos que tratam eventos do tipo ActionEvent. existem várias soluções possíveis para tratar o evento: 
 * recorrendo a própria classe (GUI) - a aplicação gráfica tem de implementar os listeners necessários 
 * recorrendo a classes locais - é criada uma classe local que implementa os listeners necessários 

@@ -81,7 +81,8 @@ Suponha que ao executar, o método f() lance uma exceção do tipo NumberFormatE
 
 A linguagem Java admite dois tipos de exceção.  
 
-As **não verificadas (unchecked, em inglês)** são instâncias de subclasses de RuntimeException. O compilador não verifica se existe possibilidade de serem lançadas, e não exige que os métodos onde possam ocorrer façam qualquer tratamento. Elas representam erros ou defeitos na lógica do programa que podem causar problemas irrecuperáveis em tempo de execução (run time).  
+As **não verificadas (unchecked, em inglês)** são instâncias de subclasses de RuntimeException. O compilador não verifica se existe possibilidade de serem lançadas, e não exige que os métodos onde possam ocorrer façam qualquer tratamento. Elas representam erros ou defeitos na lógica do programa que podem causar problemas irrecuperáveis em tempo de execução (run time).
+
 Por outro lado, instâncias de Exception, ou de qualquer outra de suas subclasses, são **verificadas (checked)** como, p.ex, IOException, ClassNotFoundException e CloneNotSupportedException. Elas representam erros que podem ocorrer em tempo de execução, mas que não dependem da lógica do programa, em geral defeitos nos dispositivos de entrada ou saída (arquivos, rede, etc).  
 
 O compilador exige que um método onde possam ocorrer exceções verificadas faça uma de duas coisas: ou utilize blocos try-catch-finally para capturar e tratar essas exceções, ou declare que pode lançar essas exceções para o método chamador, colocando uma cláusula "throws" no seu cabeçalho, como por exemplo:  
@@ -101,6 +102,7 @@ Essa cláusula é facultativa para o caso de exceções não-verificadas.
 A classe java.lang.Exception, e todas as suas subclasses, têm pelo menos dois construtores da forma:  
  
 <nome da classe de Exceção> (String <mensagem de erro>) 
+
 <nome da classe de Exceção> ()  
 
 A mensagem de erro é sempre retornada pelo método toString(). Toda exceção também aceita a mensagem printStackTrace(), que imprime na stream apontada por System.err um stack trace. O stack trace é um relatório detalhado da seqüência de chamadas a métodos que antecederam o lançamento da exceção. 
