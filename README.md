@@ -10,12 +10,14 @@
 
 - [Engenharia de Software](Faculdade/Engenharia-de-Software/eng_software_compilado.md)
 - [Estrutura de Dados](Faculdade/Estrutura-de-Dados/estrutura_dados_compilado.md)
+- [Gerencia Projetos](Faculdade/Gerencia-Projetos-Compartilhado)
 - [Inovação tecnológica](Faculdade/Inovacao-Tecnologica/inovacao_tecnologica_compilado.md)
-- [Linguagem de Programação - Java](Faculdade/Linguagem-de-Programacao-Java/java_compilado.md)
+- [Introdução a Segurança da Informação](Faculdade/Introducao-a-Seguranca-da-Informacao/isi_compilado.md)
+- [Linguagem de Programação Java](Faculdade/Linguagem-de-Programacao-Java/java_compilado.md)
 - [Modelagem de Sistemas](Faculdade/Modelagem-de-Sistemas/modelagem_sistemas_compilado.md)
 - [Organização de Computadores](Faculdade/Organizacao-de-computadores/org_computadores_compilado.md)
 - [Processos de Desenvolvimento de Software](Faculdade/Processos-de-Desenvolvimento-de-Software/pds_compilado.md)
-- [propriedade Intelectual, Direito e Ética](Faculdade/Propriedade-Intelectual-Direito-e-Etica/pide_compilado.md)
+- [Propriedade Intelectual, Direito e Ética](Faculdade/Propriedade-Intelectual-Direito-e-Etica/pide_compilado.md)
 - [Sistemas de Informação](Faculdade/Sistemas-de-Informação/sistemas_informacao_compilado.md)
 - [Tecnologia da Informação e Comunicação](Faculdade/Tecnologia-da-Informacao-e-Comunicação/tic_compilado.md)
 
