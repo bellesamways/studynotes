@@ -13,7 +13,7 @@
 - [Estrutura de Dados](Faculdade/Estrutura-de-Dados/estrutura_dados_compilado.md)
 - [Gerencia Projetos](Faculdade/Gerencia-Projetos-Compartilhado)
 - [Inovação tecnológica](Faculdade/Inovacao-Tecnologica/inovacao_tecnologica_compilado.md)
-- [Introdução a Segurança da Informação](Faculdade/Introducao-a-Seguranca-da-Informacao/isi.md)
+- [Introdução a Segurança da Informação](Faculdade/Introducao-a-Seguranca-da-Informacao/isi_compilado.md)
 - [Linguagem de Programação Java](Faculdade/Linguagem-de-Programacao-Java/java_compilado.md)
 - [Modelagem de Sistemas](Faculdade/Modelagem-de-Sistemas/modelagem_sistemas_compilado.md)
 - [Organização de Computadores](Faculdade/Organizacao-de-computadores/org_computadores_compilado.md)
