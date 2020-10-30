@@ -1,4 +1,3 @@
-- [Linguagem de Programação - Java](Faculdade/Linguagem-de-Programacao-Java/java_compilado.md)
 # Sumário
 
 ## Cursos
