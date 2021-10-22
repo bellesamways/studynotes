@@ -526,3 +526,29 @@ A figura a seguir ilustra uma visão do processo de gestão de risco (GR) segund
 
 
 ![Processo de risco](media/introducao-a-seguranca-da-informacao/processo-risco.png)
+
+### Governança, risco e compliance 
+
+ 
+
+A GR compõe alguma ferramenta utilizada no mundo dos negócios? Como obter maiores vantagens competitivas no âmbito da gestão? 
+
+Faremos agora algumas considerações que esclarecem tais questões. 
+
+ 
+A GR compõe uma ferramenta cada vez mais utilizada no mundo dos negócios: Governança, Riscos e Compliance (GRC). A organização que tiver a GRC como parte de suas diretrizes estará mais preparada para obter maiores e melhores vantagens competitivas. 
+
+ 
+<center>Qual é o papel da GRC neste cenário? </center>
+
+<b>Governança corporativa</b> 
+
+Cuida para que o controle da gestão seja tão importante quanto ela própria. 
+
+<b>Gestão de riscos</b>
+
+Gerencia o efeito da incerteza nos objetivos. 
+
+<b>Compliance</b>
+
+Adere aos padrões da legislação (regulamentos oficiais vigentes, políticas empresariais e normas internas de procedimentos). 
