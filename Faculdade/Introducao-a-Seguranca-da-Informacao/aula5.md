@@ -101,7 +101,7 @@ Podemos então reescrever o conceito de oportunidade como a causa potencial de u
 
 #### Medidas de proteção (controle) 
 
-<center">Certas ameaças rondam os ativos a todo instante. </center>
+<center>Certas ameaças rondam os ativos a todo instante. </center>
 
 Como uma organização deseja mantê-los a salvo, deve adotar medidas de proteção (controle) para esconder ou diminuir o acesso ou a exposição às vulnerabilidades deles. 
 
