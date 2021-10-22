@@ -182,6 +182,7 @@ Para cada situação, é preciso que se defina o tipo de documento a ser interpr
 ## Seletores
 
 Seletores estão para CSS como tags estão para HTML. O seletor é uma strings que identifica o elemento HTML ao qual a regra será aplicada.
+![seletores-css](../../media/Tecnologias_Web/seletores-css.png)
 
 seletor {propriedade:valor}
 é o aspecto a ser alterado.
