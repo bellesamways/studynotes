@@ -266,7 +266,7 @@ Indivíduo ou grupo com interesse no desempenho ou sucesso de uma organização.
 
  
 
-Antes de conhecê-los, precisamos entender como são realizados os <b>processos da gestão de riscos</b> (GR) dentro da <b>Gestão de Segurança da Informação</b> (GSI). Para isso, analisaremos um exemplo. 
+Antes de conhecê-los, precisamos entender como são realizados os **processos da gestão de riscos** (GR) dentro da **Gestão de Segurança da Informação** (GSI). Para isso, analisaremos um exemplo. 
 
   
  
@@ -274,35 +274,35 @@ Antes de conhecê-los, precisamos entender como são realizados os <b>processos 
 
  
  
-<b>Escopo de ativos: </b>Servidor e banco de dados; 
+**Escopo de ativos:** Servidor e banco de dados; 
 
  
  
-<b>Vulnerabilidades identificadas:</b> Falha no software que pode ser explorada devido a outra no sistema operacional; 
+**Vulnerabilidades identificadas:** Falha no software que pode ser explorada devido a outra no sistema operacional; 
 
  
  
-<b>Ameaça:</b> Malware codificado para explorar as vulnerabilidades citadas e roubar dados do banco de dados; 
+**Ameaça:** Malware codificado para explorar as vulnerabilidades citadas e roubar dados do banco de dados; 
 
  
  
-<b>Medida de controle adotada:</b> Instalação de suíte de antivírus; 
+**Medida de controle adotada:** Instalação de suíte de antivírus; 
 
  
  
-<b>Medidas de controle não adotadas:</b> Atualização de sistema operacional e software; 
+**Medidas de controle não adotadas:** Atualização de sistema operacional e software; 
 
  
  
-<b>Possível incidente de segurança da informação:</b> Malware chega por e-mail para um usuário, que executa o arquivo anexado; 
+**Possível incidente de segurança da informação:** Malware chega por e-mail para um usuário, que executa o arquivo anexado; 
 
  
  
-<b>Impactos:</b> Roubo de dados sensíveis e prejuízo financeiro; 
+**Impactos:** Roubo de dados sensíveis e prejuízo financeiro; 
 
  
  
-<b>Risco:</b> Risco extremo. 
+**Risco:** Risco extremo. 
 
  
 
@@ -465,28 +465,28 @@ No custo desejado, a proteção provavelmente não dará uma segurança total.
 
  
  
-<b>Preventiva:</b> Evita que incidentes ocorram; 
+**Preventiva:** Evita que incidentes ocorram; 
 
  
-<b>Desencorajadora:</b> Desencoraja a prática de ações; 
+**Desencorajadora:** Desencoraja a prática de ações; 
 
  
-<b>Monitoradora:</b> Monitora o estado e o funcionamento; 
+**Monitoradora:** Monitora o estado e o funcionamento; 
 
  
-<b>Corretiva:</b> Corrige falhas existentes; 
+**Corretiva:** Corrige falhas existentes; 
 
  
-<b>Recuperadora:</b> Repara danos causados por incidentes; 
+**Recuperadora:** Repara danos causados por incidentes; 
 
  
-<b>Reativa:</b> Reage a determinados incidentes; 
+**Reativa:** Reage a determinados incidentes; 
 
  
-<b>Detectora:</b> Detecta a ocorrência de incidentes; 
+**Detectora:** Detecta a ocorrência de incidentes; 
 
  
-<b>Limitadora:</b> Diminui os danos causados; 
+**Limitadora:** Diminui os danos causados; 
 
  
 
@@ -541,14 +541,14 @@ A GR compõe uma ferramenta cada vez mais utilizada no mundo dos negócios: Gove
  
 <center>Qual é o papel da GRC neste cenário? </center>
 
-<b>Governança corporativa</b> 
+**Governança corporativa**
 
 Cuida para que o controle da gestão seja tão importante quanto ela própria. 
 
-<b>Gestão de riscos</b>
+**Gestão de riscos**
 
 Gerencia o efeito da incerteza nos objetivos. 
 
-<b>Compliance</b>
+**Compliance**
 
 Adere aos padrões da legislação (regulamentos oficiais vigentes, políticas empresariais e normas internas de procedimentos). 
