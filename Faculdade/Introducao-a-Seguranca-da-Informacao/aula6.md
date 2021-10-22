@@ -73,7 +73,7 @@ Os planos de contingência devem ser desenvolvidos e implementados para garantir
 
 O PCN é constituído pelos seguintes planos: 
 
-**colocar imagens aqui**
+![PCN](media/introducao-a-seguranca-da-informacao/pcn.png)
 
 O objetivo principal desses planos é formalizar quais ações devem ser tomadas para que, em momentos de crise, as empresas possam recuperar, retomar e dar prosseguimento aos seus processos de negócio mais importantes, minimizando os danos e reduzindo as perdas financeiras. 
 
@@ -89,7 +89,16 @@ Em relação à necessidade de atualizações, o Plano de Continuidade de Negóc
 
 Muitos dos termos utilizados pelo PCN são de uso comum e intuitivos. Para esclarecer seus significados, serão apresentados alguns desses termos e dos acrônimos baseados no processo de Gerenciamento de Continuidade de Serviço de Tecnologia da Informação: 
 
-**colocar imagens aqui**
+![Risco](media/introducao-a-seguranca-da-informacao/risco.png)
+![Serviço](media/introducao-a-seguranca-da-informacao/servico.png)
+![Disponibilidade](media/introducao-a-seguranca-da-informacao/disponibilidade.png)
+![Desastre](media/introducao-a-seguranca-da-informacao/desastres.png)
+![Gerenciamento](media/introducao-a-seguranca-da-informacao/gerenciamento.png)
+![Recuperação](media/introducao-a-seguranca-da-informacao/recuperacao.png)
+![Análise de impacto](media/introducao-a-seguranca-da-informacao/analise-risco.png)
+![Garantia](media/introducao-a-seguranca-da-informacao/garantia.png)
+![Avaliação de risco](media/introducao-a-seguranca-da-informacao/avaliacao-risco.png)
+![Gerenciamento de risco](media/introducao-a-seguranca-da-informacao/gerenciamento-risco.png)
 
 O PCN é fundamental para garantir que os principais processos de uma organização possam continuar funcionando em um cenário de desastres. Infelizmente, muitas empresas não se preparam para esses cenários, subestimando a ocorrência de situações tão complexas. Contudo, as que são precavidas passam pelas crises com mais robustez, pois conseguem se manter em funcionamento e proteger a vida dos seus colaboradores. 
 
