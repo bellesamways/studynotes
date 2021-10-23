@@ -19,6 +19,7 @@
 - [Processos de Desenvolvimento de Software](Faculdade/Processos-de-Desenvolvimento-de-Software/pds_compilado.md)
 - [Propriedade Intelectual, Direito e Ética](Faculdade/Propriedade-Intelectual-Direito-e-Etica/pide_compilado.md)
 - [Sistemas de Informação](Faculdade/Sistemas-de-Informação/sistemas_informacao_compilado.md)
+- [Sistemas Operacionais](Faculdade\Sistemas-Operacionais\so_compilado.md)
 - [Tecnologia da Informação e Comunicação](Faculdade/Tecnologia-da-Informacao-e-Comunicação/tic_compilado.md)
 
 # O que é o Study Notes?
@@ -28,7 +29,6 @@ Eu tenho costume de fazer resuminhos quando estou estudando algo, isso sempre fo
 Então pensei, por que não compartilhar?
 
 Criei esse repositório que depois alimentará um blogzinho com tudo isso, por isso já estou fazendo os resumos em Markdown.
-
 
 ## Para contribuir com issues abertas
 
