@@ -114,7 +114,7 @@ O PCN é fundamental para garantir que os principais processos de uma organizaç
 
 2º D (DO) FAZER 
 
-3º 
+3º C (CHECK) CHECAR
 
 4º A (ACT) AGIR 
 
