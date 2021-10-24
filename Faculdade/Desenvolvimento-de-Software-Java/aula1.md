@@ -277,7 +277,7 @@ Estes operadores serão de grande importância para as estruturas de decisão e 
 
 Nós também podemos combinar valores booleanos com o uso de operadores lógicos, os quais são expressos pela tabela-verdade a seguir: 
 
-| A (Booleano 1) | B (Booleano 2) | `A && B` - AND | `A || B` - OR |
+| A (Booleano 1) | B (Booleano 2) | A && B - AND | A \|\| B - OR |
 |---|---|---|---|
 | false | false | false | false|
 | false | true  | false | true |
