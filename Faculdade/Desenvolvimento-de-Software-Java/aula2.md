@@ -5,13 +5,12 @@
 
 Tem como objetivo: 
 
-Aumento do reuso de código; 
+- Aumento do reuso de código; 
 
-Facilidade de manutenção; 
+- Facilidade de manutenção; 
 
-Documentação automatizada. 
+- Documentação automatizada. 
 
- 
 
 Começamos a utilizar de forma mais ampla a programação orientada a objetos (POO) com o advento das interfaces gráficas, pois ficou muito evidente que a programação estruturada não era a melhor opção para construir ambientes constituídos de janelas. 
 
