@@ -527,15 +527,15 @@ Toda a extensa área de código reservada à criação e configuração dos comp
 
 De início devemos compreender as ferramentas disponíveis, e o NetBeans apresenta: 
 
-Editor visual de janelas; 
+- Editor visual de janelas; 
 
-Paleta de componentes **swing** e **awt**; 
+- Paleta de componentes **swing** e **awt**; 
 
-Editor de propriedades; 
+- Editor de propriedades; 
 
-Visualização hierárquica dos componentes; e 
+- Visualização hierárquica dos componentes; e 
 
-Integração direta com o editor de código Java. 
+- Integração direta com o editor de código Java. 
 
 Para acrescentar uma janela do tipo JFrame ao nosso projeto devemos utilizar a opção de menu **Novo Arquivo** (CTRL + N), selecionar **Forms GUI Swing..Form JFrame** na janela que se abrirá e clicar em **Próximo**. 
 
