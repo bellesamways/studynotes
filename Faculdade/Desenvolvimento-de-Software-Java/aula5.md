@@ -116,7 +116,7 @@ Podemos observar uma página completa a seguir:
 
 Temos uma lista onde cada item corresponde a determinado hiperlink para algum site, além de trazer um título e uma definição para acentuação. 
 
-Como citado anteriormente, precisamos utilizar as tags <ul> e <l1> em conjunto, sendo que a primeira determina o início e final da lista, enquanto a segunda determina os itens que farão parte dessa lista. 
+Como citado anteriormente, precisamos utilizar as tags `<ul>` e `<l1>` em conjunto, sendo que a primeira determina o início e final da lista, enquanto a segunda determina os itens que farão parte dessa lista. 
 
  
 
