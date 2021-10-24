@@ -600,7 +600,7 @@ Podemos observar, a seguir, um formulário simples, com o uso das tags `<form>` 
 Nesse exemplo, se escrevermos o nome XPTO e selecionarmos as opções “Versão Digital” e “Mensagem SMS”, ao clicarmos em Cadastrar verificaremos a seguinte URL na barra de navegação: 
 
 
-<a href="">//servidor/app.asmx?N1=XPTO&OPT=Digital&OPT=SMS</a>
+`//servidor/app.asmx?N1=XPTO&OPT=Digital&OPT=SMS`
 
 
 O trecho ressaltado após a **interrogação** corresponde ao que chamamos de **Query String**, onde estarão os dados, no formato **nome=valor**, separados pelo sinal **&**. 
