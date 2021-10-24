@@ -215,7 +215,7 @@ Se quisermos acessar um banco de dados MySQL, podemos adicionar o arquivo mysql-
 
 O comando `import` pode ser usado de duas formas: 
 
-_Incluindo apenas uma classe, como `import java.util.ArrayList` ou _Incluindo todas as classes do pacote (sem recursividade), como `import java.util.* ` 
+_Incluindo apenas uma classe, como `import java.util.ArrayList`_ ou _Incluindo todas as classes do pacote (sem recursividade), como `import java.util.* `_ 
 
  
 
