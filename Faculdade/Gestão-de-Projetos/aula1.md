@@ -4,7 +4,6 @@
 Cada vez mais é exigido que os projetos sejam realizados dentro do **escopo, prazo, custos e qualidade planejados** para o atendimento às necessidades das partes interessadas.
 
 O **gerenciamento de projetos** é a aplicação de conhecimento, habilidades, ferramentas e técnicas as atividades do projeto com o objetivo de atender as necessidades e expectativas das partes envolvidas.
- 
 
 Benefícios do gerenciamento de projetos: Gerenciar projetos possibilita uma maior previsibilidade e probabilidade de atingir os objetivos do projeto.
 - Maior comprometimento com objetivos e resultado; 
@@ -17,9 +16,9 @@ Benefícios do gerenciamento de projetos: Gerenciar projetos possibilita uma mai
 - Aumento de produtividade; 
 - Redução dos custos do projeto.
 
+
 ## Conceitos de projeto e operação 
  
-
 **Projeto é “esforço temporário empreendido para criar um produto, serviço ou resultado exclusivo”.** 
 
 
@@ -114,6 +113,7 @@ Compara os benefícios do projeto com os custos do projeto.
 
 O índice de benefício-custo igual a 1 significa que os benefícios e custos do projeto se igualam. 
 
+
 ## Escritório de projetos - PMO (project management office) 
 
 É uma unidade organizacional que supervisiona o gerenciamento de projetos. O escritório de projeto pode ser central ou descentralizado em áreas e locais, dependendo do tamanho da organização. 
@@ -126,7 +126,6 @@ Um **portfólio** é um conjunto de projetos e programas que tem por finalidade 
 ## Stakeholders (partes interessadas)
 
 As partes interessadas, também chamadas de stakeholders, são pessoas e organizações envolvidas no projeto ou aqueles cujos interesses são afetados pela execução ou resultado do projeto. A identificação das partes interessadas deve ser realizada o mais cedo possível. 
- 
 
 São exemplos de partes interessadas: 
 - Gerente do projeto;
@@ -146,11 +145,13 @@ Profissionais agrupados, por especialidade, em departamentos funcionais (Marketi
 
 ![Organização Funcional](../../media/gestao_de_projetos/aula01/img/organizacao_funcional.png)
 
+
 ### Projetizada 
 
 Profissionais agrupados por projetos. Os gerentes de projeto têm total autoridade sobre o projeto. Os profissionais são dedicados exclusivamente ao projeto (sem lar). Os funcionários de vermelho representam os que estão alocados em atividades de projetos.
 
 ![Organização Projetizada](../../media/gestao_de_projetos/aula01/img/organizacao_projetizada.png)
+
 
 ### Organização matricial 
 
@@ -196,33 +197,41 @@ Garantir que os diversos elementos do projeto serão coordenados de maneira inte
 
 Garantir que o projeto incluirá todo e somente o trabalho necessário para o sucesso do projeto;  
 
+
 ### Gerenciamento do tempo do projeto 
 
 Garantir que o projeto será concluído no prazo previsto; 
- 
+
+
 ### Gerenciamento de custos do projeto  
 
 Garantir que o projeto será concluído dentro do custo previsto; 
+
 
 ### Gerenciamento da qualidade do projeto 
 
 Garantir que o projeto atenderá aos requisitos de qualidade esperados; 
 
+
 ### Gerenciamento dos recursos humanos do projeto 
 
 Garantir a utilização efetiva dos recursos humanos do projeto; 
+
 
 ### Gerenciamento das comunicações do projeto 
 
 Garantir a geração, coleta, disseminação, armazenamento e disponibilização das informações apropriadas do projeto no tempo e de maneira adequada; 
 
+
 ### Gerenciamento das partes interessadas
 
 Garantir o engajamento das partes interessadas com os objetivos do projeto; 
 
+
 ### Gerenciamento dos riscos do projeto 
 
 Garantir a identificação, análise, planejamento, monitoramento e controle dos riscos do projeto;  
+
 
 ### Gerenciamento de aquisições do projeto 
 
@@ -233,17 +242,21 @@ Garantir as aquisições de bens e serviços externos à organização do projet
 
 Um grupo de processos deve ser entendido como o trabalho de gerenciamento que deve ser feita em cada fase do ciclo de vida do projeto.  
 
+
 ### Iniciação 
 
 Estabelece as ações para dar início ao projeto ou fase do projeto;  
+
 
 ### Planejamento 
 
 Planeja e mantém um plano de trabalho viável para atingir os objetivos definidos para o projeto; 
 
+
 ### Execução 
 
 Coordena as ações definidas para realizar o plano de trabalho e produzir os produtos a serem entregues em cada fase; 
+
 
 ### Encerramento 
 

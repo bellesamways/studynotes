@@ -39,6 +39,7 @@ O termo de abertura pode ser composto pelos seguintes elementos:
 - **Cliente do projeto**: O cliente do projeto é o responsável por fornecer os requisitos do produto do projeto. 
 - **Patrocinador do projeto**: O patrocinador é a voz do projeto junto à alta administração da organização. Ele provê recursos orçamentários e defende o projeto junto à organização. 
 
+
 ## Plano de gerenciamento do projeto 
 
 Cria-se um documento que define como o projeto será: 
@@ -68,7 +69,6 @@ A sequência inicial para o trabalho de planejamento do projeto é rígida: **es
 Depois seguem, de acordo com as características do projeto, **sem a mesma rigidez**, as demais áreas de conhecimento: **Qualidade, recursos humanos, comunicações, engajamento das partes interessadas, riscos e aquisições**. Apesar da sequência lógica, é um **trabalho iterativo**. 
 
 **O plano de gerenciamento de projeto integra e consolida todos os planos auxiliares de gerenciamento de projetos.** Cada plano auxiliar é detalhado de acordo com as necessidades da área de conhecimento envolvida no projeto, conforme o nível de aplicação de cada processo selecionado. Assim, descreve as técnicas e ferramentas selecionadas para os processos escolhidos. É função do **gerente de projeto** avaliar o impacto da mudança nos diversos aspectos do projeto, para que a tomada de decisão seja a mais objetiva possível. 
-
  
 **Como deve ser o Plano de gerenciamento de projeto?**  
 
@@ -80,6 +80,7 @@ O plano é composto de duas partes: **os planos auxiliares e as linhas de base**
 - **Linha de base do desempenho de custos**: Orçamento 
 
 Durante a fase de execução, estas linhas de base são dinâmicas. É importante saber que, com a utilização da técnica de gerenciamento de valor agregado, essas três linhas combinadas formam a **linha de base de desempenho do projeto**. 
+
 
 ## Orientação e gerenciamento do trabalho do projeto 
 
@@ -98,7 +99,6 @@ Os desdobramentos do processo de orientação e gerenciamento do projeto são:
 - Gerenciar fornecedores; 
 - Coletar e documentar as lições aprendidas. 
 
-
 Orientar e gerenciar são as principais atividades do gerente do projeto. É preciso garantir o entendimento comum do trabalho do projeto. Para tanto, por exemplo, é importante: 
 - Garantir que o plano de comunicação seja seguido pela equipe do projeto; 
 - Garantir que as partes interessadas tenham consciência de como serão afetadas pelo projeto; 
@@ -111,6 +111,7 @@ Gerenciar é lidar com pessoas. Para tanto, é preciso:
 - Facilitar as discussões para seleção de opções; 
 - Interceder juntos aos setores da organização na superação de barreiras; 
 - Trabalhar na solução de problemas da equipe. 
+
 
 ## Monitoramento e controle do trabalho do projeto 
 
@@ -143,9 +144,11 @@ Esse trabalho também contempla o acompanhamento dos indicadores de desempenho c
 - Rejeição de uma entrega pelo controle de qualidade do projeto; 
 - Entrega com escopo incompleto. 
  
+
 ## Controle integrado de mudanças 
 
 Trata-se do trabalho definido no plano do projeto para levar a efeito as **solicitações de mudança** do projeto. O mais importante é analisar o impacto da mudança em todas as áreas de conhecimento. 
+
 
 ## Encerramento do projeto ou fase 
 
@@ -165,6 +168,7 @@ As atividades envolvidas, entre outras, são:
 Obter o aceite do cliente do produto final do produto. 
 
 Se projeto for cancelado, a documentação indicará por que o projeto foi finalizado antes do previsto e formalizará os procedimentos da transferência das entregas acabadas ou em andamento para o cliente. 
+
 
 ## Lições aprendidas 
 

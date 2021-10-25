@@ -6,6 +6,7 @@ Ele visa definir claramente aquilo que deve ser feito pelo projeto e garantir qu
 
 Os planejamentos de todas as demais áreas de conhecimento somente podem ser executados após a conclusão do planejamento do escopo. 
 
+
 ## Levantamento dos requisitos 
 
 Segundo o PMBOK®, “Os requisitos incluem os anseios, necessidades e expectativas quantificados e documentados do patrocinador, do cliente e de outras partes interessadas”. 
@@ -17,6 +18,7 @@ Quando adequadamente detalhados, melhoram o entendimento das necessidades e expe
 Podem ser classificados como:  
 - Requisitos do projeto: trabalho que precisa ser feito, entregas intermediárias; 
 - Requisitos do produto: características técnicas, funcionalidades, atributos, desempenho. 
+
 
 ## Escopo do produto x escopo do projeto 
 
@@ -51,6 +53,7 @@ Objetivos do documento:
 - Orientar a equipe durante a execução; 
 - Fornecer a linha de base (referência) para facilitar a avaliação de mudanças de escopo. 
 
+
 ### Componentes da declaração do escopo do projeto 
  
 **Descrição do escopo do produto**: Características ou funções que devem compor o produto, serviço ou resultado; 
@@ -62,6 +65,7 @@ Objetivos do documento:
 **Restrições do projeto**: Restringe as opções da equipe do projeto. Por exemplo: restrição de recursos, restrição de tecnologia, restrição de prazo ou restrição de custo; 
 
 **Premissas do projeto**: São pré-requisitos ou fatores considerados como verdadeiros para efeito de planejamento. Caso não aconteçam podem impactar o projeto. 
+
 
 ### Premissas x restrições 
 
@@ -80,6 +84,7 @@ Se não faz parte da EAP, não faz parte do projeto.
 
 ![Exemplo de EAP](../../media/gestao_de_projetos/aula03/img/eap_exemplo.png)
 
+
 ### Elementos da EAP x atividades do cronograma 
 
 É importante atentar que os elementos da EAP **representam as entregas do projeto**, e não as atividades do cronograma. 
@@ -87,6 +92,7 @@ Se não faz parte da EAP, não faz parte do projeto.
 As atividades do cronograma do projeto são ações que devem ser realizadas para concluir os pacotes de trabalho da EAP. 
 
 As atividades fazem parte da área de conhecimento do **gerenciamento do tempo do projeto**. A EAP faz parte do **gerenciamento do escopo do projeto**. 
+
 
 ### Dicionário da EAP 
 
@@ -103,6 +109,7 @@ Pode conter, entre outros:
  
 **Componentes da linha de base**: A linha de base do escopo é composta pela **declaração do escopo, pela EAP e pelo dicionário da EAP**. Serve como referência para monitorar e controlar o escopo do projeto e avaliar solicitações de mudanças. 
  
+
 ## Controle e validação do escopo do projeto 
 
 **Controlar** o escopo do projeto envolve: 
@@ -113,6 +120,7 @@ Pode conter, entre outros:
 **Validar** o escopo do projeto envolve: 
 - O aceite formal do cliente das entregas concluídas pela equipe do projeto; 
 - Eventual revisão de entregas por solicitação do cliente para aprovação final. 
+
 
 ### Diferença entre validação do escopo e controle da qualidade 
 
