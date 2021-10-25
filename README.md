@@ -18,6 +18,7 @@
 - [Organização de Computadores](Faculdade/Organizacao-de-computadores/org_computadores_compilado.md)
 - [Processos de Desenvolvimento de Software](Faculdade/Processos-de-Desenvolvimento-de-Software/pds_compilado.md)
 - [Propriedade Intelectual, Direito e Ética](Faculdade/Propriedade-Intelectual-Direito-e-Etica/pide_compilado.md)
+- [Programação para Dispositivos Móveis](Faculdade/Programacao-para-Dispositivos-Moveis/pdm_compilado.md)
 - [Sistemas de Informação](Faculdade/Sistemas-de-Informação/sistemas_informacao_compilado.md)
 - [Sistemas Operacionais](Faculdade\Sistemas-Operacionais\so_compilado.md)
 - [Tecnologia da Informação e Comunicação](Faculdade/Tecnologia-da-Informacao-e-Comunicação/tic_compilado.md)
