@@ -256,4 +256,4 @@ Formaliza o encerramento do projeto ou fase do projeto.
 
 A tríplice restrição do projeto é formada pelo balanceamento dos objetivos de **escopo, tempo e custos**. Um projeto é considerado bem sucedido quando for concluído dentro das restrições de escopo, tempo e custos.
 
-![Tríplice Resrição](../../media/gestao_de_projetos/aula01/img/triplice_restricao.png)
+![Tríplice Restrição](../../media/gestao_de_projetos/aula01/img/triplice_restricao.png)
