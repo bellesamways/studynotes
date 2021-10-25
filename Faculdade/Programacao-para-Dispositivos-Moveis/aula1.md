@@ -10,29 +10,13 @@ Um dispositivo móvel (handheld) é um computador de bolso, normalmente equipado
 
 Existem diversas categorias de dispositivos de computação móvel. Entre os mais comuns estão:
 
-<ul>
-<li>
-Smartphone;
-</li>
-<li>
-Tablet;
-</li>
-<li>
-PDA (Personal Digital Assistant);
-</li>
-<li>
-Celular;
-</li>
-<li>
-Console portátil;
-</li>
-<li>
-Coletor de dados;
-</li>
-<li>
-GPS (Global Positioning System).
-</li>
-</ul>
+- Smartphone;
+- Tablet;
+- PDA (Personal Digital Assistant);
+- Celular;
+- Console portátil;
+- Coletor de dados;
+- GPS (Global Positioning System).
 
 ## Conceito de mobilidade
 
@@ -40,91 +24,37 @@ O conceito base que impulsionou o desenvolvimento dos dispositivos móveis foi a
 
 Para isso, os dispositivos móveis possuem determinadas características essenciais:
 
-<ul>
-<li>
-Pequenos;
-</li>
-<li>
-Leves;
-</li>
-<li>
-Capacidade de memória e processamento limitados;
-</li>
-<li>
-Baixo consumo de energia;
-</li>
-<li>
-Conectividade ou não, ou, ainda, conectividade limitada;
-</li>
-<li>
-Inicialização mais rápida;
-</li>
-<li>
-Armazenamento de dados local e/ou remoto;
-</li>
-<li>
-Sincronização de dados com outros sistemas;
-</li>
-</ul>
+- Pequenos;
+- Leves;
+- Capacidade de memória e processamento limitados;
+- Baixo consumo de energia;
+- Conectividade ou não, ou, ainda, conectividade limitada;
+- Inicialização mais rápida;
+- Armazenamento de dados local e/ou remoto;
+- Sincronização de dados com outros sistemas;
 
 ## Aplicativos
 
 Os possíveis tipos de aplicativos são:
 
-<ol>
-  <li>
-Nativo:
-</li>
-<ol>
-  <li>
-    Desenvolvidas especificamente para uma determinada plataforma móvel;
-  </li>
-  <li>
-    Faz uso da linguagem de programação suportada pela plataforma e seu respectivo SDK (software development kit);
-  </li>
-  <li>
-  Normalmente, são instaladas através da loja de aplicativos, como, por exemplo, App Store e Google Play.
-  </li>
-</ol>
-  <li>
-    WebMobile:
-  </li>
-  <ol>
-    <li>
-      Diferente das aplicações nativas, consiste em um site com layout otimizado para plataforma móvel;
-    </li>
-    <li>
-      Faz uso de linguagens web (HTML, CSS, Javascript);
-    </li>
-    <li>
-      Pode ser usado por qualquer plataforma móvel.
-    </li>
-</ol>
-<li>
-  Híbrida:
-</li>
-<ol>
-  <li>
-    Consiste na combinação dos tipos nativos e WebMobile;
-  </li>
-  <li>
-    Em geral, possui um navegador de internet customizado para o site do aplicativo;
-  </li>
-  <li>
-    É desenvolvido para uma plataforma móvel específica;
-  </li>
-  <li>
-    Tem se destacado nos últimos tempos.
-  </li>
-</ol>
-<li>
-  Multiplataforma:
-</li>
-<ol>
-  <li>
-    Faz uso de framework para geração de aplicações móveis.
-  </li>
-</ol>
+1. Nativo:
+   - Desenvolvidas especificamente para uma determinada plataforma móvel;
+   - Faz uso da linguagem de programação suportada pela plataforma e seu respectivo SDK (software development kit);
+   - Normalmente, são instaladas através da loja de aplicativos, como, por exemplo, App Store e Google Play.
+2. WebMobile:
+   - Diferente das aplicações nativas, consiste em um site com layout otimizado para plataforma móvel;
+   - Faz uso de linguagens web (HTML, CSS, Javascript);
+   - Pode ser usado por qualquer plataforma móvel.
+3. Híbrida:
+
+   - Consiste na combinação dos tipos nativos e WebMobile;
+   - Em geral, possui um navegador de internet customizado para o site do aplicativo;
+   - É desenvolvido para uma plataforma móvel específica;
+   - Tem se destacado nos últimos tempos.
+
+4. Multiplataforma:
+   - Faz uso de framework para geração de aplicações móveis.
+
 </br>
 
 ## Principais sistemas operacionais de dispositivos móveis
@@ -173,23 +103,11 @@ Cada versão possui um código identificador (número inteiro) denominado API Le
 
 A arquitetura do android é agrupada em 3 níveis e é composta de 5 módulos:
 
-<ol>
-<li>
-Linux Kernel;
-</li>
-<li>
-Libraries;
-</li>
-<li>
-Android Runtime;
-</li>
-<li>
-Application framework;
-</li>
-<li>
-Applications.
-</li>
-</ol>
+1. Linux Kernel;
+2. Libraries;
+3. Android Runtime;
+4. Application framework;
+5. Applications.
 
 ![Arquitetura android](/media/programacao-dispositivos-moveis/arquitetura-android.png)
 
@@ -197,24 +115,11 @@ Applications.
 
 É nesse módulo que se encontram os aplicativos instalados, como, por exemplo:
 
-<ul>
-<li>
-Cliente email;
-</li>
-<li>
-Navegador;
-</li>
-<li>
-Contatos;
-</li>
-<li>
-Mapas;
-</li>
-<li>
-Programas para SMS.
-</li>
-</ul>
-</br>
+- Cliente email;
+- Navegador;
+- Contatos;
+- Mapas;
+- Programas para SMS.
 
 ### Application framework
 
@@ -224,24 +129,12 @@ Os desenvolvedores de aplicativos têm permissão para fazer uso desses serviço
 
 Os principais serviços são:
 
-<ul>
-  <li>
-    Activity Manager - Controla todos os aspectos do ciclo de vida da aplicação e da pilha de atividade;
-  </li>
-  <li>
-    Content Provider - Permite que os aplicativos publiquem e partilhem dados com outras aplicações;
-  </li>
-  <li>
-    Resource Manager - Fornece acesso a recursos, como Strings, configurações de cores e layouts de interface do usuário;
-  </li>
-  <li>
-    Notifications Manager - Permite que os aplicativos exibam alertas e notificações para o usuário;
-  </li>
-  <li>
-    View System - Conjunto de views destinado a criar interfaces de usuário.
-  </li>
-</ul>
-</br>
+- Activity Manager - Controla todos os aspectos do ciclo de vida da aplicação e da pilha de atividade;
+- Content Provider - Permite que os aplicativos publiquem e partilhem dados com outras aplicações;
+- Resource Manager - Fornece acesso a recursos, como Strings, configurações de cores e layouts de interface do usuário;
+- Notifications Manager - Permite que os aplicativos exibam alertas e notificações para o usuário;
+
+- View System - Conjunto de views destinado a criar interfaces de usuário.
 
 ### Libraries
 
@@ -249,33 +142,17 @@ São as bibliotecas destinadas ao desenvolvimento Android.
 
 Dentre elas, merecem destaque:
 
-<ul>
-  <li>
-    Android.app - Fornece acesso à aplicação;
-  </li>
-  <li>
-    Android.content - Facilita o acesso ao conteúdo, publicação e mensagens entre aplicativos e componentes dos aplicativos;
-  </li>
-  <li>
-    Android.database - Usado para acessar os dados publicados por provedores de conteúdo e inclui classes de gerenciamento de banco de dados SQLite;
-  </li>
-  <li>
-    Android.opengl - Uma interface Java para os gráficos OpenGL;
-  </li>
-  <li>
-    Android.os - Fornece acesso aos serviços do sistema operacional padrão, incluindo mensagens, serviços do sistema e comunicação entre processos;
-  </li>
-  <li>
-    Android.text - Usado para processar e manipular texto em uma tela do dispositivo;
-  </li>
-  <li>
-    Android.view - Construção das interfaces com o usuário do aplicativo;
-  </li>
-  <li>
-    Android.widget - Uma rica coleção de componentes de interface do usuário pré-construídos, tais como botões, etiquetas, exibições de lista, gerenciadores de layout, botões de rádio etc.
-  </li>
-</ul>
-</br>
+- Android.app - Fornece acesso à aplicação;
+- Android.content - Facilita o acesso ao conteúdo, publicação e mensagens entre aplicativos e componentes dos aplicativos;
+- Android.database - Usado para acessar os dados publicados por provedores de conteúdo e inclui classes de gerenciamento de banco de dados SQLite;
+- Android.opengl - Uma interface Java para os gráficos OpenGL;
+  Android.os - Fornece acesso aos serviços do sistema operacional padrão, incluindo mensagens, serviços do sistema e comunicação entre processos;
+
+- Android.text - Usado para processar e manipular texto em uma tela do dispositivo;
+
+- Android.view - Construção das interfaces com o usuário do aplicativo;
+
+- Android.widget - Uma rica coleção de componentes de interface do usuário pré-construídos, tais como botões, etiquetas, exibições de lista, gerenciadores de layout, botões de rádio etc.
 
 ### Android runtime
 
@@ -345,88 +222,50 @@ Em outras palavras, podemos afirmar que corresponde a uma abstração de dados p
 
 ### Componentes adicionais
 
-<ol>
-  <li>
-    Fragments
-  </li>
-  <ol>
-    <li>
-      Permitem a modularização da interface do usuário;
-    </li>
-    <li>
-      Representam uma parte da UI em uma atividade;
-    </li>
-    <li>
-      Assim como o activity, possuem seu próprio ciclo de vida e podem ser definidos como fragmento de um tela em um aplicativo android;
-    </li>
-    <li>
-      São uma espécie de "subatividade" que pode ser reutilizada em   diferentes atividades.
-    </li>
-  </ol>
-  <li>
-    Views
-  </li>
-  <ol>
-    <li>
-      Elementos de interface do usuário que são desenhados na tela, como botões, quadros de texto e até mesmo gerenciadores de layouts;
-    </li>
-    <li>
-      São a classe-pai de todos os componentes visuais.
-    </li>
-  </ol>
-  <li>
-    Layouts
-  </li>
-  <ol>
-      <li>
-      Controlam o formato de tela e a aparência de interface do usuário, sendo possível serem criados com declaração de elementos XML ou através da programação Java.
-    </li>
-  </ol>
-  <li>
-    Intents
-  </li>
-  <ol>
-    <li>
-      Representam uma ação que a aplicação deseja executar. Isso se dá através de mensagem (Broadcast) enviada ao sistema operacional, que decidirá a realização ou não da ação, a partir do conteúdo dessa mensagem;
-    </li>
-    <li>
-      É importante lembrar que se constituem uma intenção, como próprio nome diz. Não há certeza de que a aplicação será executada.
-    </li>
-  </ol>
-  <li>
-    Manifest
-  </li>
-  <ol>
-    <li>
-      Arquivo que possui informações essenciais referentes à configuração para execução da aplicação, como, por exemplo, nome do pacote utilizado, nome das classes de cada activity e outros;
-    </li>
-    <li>
-      Deve estar na pasta raiz do projeto.
-    </li>
-  </ol>
-</ol>
+1. Fragments
+
+   - Permitem a modularização da interface do usuário;
+
+   - Representam uma parte da UI em uma atividade;
+
+   - Assim como o activity, possuem seu próprio ciclo de vida e podem ser definidos como fragmento de um tela em um aplicativo android;
+
+   - São uma espécie de "subatividade" que pode ser reutilizada em diferentes atividades.
+
+2. Views
+   - Elementos de interface do usuário que são desenhados na tela, como botões, quadros de texto e até mesmo gerenciadores de layouts;
+   - São a classe-pai de todos os componentes visuais.
+3. Layouts
+   - Controlam o formato de tela e a aparência de interface do usuário, sendo possível serem criados com declaração de elementos XML ou através da programação Java.
+4. Intents
+   - Representam uma ação que a aplicação deseja executar. Isso se dá através de mensagem (Broadcast) enviada ao sistema operacional, que decidirá a realização ou não da ação, a partir do conteúdo dessa mensagem;
+   - É importante lembrar que se constituem uma intenção, como próprio nome diz. Não há certeza de que a aplicação será executada.
+5. Manifest
+   - Arquivo que possui informações essenciais referentes à configuração para execução da aplicação, como, por exemplo, nome do pacote utilizado, nome das classes de cada activity e outros;
+   - Deve estar na pasta raiz do projeto.
+
 </br>
 
 ## Principais IDEs
 
 A IDE é um ambiente integrado, que acelera o desenvolvimento de aplicativos durante a fase de programação.
 
-Android Studio: https://developer.android.com/sdk/index.html
+1. Android Studio: https://developer.android.com/sdk/index.html
 
-IntelliJ: https://www.jetbrains.com/idea/download/
+2. IntelliJ: https://www.jetbrains.com/idea/download/
 
-Eclipse: https://eclipse.org/downloads/
+3. Eclipse: https://eclipse.org/downloads/
 
 ## Revisão
 
 Os principais componentes da plataforma de desenvolvimento android:
 
-• Activity: é um componente de aplicativo que fornece uma tela com a qual os usuários podem interagir para fazer algo, como discar um número no telefone, tirar uma foto, enviar um e-mail ou ver um mapa. Cada atividade recebe uma janela que exibe a interface do usuário. Geralmente, a janela preenche a tela, mas pode ser menor do que a tela e flutuar sobre outras janelas.
+- Activity: é um componente de aplicativo que fornece uma tela com a qual os usuários podem interagir para fazer algo, como discar um número no telefone, tirar uma foto, enviar um e-mail ou ver um mapa. Cada atividade recebe uma janela que exibe a interface do usuário. Geralmente, a janela preenche a tela, mas pode ser menor do que a tela e flutuar sobre outras janelas.
 
-• Intent: é um objeto de mensagem que pode ser usado para solicitar uma ação de outro componente de aplicativo.
+- Intent: é um objeto de mensagem que pode ser usado para solicitar uma ação de outro componente de aplicativo.
 
-• Service: é o componente responsável pelo processamento em segundo plano associado a uma aplicação.
+- Service: é o componente responsável pelo processamento em segundo plano associado a uma aplicação.
 
-• Broadcast Receiver: são componentes responsáveis por receber e tratar eventos (broadcasts) provenientes do sistema ou de outras aplicações. É sempre executada em segundo plano.
+- Broadcast Receiver: são componentes responsáveis por receber e tratar eventos (broadcasts) provenientes do sistema ou de outras aplicações. É sempre executada em segundo plano.
 
-• Content Provider: são componentes responsáveis por prover às aplicações o conteúdo que elas precisam para funcionar, ou seja, os dados. Permitem o compartilhamento de dados entre aplicações, centralizam as rotinas de armazenamento e recuperam em um único local.
+- Content Provider: são componentes responsáveis por prover às aplicações o conteúdo que elas precisam para funcionar, ou seja, os dados. Permitem o compartilhamento de dados entre aplicações, centralizam as rotinas de armazenamento e recuperam em um único local.

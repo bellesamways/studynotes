@@ -12,59 +12,36 @@ Podemos trabalhar com três tipos de menus em Android:
 
 ### Menu de opção e barra de opção
 
-<ul>
-  <li> É o menu default das aplicações Android; </li>
-  <li> Normalmente encontramos nesse menu as principais opções. </li>
-</ul>
+- É o menu default das aplicações Android;
+- Normalmente encontramos nesse menu as principais opções.
 
 Existem dois modelos:
 
-<ol>
-  <li>
-    Ícone (icon menu): 
-  </li>
-  <ul>
-    <li>Disponível parte inferior da tela; </li>
-    <li>Suporta até seis itens de menu; </li>
-    <li>Suporta ícones; </li>
-    <li>Não suporta caixa de seleção; </li>
-    <li>Não suporta botões de rádio; </li>
-    <li>Android 2.3.x – API Level 10 ou Inferior. </li>
-  </ul>
-</ol>
+1. Ícone (icon menu):
 
-<ol>
-  <li>
-    Expandido (expanded menu):
-  </li>
-  <ul>
-    <li>
-      Suporta mais de seis itens de menu;
-    </li>
-    <li>
-      Apresentado automaticamente na opção Mais (More) quando possuir mais de seis itens de menu;
-    </li>
-    <li>
-      Android 3.0 – API Level 11 ou superior.
-    </li>
-  </ul>
-</ol>
+   - Disponível parte inferior da tela;
+   - Suporta até seis itens de menu;
+   - Suporta ícones;
+   - Não suporta caixa de seleção;
+   - Não suporta botões de rádio;
+   - Android 2.3.x – API Level 10 ou Inferior.
+
+2. Expandido (expanded menu):
+   - Suporta mais de seis itens de menu;
+   - Apresentado automaticamente na opção Mais (More) quando possuir mais de seis itens de menu;
+   - Android 3.0 – API Level 11 ou superior.
 
 ### Menu de contexto
 
-<ul>
-<li>É exibido quando o usuário clica e segura, por mais de 2 segundos, um componente visual;</li>
-<li>Não suporta atalhos, ícones ou até mesmo submenus;</li>
-<li>Pode ser compartilhado entre diferentes Views.</li>
-</ul>
+- É exibido quando o usuário clica e segura, por mais de 2 segundos, um componente visual;
+- Não suporta atalhos, ícones ou até mesmo submenus;
+- Pode ser compartilhado entre diferentes Views.
 
 ### Menu Pop-up
 
-<ul>
-<li>Abre quando tocamos no item de menu Options (Opções) ou em menu contextual;</li>
-<li>Não suporta ícones;</li>
-<li>Não suporta submenus aninhados;</li>
-</ul>
+- Abre quando tocamos no item de menu Options (Opções) ou em menu contextual;
+- Não suporta ícones;
+- Não suporta submenus aninhados;
 
 ## Action Bar
 
@@ -72,43 +49,27 @@ Existem dois modelos:
 
 ### App Icon
 
-<ul>
-<li>Exibe o ícone do projeto ou logo customizado;</li>
-<li>Back Navigation Icon - permite a navegação para cima na hierarquia de telas.</li>
-</ul>
+- Exibe o ícone do projeto ou logo customizado;
+- Back Navigation Icon - permite a navegação para cima na hierarquia de telas.
 
 ### View control
 
-<ul>
-  <li>Exibe o título do aplicativo ou a tela em que o usuário se encontra;</li>
-  <li>Exibe o controle de Navegação (Drop-down ou Tabs).</li>
-</ul>
+- Exibe o título do aplicativo ou a tela em que o usuário se encontra;
+- Exibe o controle de Navegação (Drop-down ou Tabs).
 
 ### Action buttons
 
-<ul>
-<li>Exibem as ações mais comuns em seu aplicativo;</li>
-<li>Os ícones que não couberem nesse espaço serão inseridos automaticamente no Action OverFlow.</li>
-</ul>
+- Exibem as ações mais comuns em seu aplicativo;
+- Os ícones que não couberem nesse espaço serão inseridos automaticamente no Action OverFlow.
 
 ### Action Overflow
 
-<ul>
-  <li>
-    Exibe as ações não utilizadas frequentemente de seu aplicativo.
-  </li>
-</ul>
+- Exibe as ações não utilizadas frequentemente de seu aplicativo.
 
 Podemos desenvolver menus Android através de:
 
-<ul>
-  <li>
-    Codificação (Java): desenvolvido no código de sua atividade;
-  </li>
-  <li>
-    Arquivo XML: definido em um arquivo XML.
-  </li>
-</ul>
+- Codificação (Java): desenvolvido no código de sua atividade;
+- Arquivo XML: definido em um arquivo XML.
 
 Exemplo:
 
@@ -126,32 +87,22 @@ Se você olhar mais atentamente o código, perceberá que cada tag item é refer
 
 No nosso exemplo, os parâmetros são:
 
-<ul>
-<li>android:id - Esse id é exclusivo para cada item. É através dele que podemos identificar o item de menu;</li>
-<li>android:title - É o texto título de nosso item de menu;</li>
-<li>aandroid:icon - Embora não tenha sido usado nesse exemplo, poderia definir um ícone para o nosso menu. O valor aqui é a referência a um drawable;</li>
-<li>android:showAsAction - Define a forma de exibição do componente.</li>
-</ul>
+- android:id - Esse id é exclusivo para cada item. É através dele que podemos identificar o item de menu;
+- android:title - É o texto título de nosso item de menu;
+- aandroid:icon - Embora não tenha sido usado nesse exemplo, poderia definir um ícone para o nosso menu. O valor aqui é a referência a um drawable;
+- android:showAsAction - Define a forma de exibição do componente.
 
 As constantes que devemos empregar são:
 
-<ul>
-<li>
-Always: o componente sempre fica visível. Recomendado para ações mais comuns do aplicativo.
-</li>
-<li>
-IfRoom: o componente é exibido na action bar, se existir espaço. Adequado para manter compatibilidade com diversos tipos de dispositivos e também com telas na vertical ou horizontal.
-</li>
-<li>
-WithText: o componente exibe o seu título ao lado do ícone, caso tenha espaço disponível.
-</li>
-<li>
-Nerver: não exibe o componente na action bar.
-</li>
-<li>
-CollapseActionView: quando a view é grande, deve ser contraída para exibidar apenas um botão.
-</li>
-</ul>
+- Always: o componente sempre fica visível. Recomendado para ações mais comuns do aplicativo.
+
+- IfRoom: o componente é exibido na action bar, se existir espaço. Adequado para manter compatibilidade com diversos tipos de dispositivos e também com telas na vertical ou horizontal.
+
+- WithText: o componente exibe o seu título ao lado do ícone, caso tenha espaço disponível.
+
+- Nerver: não exibe o componente na action bar.
+
+- CollapseActionView: quando a view é grande, deve ser contraída para exibidar apenas um botão.
 
 É oportuno saber que também podemos combinar as constantes com separadores, como, por exemplo, ifRoom|withText.
 
@@ -185,25 +136,14 @@ Sua sintaxe é bastante simples de entender. `Toast toast = Toast.makeText(conte
 
 Os parâmetros dessa classe correspondem:
 
-<ul>
-  <li>
-    Ao contexto: este é o contexto de onde será exibida a mensagem.
-  </li>
-  <li>  
-    Ao texto: a mensagem que deverá exibida para o nosso usuário.
-</li>
-  <li>
-À duração: é a definição do tempo que a nossa mensagem será exibida na tela.
-</li>
-</ul>
+- Ao contexto: este é o contexto de onde será exibida a mensagem.
+- Ao texto: a mensagem que deverá exibida para o nosso usuário.
+- À duração: é a definição do tempo que a nossa mensagem será exibida na tela.
 
 Podemos configurar a partir das seguintes constantes:
 
-<ul>
-
-<li>Toast.LENGTH_LONG - 4 segundos;</li>
-<li>Toast.LENGTH_SHORT - 2 segundos.</li>
-</ul>
+- Toast.LENGTH_LONG - 4 segundos;
+- Toast.LENGTH_SHORT - 2 segundos.
 
 Após configurarmos nossa mensagem, é necessário executar o método .show() para que possa ser exibida.
 
@@ -219,13 +159,11 @@ Podemos alterar isso. Basta definirmos o método .setGravity().
 
 Sua sintaxe é toast.setGravity(constante, valor_x, valor_y), onde:
 
-<ul>
-<li>Constante: Constante Gravity. Existem várias constantes que você pode empregar e até mesmo combinar.</li>
+- Constante: Constante Gravity. Existem várias constantes que você pode empregar e até mesmo combinar.
 
-<li>Valor_x: Deslocamento x da posição;</li>
+- Valor_x: Deslocamento x da posição;
 
-<li>Valor_y: Deslocamento y da posição.</li>
-</ul>
+- Valor_y: Deslocamento y da posição.
 
 Exemplo 1: `toast.setGravity(Gravity.TOP|Gravity.LEFT, 0, 0);`
 
@@ -251,26 +189,12 @@ Já na figura do tablet a navegabilidade se dá na mesma tela.
 
 ### Características
 
-<ul>
-<li>
-Possui seu próprio layout e comportamento com os seus retornos de chamada do ciclo de vida; 
-</li>
-<li>
-Pode ser utilizado em várias activities; 
-</li>
-<li>
-Permite adicionar ou remover fragments de uma activity em execução; 
-</li>
-<li>
-Ciclo de vida de um fragment está intimamente relacionado ao ciclo de vida de sua activity de acolhimento, o que significa que, quando a activity estiver em pausa, todos os fragments disponíveis na activity também serão interrompidos; 
-</li>
-<li>
-Permite combinar vários fragments em uma única activity; 
-</li>
-<li>
-Permite implementar um comportamento que não tem nenhum componente interface do usuário. 
-</li>
-</ul>
+- Possui seu próprio layout e comportamento com os seus retornos de chamada do ciclo de vida;
+- Pode ser utilizado em várias activities;
+- Permite adicionar ou remover fragments de uma activity em execução;
+- Ciclo de vida de um fragment está intimamente relacionado ao ciclo de vida de sua activity de acolhimento, o que significa que, quando a activity estiver em pausa, todos os fragments disponíveis na activity também serão interrompidos;
+- Permite combinar vários fragments em uma única activity;
+- Permite implementar um comportamento que não tem nenhum componente interface do usuário.
 
 ### Ciclo de vida de Fragment
 
@@ -302,10 +226,8 @@ As principais classes da API Fragments são:
 
 Fragment(android.app.Fragment)
 
-<ul>
-  <li>Classe que o fragment deve estender;</li>
-  <li>É necessário sobrescrever o método onCreate (inflater, container, bundle) para criar a view.</li>
-</ul>
+- Classe que o fragment deve estender;
+- É necessário sobrescrever o método onCreate (inflater, container, bundle) para criar a view.
 
 Fragment(android.app.Fragment)
 Classe que gerencia os fragments pela API;
@@ -320,8 +242,6 @@ Classe utilizada para adicionar, remover ou substituir os fragments dinamicament
 
 Para implementar um fragment, basta seguir os três passos básicos:
 
-<ul>
-<li>Criar uma subclasse do fragment</li>
-<li>Definir o layout do fragment</li>
-<li>Incluir o fragment dentro da activity</li>
-<ul>
+- Criar uma subclasse do fragment
+- Definir o layout do fragment
+- Incluir o fragment dentro da activity

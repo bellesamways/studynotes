@@ -20,12 +20,10 @@ Detalhes de alguns tipos de arquivos:
 
 Considerado um dos principais arquivos de sua aplicação. É nele que são descritas informações essenciais à execução de seu projeto como, por exemplo:
 
-<ul>
- <li>Nome do pacote utilizado;</li>
- <li>Nome das Activities;</li>
- <li>Permissões que o aplicativo possui;</li>
- <li>Versão mínima da API Android.</li>
-<ul>
+- Nome do pacote utilizado;
+- Nome das Activities;
+- Permissões que o aplicativo possui;
+- Versão mínima da API Android.
 
 ![Arquivo androidmanifest.xml](/media/programacao-dispositivos-moveis/arquivo-androidmanifest.png)
 
@@ -67,33 +65,22 @@ Exemplo de uma pilha de atividades:
 
 Os principais métodos do ciclo de vida Activity são:
 
-<ul>
-<li>
-onCreate(): primeira função executada quando a Activity é criada. Tem por responsabilidade carregar os layouts XML, inicializar os objetos, variáveis e outras operações de inicialização. É importante lembrar que é executada somente uma vez.</li><li>
-onStart(): é executado antes da Activity ficar visível na tela do dispositivo, podendo ser chamado após os métodos **onCreate()** ou **onRestart()**.</li><li>
-onResume(): representa o estado que a Activity está executando. É chamada logo após o evento onStart.</li><li>
-onRestart(): é chamado imediatamente após ao método onStart(), quando uma Activity que estava parada volta ao foco.</li><li>
-onPause(): é chamado sempre que a tela da Activity fechar. Isto ocorre quando uma outra Activity (da sua aplicação ou não) ganhar o foco.
-onStop(): é chamado após o método **onPause()**, quando a Activity não está mais visível e está sendo encerrada.</li><li>
-onDestroy(): é chamado antes da Activity ser destruída e logo após será liberada a memória.
-</li>
-</ul>
+- onCreate(): primeira função executada quando a Activity é criada. Tem por responsabilidade carregar os layouts XML, inicializar os objetos, variáveis e outras operações de inicialização. É importante lembrar que é executada somente uma vez.
+- onStart(): é executado antes da Activity ficar visível na tela do dispositivo, podendo ser chamado após os métodos **onCreate()** ou **onRestart()**.
+- onResume(): representa o estado que a Activity está executando. É chamada logo após o evento onStart.
+- onRestart(): é chamado imediatamente após ao método onStart(), quando uma Activity que estava parada volta ao foco.
+- onPause(): é chamado sempre que a tela da Activity fechar. Isto ocorre quando uma outra Activity (da sua aplicação ou não) ganhar o foco.
+- onStop(): é chamado após o método **onPause()**, quando a Activity não está mais visível e está sendo encerrada.
+- onDestroy(): é chamado antes da Activity ser destruída e logo após será liberada a memória.
 
 No diagrama abaixo, referente ao ciclo de vida da Activity os 3 níveis:
 
 ![Niveis Ciclo Activity](/media/programacao-dispositivos-moveis/niveis-ciclo-activity.png)
 
-<ol>
-<li>
-**Entire lifetime**: tempo de vida completo. Ocorre desde a primeira chamada ao método onCreate() até a chamada do método onDestroy(), os quais são executados apenas uma vez durante o ciclo de vida da Activity. 
-</li>
-<li>
-**Visible lifetime**: tempo de vida visível. Ocorre entre uma chamada do método onStart() e a chamada correspondente do método onStop(). A activity pode estar no topo da pilha (visível para o usuário) ou em segundo plano. 
-</li>
-<li>
-**Foreground lifetime**: tempo de vida no topo da pilha. Ocorre entre uma chamada no método onResume() e a chamada correspondente do método onPause(). A Activity está no topo da pilha e interagindo com o usuário. 
-</li>
-</ol>
+1. **Entire lifetime**: tempo de vida completo. Ocorre desde a primeira chamada ao método onCreate() até a chamada do método onDestroy(), os quais são executados apenas uma vez durante o ciclo de vida da Activity.
+2. **Visible lifetime**: tempo de vida visível. Ocorre entre uma chamada do método onStart() e a chamada correspondente do método onStop(). A activity pode estar no topo da pilha (visível para o usuário) ou em segundo plano.
+3. **Foreground lifetime**: tempo de vida no topo da pilha. Ocorre entre uma chamada no método onResume() e a chamada correspondente do método onPause(). A Activity está no topo da pilha e interagindo com o usuário.
+
 </br>
 
 ### Classe Intent
@@ -114,14 +101,12 @@ Uma Intent é basicamente um conjunto de dados que possui informações de inter
 
 Deve conter:
 
-<ul>
-  <li>Componente</li>
-  <li>Ação</li>
-  <li>Dados</li>
-  <li>Categorias</li>
-  <li>Extras</li>
-  <li>Flags</li>
-</ul>
+- Componente
+- Ação
+- Dados
+- Categorias
+- Extras
+- Flags
 
 Podemos definir ações específicas de nossa aplicação, biblioteca ou ações pré-definidas conforme a tabela abaixo:
 
