@@ -52,13 +52,13 @@ Cada página visitada, também chamada de Home Page, está abrigada em um site q
 
 URL: protocolo://endereço
 
-exemplo: **http://www.estacio.br**
+  - exemplo: **http://www.estacio.br**
 
 URL com site seguro, adicionando o s no protocolo:
 
-exemplo: **https://www.estacio.br**
+  - exemplo: **https://www.estacio.br**
 
-Neste caso, o servidor Web, indica ao navegador web que o site é seguro, utilizando o protocolo _Secury Sockets Layer (SSL)_.
+  - Neste caso, o servidor Web, indica ao navegador web que o site é seguro, utilizando o protocolo _Secury Sockets Layer (SSL)_.
 
 Na figura abaixo, uma negociação entre o navegador e o servidor www.
 
