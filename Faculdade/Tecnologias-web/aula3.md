@@ -52,17 +52,17 @@ Este é um dos ataques que mais logra êxito, pois muitos usuários não reparam
 
 ## COMO DIFICULTAR A QUEBRA DE SENHAS
 
-Nunca utilize senhas com menos de 6 caracteres, pois a combinação destes já dá mais trabalho ao invasor.
+  - Nunca utilize senhas com menos de 6 caracteres, pois a combinação destes já dá mais trabalho ao invasor.
 
-Não utilize dados pessoais em suas senhas, tais como nomes de pessoas, animais de estimação, ou datas de aniversário.
+  - Não utilize dados pessoais em suas senhas, tais como nomes de pessoas, animais de estimação, ou datas de aniversário.
 
-Utilize letras Maiúsculas combinadas com Minúsculas para dificultar a vida dos invasores. Ex: AlOjPpKj.
+  - Utilize letras Maiúsculas combinadas com Minúsculas para dificultar a vida dos invasores. Ex: AlOjPpKj.
 
-Inclua números em suas senhas. Ex: A0l2yu7sIa.
+  - Inclua números em suas senhas. Ex: A0l2yu7sIa.
 
-Inclua caracteres especiais. Ex: Al156@ty%67
+  - Inclua caracteres especiais. Ex: Al156@ty%67
 
-Utilizar um gerenciador de senhas é uma ótima opção, nele dá pra gerar senhas dificílimas que jamais seriam quebradas.
+  - Utilizar um gerenciador de senhas é uma ótima opção, nele dá pra gerar senhas dificílimas que jamais seriam quebradas.
 
 ## COMO DIFICULTAR O ROUBO DE INFORMAÇÕES VIA E-MAIL
 
@@ -72,17 +72,17 @@ Muitas pessoas demonstram, ao responder um e-mail, total displicência com rela�
 
 O invasor se vale desta pressa para poder levantar dados dos usuários a serem atacados.
 
-Não divulgue seu e-mail corporativo em listas, correntes ou outros locais fora do ambiente de trabalho.
+1. Não divulgue seu e-mail corporativo em listas, correntes ou outros locais fora do ambiente de trabalho.
 
-Preste atenção na assinatura automática do seu e-mail.
+2. Preste atenção na assinatura automática do seu e-mail.
 
-Preencha seu e-mail com calma.
+3. Preencha seu e-mail com calma.
 
-Utilize CCO ou BCC, isto é, poste com cópia oculta para não revelar aos invasores a lista dos copiados.
+4. Utilize CCO ou BCC, isto é, poste com cópia oculta para não revelar aos invasores a lista dos copiados.
 
-Utilize assinaturas digitais.
+5. Utilize assinaturas digitais.
 
-Utilize e-mails, principalmente para dentro da empresa, criptografados.
+6. Utilize e-mails, principalmente para dentro da empresa, criptografados.
 
 ## CRIPTOGRAFIA
 
