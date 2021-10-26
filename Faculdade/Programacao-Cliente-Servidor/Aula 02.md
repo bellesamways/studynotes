@@ -33,13 +33,13 @@ Analisando linha a linha da XML acima, temos:
 
 - Na **primeira linha**, a declaração XML, responsável por especificar a versão e por informar ao navegador que se trata de um arquivo XML. Nessa primeira linha, também é definido o **charset** do documento. 
 
-- Na **segunda linha**, representado pela tag <correntistas>, o nó principal — ou nó raiz — do documento. 
+- Na **segunda linha**, representado pela tag `<correntistas>`, o nó principal — ou nó raiz — do documento. 
 
 - Entre a **segunda e a terceira**, um comentário: Repare que os comentários em um documento XML são iguais aos usados em HTML. 
 
-- Na **terceira linha**, temos o primeiro elemento filho do nó raiz, o elemento <pessoa>. 
+- Na **terceira linha**, temos o primeiro elemento filho do nó raiz, o elemento `<pessoa>`. 
 
-- Na **quarta, quinta e sexta linhas**, temos os elementos filhos do elemento <pessoa>. 
+- Na **quarta, quinta e sexta linhas**, temos os elementos filhos do elemento `<pessoa>`. 
 
 - Nas linhas seguintes, temos outro elemento <pessoa> e seus respectivos elementos filhos. 
 
@@ -88,7 +88,7 @@ Em relação ao primeiro documento XML, neste último, no elemento `<conta>`, fo
 </correntistas> 
 ``` 
 
-Perceba que, no lugar de elementos filhos, os dados de cada conta foram armazenados diretamente no elemento <conta>, na forma de atributos. Sobre os atributos, como visto no exemplo, é necessário envolvê-los com aspas. Por último, veja que o elemento <conta> foi simplificado, sendo aberto e fechado numa única linha, com a utilização da barra antes do sinal de maior ( /> ). 
+Perceba que, no lugar de elementos filhos, os dados de cada conta foram armazenados diretamente no elemento `<conta>`, na forma de atributos. Sobre os atributos, como visto no exemplo, é necessário envolvê-los com aspas. Por último, veja que o elemento <conta> foi simplificado, sendo aberto e fechado numa única linha, com a utilização da barra antes do sinal de maior ( /> ). 
 
 
 **Anatomia em termos conceituais: um arquivo XML é composto por: ** 
