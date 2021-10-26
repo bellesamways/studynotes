@@ -20,11 +20,11 @@ Existem muitas maneiras de se compartilhar arquivos. Muitos depositam seus arqui
 
 ## Editores HTML
 
-NVU
+1. NVU
 
-Notepad++
+2. Notepad++
 
-Dreamweaver
+3. Dreamweaver
 
 ## Segurança de rede
 
