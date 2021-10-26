@@ -21,7 +21,6 @@ Exemplo 1 - Layout com 2 colunas, topo e rodapé.
 <html>
 
     <head>
-
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
         <title>Exemplo</title>
@@ -846,67 +845,54 @@ margin-right: 1em;
 
 <body>
 
-<div id="logo">
+    <div id="logo">
 
-<h1>Estácio de Sá</h1>
+        <h1>Estácio de Sá</h1>
 
-</div>
+    </div>
 
-<div id="bloco">
-
-
-
-<div id="bloco2">
+    <div id="bloco">
 
 
+    <div id="bloco2">
 
-<div id="navegacao">
 
-<ul>
+    <div id="navegacao">
+        <ul>
+            <li><a href="#">Graduação</a></li>
 
-<li><a href="#">Graduação</a></li>
+            <li><a href="#">Graduação a Distância</a></li>
 
-<li><a href="#">Graduação a Distância</a></li>
-
-<li><a href="#">Pós-graduação</a></li>
-
-</ul>
+            <li><a href="#">Pós-graduação</a></li>
+        </ul>
+    </div>
 
 
 
-</div>
+    <div id="mais">
+
+        <h3>Maiores Informações</h3>
+
+        <p>Inscreva-se <a href="">Já</a></p>
+
+    </div>
 
 
 
-<div id="mais">
+    <div id="conteudo">
 
-<h3>Maiores Informações</h3>
+        <h2>Cursos</h2>
 
-<p>Inscreva-se <a href="">Já</a></p>
+        <h3>
+            <p>
+                Gestão da Tecnologia da Informação
+            </p>
 
-</div>
-
-
-
-<div id="conteudo">
-
-<h2>Cursos</h2>
-
-
-
-<h3>
-
-                <p>
-
-                    Gestão da Tecnologia da Informação
-
-                </p>
-
-            </h3>
+        </h3>
 
             <p>
 
-                O curso habilita o aluno para que atue em organizações de qualquer setor (público ou privado), indústria, comércio e empresas que utilizam as tecnologias da informação e comunicação como diferencial estratégico para suas operações e decisões. Além disso, o gestor da tecnologia da informação é um profissional apto a prestar assessoria e consultoria nas diversas áreas das organizações.
+                O curso habilita o aluno para que atue em organizações de qualquer setor (público ou privado), indústria, comércio e empresas que utilizam as                     tecnologias da informação e comunicação como diferencial estratégico para suas operações e decisões. Além disso, o gestor da tecnologia da                         informação é um profissional apto a prestar assessoria e consultoria nas diversas áreas das organizações.
 
             </p>
 
@@ -921,9 +907,7 @@ margin-right: 1em;
             </h3>
 
             <p>
-
-                O profissional da área de Análise e Desenvolvimento de Sistemas administra e mantém softwares que apóiam o funcionamento de uma organização. Possui conhecimento para a criação de projetos de automação de processos administrativos e para a gestão do desenvolvimento de sistemas. Também aprende as técnicas para documentar, testar e implantar os sistemas de informação como também para usar ferramentas metodológicas de garantia de qualidade em sistemas de informação.
-
+                O profissional da área de Análise e Desenvolvimento de Sistemas administra e mantém softwares que apóiam o funcionamento de uma organização.                       Possui conhecimento para a criação de projetos de automação de processos administrativos e para a gestão do desenvolvimento de sistemas. Também                   aprende as técnicas para documentar, testar e implantar os sistemas de informação como também para usar ferramentas metodológicas de garantia de                   qualidade em sistemas de informação.
             </p>
 
             <h3>
@@ -936,48 +920,45 @@ margin-right: 1em;
 
             </h3>
 
+            <p>
+
+            O Bacharel em Sistemas de Informação estará apto a atuar com inovação, planejamento e gerenciamento da informação e da infra-estrutura de tecnologia               da informação alinhados às estratégias organizacionais como também com o desenvolvimento e evolução de sistemas de informação e da infra-estrutura de             informação e comunicação, ambos aplicados aos processos organizacionais.
+
             </p>
 
-            O Bacharel em Sistemas de Informação estará apto a atuar com inovação, planejamento e gerenciamento da informação e da infra-estrutura de tecnologia da informação alinhados às estratégias organizacionais como também com o desenvolvimento e evolução de sistemas de informação e da infra-estrutura de informação e comunicação, ambos aplicados aos processos organizacionais.
-
-        </p>
 
 
+            <p class="botao_proximo"><a href="JavaScript:history.back()">Retorna</a></p>
 
-<p class="botao_proximo"><a href="JavaScript:history.back()">Retorna</a></p>
-
-</div>
+    </div>
 
 
 
-<div id="limpa_div"></div>
+    <div id="limpa_div"></div>
 
 
 
-</div>
+    </div>
 
-</div>
-
-
-
-<div id="rodape">
-
-<ul>
-
-<li><a href="#">A Empresa</a></li>
-
-<li><a href="#">Trabalhe Conosco</a></li>
-
-<li><a href="#">Estatísticas</a></li>
-
-<li><a href="#">Copyright &copy; Universidade Estacio de Sá</a></li>
+    </div>
 
 
 
-</ul>
+    <div id="rodape">
 
-</div>
+        <ul>
 
+            <li><a href="#">A Empresa</a></li>
+
+            <li><a href="#">Trabalhe Conosco</a></li>
+
+            <li><a href="#">Estatísticas</a></li>
+
+            <li><a href="#">Copyright &copy; Universidade Estacio de Sá</a></li>
+
+        </ul>
+
+    </div>
 
 
 </body>
