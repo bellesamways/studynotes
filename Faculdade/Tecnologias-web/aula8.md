@@ -12,15 +12,15 @@ Ao longo dos anos, tanto o W3C (Consórcio Mundial de Internet) quanto o WAI (Pr
 
 Problemas apontados pelo W3C e WAI:
 
-Na Internet, é real a dificuldade que o deficiente visual tem em ler os textos devido às características dos mesmos. Existem os textos criados a partir de imagens, existem os textos cuja formatação impede o acesso de pessoas com diversos tipos de problemas visuais (baixa visão, cegueira ou problemas com contrastes) como, por exemplo, a sintaxe matemática e, também, existem os textos gerados dinamicamente por recursos que dependem de sistemas instalados na máquina do usuário (Javascript), impedindo o acesso, a qualquer tempo, por quem quer que seja. Além disso, existem os textos sem representação fonética, o que causa dificuldade de entendimento dos mesmos para aqueles que nunca ouviram a nossa língua, como é o caso dos surdos.
+1. Na Internet, é real a dificuldade que o deficiente visual tem em ler os textos devido às características dos mesmos. Existem os textos criados a partir de imagens, existem os textos cuja formatação impede o acesso de pessoas com diversos tipos de problemas visuais (baixa visão, cegueira ou problemas com contrastes) como, por exemplo, a sintaxe matemática e, também, existem os textos gerados dinamicamente por recursos que dependem de sistemas instalados na máquina do usuário (Javascript), impedindo o acesso, a qualquer tempo, por quem quer que seja. Além disso, existem os textos sem representação fonética, o que causa dificuldade de entendimento dos mesmos para aqueles que nunca ouviram a nossa língua, como é o caso dos surdos.
 
-Existem dificuldades em se interpretar as informações seja pela barreira da língua, seja pela forma de exposição ou pela busca de informações cujas indicações, muitas vezes, não são dadas ou não estão claras por se acreditar ser óbvio o que se quer dizer. Nesse caso, é óbvio para quem fez ou para todos os internautas? É fundamental que os especialistas no assunto não validem o que foi construído a fim de garantir o perfeito entendimento e acesso de todos.
+2. Existem dificuldades em se interpretar as informações seja pela barreira da língua, seja pela forma de exposição ou pela busca de informações cujas indicações, muitas vezes, não são dadas ou não estão claras por se acreditar ser óbvio o que se quer dizer. Nesse caso, é óbvio para quem fez ou para todos os internautas? É fundamental que os especialistas no assunto não validem o que foi construído a fim de garantir o perfeito entendimento e acesso de todos.
 
-Existem pessoas que, por razões diversas, não podem utilizar o mouse. Muitos portais somente permitem interação do usuário via mouse, solicitando-lhe “clicar para pular a introdução”. Se ele não pode utilizar o mouse, ele nunca poderá interagir. Outro problema, ainda, são os teclados virtuais que, embora disponibilizados por medida de segurança, não fornecem alternativas àqueles que não podem utilizar o mouse. Nesse caso, estamos falando de impossibilidades cuja complexidade varia como, por exemplo, um simples cabo de mouse partido, pessoas portadoras de LER (Lesão por Esforço Repetitivo) e pessoas com paralisia.
+3. Existem pessoas que, por razões diversas, não podem utilizar o mouse. Muitos portais somente permitem interação do usuário via mouse, solicitando-lhe “clicar para pular a introdução”. Se ele não pode utilizar o mouse, ele nunca poderá interagir. Outro problema, ainda, são os teclados virtuais que, embora disponibilizados por medida de segurança, não fornecem alternativas àqueles que não podem utilizar o mouse. Nesse caso, estamos falando de impossibilidades cuja complexidade varia como, por exemplo, um simples cabo de mouse partido, pessoas portadoras de LER (Lesão por Esforço Repetitivo) e pessoas com paralisia.
 
-Existem portais que foram projetados para garantir a atenção dos usuários e, no caso de tarefas em que isto não é possível, não apresentam outras alternativas. Imagine-se sendo capaz de ler as informações de um portal enquanto dirige um carro. Nada feito. Mas, se o portal disponibilizasse alguma alternativa que tornasse isso possível, ou se o dispositivo de conexão web solucionasse esse problema, mesmo dirigindo, poder-se-ia buscar, na internet, informações através de comandos de voz, e a resposta de tal busca chegaria, também, através de um conteúdo falado. Para isso, tanto os portais quanto os dispositivos móveis deveriam prever esse tipo de solução.
+4. Existem portais que foram projetados para garantir a atenção dos usuários e, no caso de tarefas em que isto não é possível, não apresentam outras alternativas. Imagine-se sendo capaz de ler as informações de um portal enquanto dirige um carro. Nada feito. Mas, se o portal disponibilizasse alguma alternativa que tornasse isso possível, ou se o dispositivo de conexão web solucionasse esse problema, mesmo dirigindo, poder-se-ia buscar, na internet, informações através de comandos de voz, e a resposta de tal busca chegaria, também, através de um conteúdo falado. Para isso, tanto os portais quanto os dispositivos móveis deveriam prever esse tipo de solução.
 
-Necessidade de frequente atualização de recursos na máquina do usuário. Sabemos que as inovações tecnológicas são importantes, mas, em muitos casos, o mais importante é o conteúdo, a informação dentro do portal e não seus recursos funcionais que obrigam o usuário a atualizar os próprios sistemas. Imagine que uma pessoa, navegando pela Internet, ficou empolgada para comprar um carro, mas utiliza um sistema que não possui a última versão de um determinado software ou ainda não possui aquele software proprietário para acessar o conteúdo do portal da empresa para escolher o modelo do carro. Isso acontece a toda hora. Muitas vezes, o cliente altera a escolha que fez pela falta de preocupação da empresa em garantir o acesso de qualquer pessoa ao conteúdo do portal. Imagine o que pode acontecer ao desenvolvedor se o cliente deixar de comprar um carro de trezentos mil reais porque ele pressupõe que o cliente em potencial para esse tipo de automóvel deva ter um determinado sistema instalado em sua máquina. No dia em que as empresas souberem que isso acontece, deve-se lamentar pelos desenvolvedores e pelos web designers responsáveis pela criação desses portais.
+5. Necessidade de frequente atualização de recursos na máquina do usuário. Sabemos que as inovações tecnológicas são importantes, mas, em muitos casos, o mais importante é o conteúdo, a informação dentro do portal e não seus recursos funcionais que obrigam o usuário a atualizar os próprios sistemas. Imagine que uma pessoa, navegando pela Internet, ficou empolgada para comprar um carro, mas utiliza um sistema que não possui a última versão de um determinado software ou ainda não possui aquele software proprietário para acessar o conteúdo do portal da empresa para escolher o modelo do carro. Isso acontece a toda hora. Muitas vezes, o cliente altera a escolha que fez pela falta de preocupação da empresa em garantir o acesso de qualquer pessoa ao conteúdo do portal. Imagine o que pode acontecer ao desenvolvedor se o cliente deixar de comprar um carro de trezentos mil reais porque ele pressupõe que o cliente em potencial para esse tipo de automóvel deva ter um determinado sistema instalado em sua máquina. No dia em que as empresas souberem que isso acontece, deve-se lamentar pelos desenvolvedores e pelos web designers responsáveis pela criação desses portais.
 
 ## Sistemas auxiliares
 
@@ -130,25 +130,25 @@ A sigla WCAG representa Web Content Accessibility Guidelines. Em uma tradução 
 
 A quem se destina o WGAG?
 
-Desenvolvedores de conteúdo Web (autores de páginas, designers de sites, etc.).
+  - Desenvolvedores de conteúdo Web (autores de páginas, designers de sites, etc.).
 
-Desenvolvedores de ferramentas de autoria Web.
+  - Desenvolvedores de ferramentas de autoria Web.
 
-Desenvolvedores de ferramentas de avaliação de acessibilidade para a Web.
+  - Desenvolvedores de ferramentas de avaliação de acessibilidade para a Web.
 
-Outros que desejam ou que precisam de uma norma técnica de acessibilidade na Web.
+  - Outros que desejam ou que precisam de uma norma técnica de acessibilidade na Web.
 
 ### Os princípios do WGAG 2.0
 
 WCAG 2.0 tem 12 diretrizes que são organizadas em 4 princípios:
 
-Perceptível
+1. Perceptível
 
-Operável
+2. Operável
 
-Compreensível
+3. Compreensível
 
-Robusto
+4. Robusto
 
 Para cada orientação, existem critérios de sucesso testáveis que são em três níveis: A, AA e AAA. Quanto maior o número de letras A, maior o grau de acessibilidade apresentado, isto é, mais princípios foram atendidos.
 
