@@ -2,7 +2,7 @@
 
 ## Modelo básico
 
-No modelo básico de um formulário temos uma caixa de entrada definida através da tag <input> e um botão para encaminhar os dados, definido pela tag <submit>. Repare que no caso do exemplo anterior utilizamos também o tipo radio, cuja função é apresentar ao usuário um objeto do tipo botão de rádio que se selecionado desmarca a outra opção.
+No modelo básico de um formulário temos uma caixa de entrada definida através da tag <\input> e um botão para encaminhar os dados, definido pela tag <\submit>. Repare que no caso do exemplo anterior utilizamos também o tipo radio, cuja função é apresentar ao usuário um objeto do tipo botão de rádio que se selecionado desmarca a outra opção.
 
 ```html
 <form action="http://www.estacio.br/cadastro.jsp" method="post">
@@ -34,13 +34,13 @@ No modelo básico de um formulário temos uma caixa de entrada definida através
 
 Temos alguns atributos essenciais para o bom entendimento de suas funcionalidades:
 
-`type`: determina qual o tipo de campo de entrada será. As opções possíveis são **texto, enviar e senha**. No caso de campos texto, o `type="text"`, para botões de envio, o `type="submit"` e, no caso de senha, o `type="password"`.
+  - `type`: determina qual o tipo de campo de entrada será. As opções possíveis são **texto, enviar e senha**. No caso de campos texto, o `type="text"`, para botões de envio, o `type="submit"` e, no caso de senha, o `type="password"`.
 
-`name`: Atribui um nome a um determinado campo de referência de modo que você pode, mais tarde, fazer referência a ele em um tratamento via linguagem de programação.
+  - `name`: Atribui um nome a um determinado campo de referência de modo que você pode, mais tarde, fazer referência a ele em um tratamento via linguagem de programação.
 
-`size`: Define a largura horizontal do campo. A unidade de medida é em espaços em branco.
+  - `size`: Define a largura horizontal do campo. A unidade de medida é em espaços em branco.
 
-`maxlength`: Define o número máximo de caracteres que podem ser inseridos.
+  - `maxlength`: Define o número máximo de caracteres que podem ser inseridos.
 
 ## Método de envios de dados
 
@@ -60,19 +60,19 @@ Este tipo de caixa é muito especial, pois permite a entrada de uma grande quant
 
 Atributos:
 
-rows – indica número de linhas em um objeto textarea.
+  - rows – indica número de linhas em um objeto textarea.
 
-cols - indica número de linhas em um objeto textarea
+  - cols - indica número de linhas em um objeto textarea
 
-name – especifica o nome da textarea
+  - name – especifica o nome da textarea
 
-wrap – controla a quebra de linhas (off, virtual, physical).
+  - wrap – controla a quebra de linhas (off, virtual, physical).
 
-Off – desliga a quebra de linhas,
+  - Off – desliga a quebra de linhas,
 
-Virtual – mostra a quebra de linhas colocando um <ENTER> ao final.
+  - Virtual – mostra a quebra de linhas colocando um <ENTER> ao final.
 
-Physical – inserem quebras de linhas quando necessário e as envia no processamento.
+  - Physical – inserem quebras de linhas quando necessário e as envia no processamento.
 
 ### Caixa de entrada de texto
 
@@ -80,13 +80,13 @@ A caixa de entrada é utilizada para entrada de dados como um campo em um formul
 
 Atributos:
 
-size – especifica quantos caracteres serão apresentados dentro da caixa
+  - size – especifica quantos caracteres serão apresentados dentro da caixa
 
-maxlength - especifica o tamanho máximo da caixa
+  - maxlength - especifica o tamanho máximo da caixa
 
-name - especifica o nome da caixa
+  - name - especifica o nome da caixa
 
-value - especifica o valor padrão contido na caixa
+  - value - especifica o valor padrão contido na caixa
 
 ### Caixa de senha
 
@@ -94,13 +94,13 @@ Com esta caixa, podemos digitar sem que os usuários próximos saibam qual o tex
 
 Atributos:
 
-size – especifica quantos caracteres serão apresentados dentro da caixa
+  - size – especifica quantos caracteres serão apresentados dentro da caixa
 
-maxlength - especifica o tamanho máximo da caixa
+  - maxlength - especifica o tamanho máximo da caixa
 
-name - especifica o nome da caixa
+  - name - especifica o nome da caixa
 
-value - especifica o valor padrão
+  - value - especifica o valor padrão
 
 ### Caixa de verificação
 
@@ -108,9 +108,9 @@ Muito utilizada para a marcação de valores do tipo múltipla escolha.
 
 Atributos:
 
-name - especifica o nome da caixa
+  - name - especifica o nome da caixa
 
-value - especifica o valor padrão
+  - value - especifica o valor padrão
 
 ### Botão de rádio
 
@@ -118,9 +118,9 @@ Muito utilizada para a marcação de valores do tipo múltipla escolha com uma �
 
 Atributos:
 
-name - especifica o nome da caixa
+  - name - especifica o nome da caixa
 
-value - especifica o valor padrão
+  - value - especifica o valor padrão
 
 ### Caixa de seleção
 
@@ -128,15 +128,15 @@ Este objeto permite que carreguemos uma lista com muitos elementos pré-selecion
 
 Atributos:
 
-name - especifica o nome do campo
+  - name - especifica o nome do campo
 
-size - número de itens na lista
+  - size - número de itens na lista
 
-multiple – permite que se faça seleção múltipla
+  - multiple – permite que se faça seleção múltipla
 
-option – itens individuais no menu. Caso queira pré-selecionar algum, utilize selected ao lado do item
+  - option – itens individuais no menu. Caso queira pré-selecionar algum, utilize selected ao lado do item
 
-value – valor padrão
+  - value – valor padrão
 
 ### Campo invisível
 
@@ -144,9 +144,9 @@ Algumas vezes queremos pré-processar algum dado utilizando, por exemplo, Javasc
 
 Atributos:
 
-name - especifica o nome do campo
+  - name - especifica o nome do campo
 
-value – valor padrão
+  - value – valor padrão
 
 ### Botão cancelar
 
@@ -154,9 +154,9 @@ Através deste botão, o usuário poderá limpar os dados inseridos em seu formu
 
 Atributos:
 
-name - especifica o nome do campo
+  - name - especifica o nome do campo
 
-value – texto descrito no botão
+  - value – texto descrito no botão
 
 ### Botão enviar
 
@@ -164,9 +164,9 @@ Através deste botão, o usuário poderá enviar seu dados que estão no formul�
 
 Atributos:
 
-name - especifica o nome do campo
+  - name - especifica o nome do campo
 
-value – texto descrito no botão
+  - value – texto descrito no botão
 
 ### Imagem
 
@@ -174,4 +174,4 @@ value – texto descrito no botão
 
 Atributos:
 
-name – nome da imagem
+  - name – nome da imagem
