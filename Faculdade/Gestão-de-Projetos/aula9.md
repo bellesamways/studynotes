@@ -33,20 +33,20 @@ O plano de gerenciamento de riscos define como será o planejamento, monitoramen
 
 - Categorias ou fontes de riscos. 
 - Técnicos; 
- - - Gerenciamento do projeto; 
- - - Organizacional; 
- - - Regulatórios; 
- - - Ambientais; 
- - - Fornecimentos. 
+  - Gerenciamento do projeto; 
+  - Organizacional; 
+  - Regulatórios; 
+  - Ambientais; 
+  - Fornecimentos. 
 
 - Classificação dos níveis de probabilidade e impacto utilizando escalas relativas ou numéricas. 
-- - Exemplo: 
-- - Escala de probabilidade: “alta”, “média” e “baixa”; 
- - - Escala impacto:” baixo”, “moderado” e “alto”. 
+  - Exemplo: 
+  - Escala de probabilidade: “alta”, “média” e “baixa”; 
+  - Escala impacto:” baixo”, “moderado” e “alto”. 
 
 - Matriz de probabilidade e impacto. 
-- - Para priorizar qualitativamente os riscos de acordo com suas implicações potenciais de afetar os objetivos do projeto. 
-- - ![Matriz de probabilidade e impacto](../../media/gestao_de_projetos/aula09/img/matriz_probabilidade_impacto.png)
+  - Para priorizar qualitativamente os riscos de acordo com suas implicações potenciais de afetar os objetivos do projeto. 
+  - ![Matriz de probabilidade e impacto](../../media/gestao_de_projetos/aula09/img/matriz_probabilidade_impacto.png)
 
 - Papéis e responsabilidades relacionadas aos eventos de risco. 
 - Custos envolvidos. 

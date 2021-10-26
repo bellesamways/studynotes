@@ -25,10 +25,10 @@ Outros fatores devem ser considerados para o planejamento da equipe do projeto, 
 Os requisitos dos recursos para a execução das atividades definidos no processo de planejamento do tempo são utilizados para o planejamento da equipe do projeto. O plano de recursos humanos contempla: 
 
 1. Papéis e responsabilidades - para identificar papéis e responsabilidades dos membros da equipe. 
-- - ![Papeis e responsabilidades](../../media/gestao_de_projetos/aula07/img/papeis_responsabilidades.png)
+  - ![Papeis e responsabilidades](../../media/gestao_de_projetos/aula07/img/papeis_responsabilidades.png)
 
 2. Organograma do projeto – para estabelecer as relações hierárquicas do projeto. 
-- - ![Organograma do Projeto](../../media/gestao_de_projetos/aula07/img/organograma.png)
+  - ![Organograma do Projeto](../../media/gestao_de_projetos/aula07/img/organograma.png)
 
 3. Plano de gerenciamento de pessoal - contém o plano de mobilização e liberação de pessoal, calendário de recursos, necessidades de treinamento, reconhecimento e recompensas, normas de segurança do trabalho. 
 
