@@ -29,27 +29,25 @@ Os pesquisadores trabalhavam para desenvolver uma rede com os seguintes requisit
  
  
 
-Utilizar os serviços de hardware distribuídos. 
+1. Utilizar os serviços de hardware distribuídos. 
 
-Quando você  navega pela Internet e digita o nome de um site no navegador do seu computador, existem serviços que são acionados em diversos servidores (máquinas que realizam tarefas específicas em grande velocidade e capacidade) para lhe entregar o conteúdo de uma página. **São servidores, em vários locais do mundo, que trabalham para entregar uma informação à você.** 
+     - Quando você  navega pela Internet e digita o nome de um site no navegador do seu computador, existem serviços que são acionados em diversos servidores           (máquinas que realizam tarefas específicas em grande velocidade e capacidade) para lhe entregar o conteúdo de uma página. **São servidores, em vários locais       do mundo, que trabalham para entregar uma informação à você.** 
 
-Ser recuperável à distância. 
+2. Ser recuperável à distância. 
 
-Agora, imagine que você necessite **recuperar dados remotamente** em uma máquina ou até mesmo **recuperar seus serviços**. 
+     - Agora, imagine que você necessite **recuperar dados remotamente** em uma máquina ou até mesmo **recuperar seus serviços**. 
 
-Utilizar bancos de dados remotamente. 
+3. Utilizar bancos de dados remotamente. 
 
-Imagine aquele dado tão importante armazenado em seu banco de dados da empresa e que você necessita **acessar de uma filial através da Internet**.  
+     - Imagine aquele dado tão importante armazenado em seu banco de dados da empresa e que você necessita **acessar de uma filial através da Internet**.  
 
-Compartilhar sub-rotinas de softwares e pacotes não disponíveis nos computadores dos usuários devido à incompatibilidade de hardware ou língua. 
+4. Compartilhar sub-rotinas de softwares e pacotes não disponíveis nos computadores dos usuários devido à incompatibilidade de hardware ou língua. 
 
-Quando você deseja fazer algo através da Internet, ficamos despreocupados com a **compatibilidade do hardware do servidor** com nosso computador. Imagine ter que instalar todos os programas que rodam nos servidores para poder ser cliente de seus serviços. É, hoje não faz sentido, mas, naquela época, isso virou requisito para a ARPANET surgir. 
-
- 
+     - Quando você deseja fazer algo através da Internet, ficamos despreocupados com a **compatibilidade do hardware do servidor** com nosso computador. Imagine          ter que instalar todos os programas que rodam nos servidores para poder ser cliente de seus serviços. É, hoje não faz sentido, mas, naquela época, isso            virou requisito para a ARPANET surgir. 
 
  
 
-Tudo isso precisava de um protocolo de comunicação para funcionar. Foi ai que surgiu o **TCP/IP (Transmission Control Protocol / Internet Protocol)** que possibilitaria a comunicação de duas ou mais máquinas **endereçadas por um número único**, o endereço IP (endereço que identifica uma máquina ou hardware em uma rede com padrão TCP/IP). Hoje temos **padrão IPv4 e IPv6** que trabalham com endereços de 32 bits e 128 bits respectivamente. 
+ Tudo isso precisava de um protocolo de comunicação para funcionar. Foi ai que surgiu o **TCP/IP (Transmission Control Protocol / Internet Protocol)** que possibilitaria a comunicação de duas ou mais máquinas **endereçadas por um número único**, o endereço IP (endereço que identifica uma máquina ou hardware em uma rede com padrão TCP/IP). Hoje temos **padrão IPv4 e IPv6** que trabalham com endereços de 32 bits e 128 bits respectivamente. 
 
  
 
