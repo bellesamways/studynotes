@@ -6,47 +6,37 @@ Folhas de Estilo em Cascata ou CSS (Cascade Style Sheet) são estilos aplicados 
 
 As Folhas de Estilos em Cascatas têm como funções:
 
-Definir a aparência das páginas em um único lugar, em vez de repetir-se uma e outra vez no site.
+1. Definir a aparência das páginas em um único lugar, em vez de repetir-se uma e outra vez no site.
 
-Facilmente alterar a aparência das páginas, mesmo depois que eles são criados.
+2. Facilmente alterar a aparência das páginas, mesmo depois que eles são criados.
 
-Definir o tamanho da fonte e os atributos semelhantes com a mesma precisão que você tem com um processador de texto.
+3. Definir o tamanho da fonte e os atributos semelhantes com a mesma precisão que você tem com um processador de texto.
 
-Definir a posição do conteúdo das páginas com precisão de pixel.
+4. Definir a posição do conteúdo das páginas com precisão de pixel.
 
-Definir estilos personalizados.
+5. Definir estilos personalizados.
 
-Definir as camadas sem a necessidade de pop-ups.
+6. Definir as camadas sem a necessidade de pop-ups.
 
 ## Aplicando folhas de estilo em cascata
 
 Existem 3 formas de se aplicar estilo às páginas em HTML.
 
-In-line
+  - In-line
 
-Interna
+  - Interna
 
-Externa
+  - Externa
 
 A sintaxe do CSS segue o formato seletor com uma ou mais declarações:
-![sintaxe-css](../../Tecnologias_Web/sintaxe-css.png)
 
-Seletor
-Declaração
-{color:
-Propriedade
-Valor
-Declaração
-font-size:
-Propriedade
-12px:}
-Valor
+![sintaxe-css](../../media/Tecnologias_Web/sintaxe-css.png)
 
-Tudo deve ser descrito em minúsculas.
+  - Tudo deve ser descrito em minúsculas.
 
-Desta forma, pode-se utilizar mais de uma declaração para o mesmo seletor. Isto é muito mais poderoso do que se podia fazer em HTML puro.
+  - Desta forma, pode-se utilizar mais de uma declaração para o mesmo seletor. Isto é muito mais poderoso do que se podia fazer em HTML puro.
 
-Para se declarar um estilo, tem-se que determinar como ele será implementado no código: junto ao elemento, interno ao código ou externo ao código.
+  - Para se declarar um estilo, tem-se que determinar como ele será implementado no código: junto ao elemento, interno ao código ou externo ao código.
 
 ### In-line
 
@@ -88,24 +78,8 @@ Para que se defina os estilos internos da página, deve-se criá-los dentro de t
 Repare que o type é text/css. Além do type, pode-se definir para que tipo de mídia (media) se quer aplicar estes estilos. Isso é particularmente importante quando queremos diferenciar os estilos por dispositivos, no caso da acessibilidade.
 
 Podemos ter as seguintes mídias:
-![medias-type](../../media/Tecnologias_Web/media-type.png)
 
-aural
-braille
-handheld
-print
-projection
-screen
-tty
-todos
-sintetizadores de voz
-para dispositivos adaptados ao Braille
-para palms e outros tipos de dispositivos portáteis
-para impressão ou visualização para impressão
-para projetores do tipo data show
-para monitores
-para teletipos
-para televisores
+![medias-type](../../media/Tecnologias_Web/media-type.png)
 
 A omissão da declaração media determina o valor padrão all.
 
@@ -182,12 +156,8 @@ Para cada situação, é preciso que se defina o tipo de documento a ser interpr
 ## Seletores
 
 Seletores estão para CSS como tags estão para HTML. O seletor é uma strings que identifica o elemento HTML ao qual a regra será aplicada.
-![seletores-css](../../media/Tecnologias_Web/seletores-css.png)
 
-seletor {propriedade:valor}
-é o aspecto a ser alterado.
-é o atributo ou caracteristica a ser estilizada, por exemplo, color, font-wegh.
-irâ identificar o elemento HTML ou XHTML.
+![seletores-css](../../media/Tecnologias_Web/seletores-css.png)
 
 Exemplo:
 
@@ -344,11 +314,8 @@ Os 4 lados podem ser trabalhados de forma individual utilizando-se as seguintes 
 **margin-top, margin-right, margin-bottom, margin-left, padding-top, padding-right, padding-bottom e padding-left**
 
 Elas são explicadas, mais facilmente, pela figura abaixo.
-![margin-padding-border](../../media/Tecnologias_Web/margin-border-padding.png)
 
-margirHop
-padding-top
-padding•bottom
+![margin-padding-border](../../media/Tecnologias_Web/margin-border-padding.png)
 
 ### Bordas
 
