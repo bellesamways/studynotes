@@ -6,11 +6,11 @@ A grande reviravolta na Internet aconteceu quando, em 1989, Tim Berbers-Lee dese
 
 As 3 principais facilidades da linguagem HTML são:
 
-Princípio da não linearidade da informação, permitindo ao usuário navegar pelas informações utilizando o princípio do hipertexto.
+1. Princípio da não linearidade da informação, permitindo ao usuário navegar pelas informações utilizando o princípio do hipertexto.
 
-Permite a formatação do texto, utilizando marcações para estilizá-lo, podendo ser interpretável por todo e qualquer navegador Web desde que sejam respeitadas as marcações padrão do W3C.
+2. Permite a formatação do texto, utilizando marcações para estilizá-lo, podendo ser interpretável por todo e qualquer navegador Web desde que sejam respeitadas as marcações padrão do W3C.
 
-Flexibilidade de uso. Esta linguagem permite fácil adequação aos mais diferentes propósitos.
+3. Flexibilidade de uso. Esta linguagem permite fácil adequação aos mais diferentes propósitos.
 
 ## Estrutura
 
@@ -20,7 +20,7 @@ Cada elemento, quando utilizado, pode trabalhar em par com a abertura e o fecham
 
 Sintaxe:
 
-**<tag> </tag>** - abertura e fechamento ou para tags sem elementos adicionais **<tag>**
+**\<tag> \</tag>** - abertura e fechamento ou para tags sem elementos adicionais **\<tag>**
 
 Uma tag é formada por:
 
@@ -32,7 +32,7 @@ valores: caracterizam essa mudança
 
 Toda as tags devem ser descritas dentro da estrutura maior de uma página HTML, que nada mais é que um arquivo texto, cujos elementos estruturais são também descritos por tags como, por exemplo:
 
-<HTML><BODY></BODY></HTML>
+\<HTML>\<BODY>\</BODY>\</HTML>
 
 Cada comando tem seus atributos possíveis e seus valores. Um exemplo é o atributo **size** que pode ser usado com o comando FONT, com o HR, mas que não pode ser usado com o comando BODY.
 
@@ -44,25 +44,25 @@ Os documentos em HTML são arquivos de texto simples que podem ser criados e edi
 
 As tags básicas de HTML que você normalmente encontrará nas páginas da Internet são:
 
-<HTML>: Esta tag irá definir o início de um documento HTML ao navegador web.
+1. \<HTML>: Esta tag irá definir o início de um documento HTML ao navegador web.
 
-<HEAD>: Nesta tag estão as definições de cabeçalho do documento. Podem ser postos aqui: chamadas Javascript, CSS, tags META entre outras.
+2. \<HEAD>: Nesta tag estão as definições de cabeçalho do documento. Podem ser postos aqui: chamadas Javascript, CSS, tags META entre outras.
 
-<BODY>: Em um documento HTML faz-se necessário indicar o corpo do documento. A partir desta tag até o fechamento da mesma, todos os elementos aqui descritos serão apresentados como conteúdos na página em seu navegador.
+3. \<BODY>: Em um documento HTML faz-se necessário indicar o corpo do documento. A partir desta tag até o fechamento da mesma, todos os elementos aqui descritos serão apresentados como conteúdos na página em seu navegador.
 
 ## Comandos em HTML
 
 Dentro do cabeçalho de um documento em HTML podemos encontrar os seguintes comandos:
 
-<TITLE>: O conteúdo definido dentro desta tag será exibido na barra de título do seu navegador.
+1. \<TITLE>: O conteúdo definido dentro desta tag será exibido na barra de título do seu navegador.
 
-<STYLE>: Quando trabalharmos com Folhas de Estilos, definimos aqui os estilos carregados. 
+2. \<STYLE>: Quando trabalharmos com Folhas de Estilos, definimos aqui os estilos carregados. 
 
-<SCRIPT>: Utilizada para definir a carga de um script do tipo Javascript, por exemplo, do lado do cliente. 
+3. \<SCRIPT>: Utilizada para definir a carga de um script do tipo Javascript, por exemplo, do lado do cliente. 
 
-<LINK>: Utilizada para definir ligações entre a página e arquivos externos como, por exemplo, arquivo de folhas de estilos. XHTML esta tag deve ser obrigatoriamente fechada. 
+4. \<LINK>: Utilizada para definir ligações entre a página e arquivos externos como, por exemplo, arquivo de folhas de estilos. XHTML esta tag deve ser obrigatoriamente fechada. 
 
-<META>: Esta tag é uma das mais utilizadas para dar aos robôs de busca informações a respeito de sua página e site. Ela define as propriedades da página. Desta forma, ferramentas de indexação de conteúdos podem, ao ler as informações contidas nestas tags, catalogar sites e suas informações, tais  como descrição da página,autor,palavras chave, etc. O atributo content é obrigatório, pois especifica o conteúdo da meta informação. Os demais atributos são opcionais.  
+5. \<META>: Esta tag é uma das mais utilizadas para dar aos robôs de busca informações a respeito de sua página e site. Ela define as propriedades da página. Desta forma, ferramentas de indexação de conteúdos podem, ao ler as informações contidas nestas tags, catalogar sites e suas informações, tais  como descrição da página,autor,palavras chave, etc. O atributo content é obrigatório, pois especifica o conteúdo da meta informação. Os demais atributos são opcionais.  
 
  
 
@@ -83,7 +83,7 @@ Algumas tags são importantes para o desenvolvimento da página Web  como, por e
  
  
 
-**Comentários**: Tag: <!- - > 
+**Comentários**: Tag: \<!- - > 
 
  
  
@@ -93,7 +93,7 @@ Esta tag é utilizada para aplicar comentários ao código HTML. Não se esqueç
  
  
 
-**Âncora**: Tag: <a> 
+**Âncora**: Tag: \<a> 
 
  
  
@@ -109,7 +109,7 @@ Esta tag define uma âncora dentro ou fora da página. Através dela, é possív
  
  
 
-**Negrito Tag**: <b> 
+**Negrito Tag**: \<b> 
 
  
  
@@ -120,17 +120,17 @@ Através desta tag, podemos indicar ao navegador que negrite o texto.
 
  
 
-**Itálico Tag**: <i> 
+**Itálico Tag**: \<i> 
 
  
  
 
-Para aplicar o efeito itálico no caracter, basta utilizar a tag <i>, não se esquecendo de fechá-la, pois, caso isto não ocorra, todos os elementos textuais ganharão este estilo. 
+Para aplicar o efeito itálico no caracter, basta utilizar a tag \<i>, não se esquecendo de fechá-la, pois, caso isto não ocorra, todos os elementos textuais ganharão este estilo. 
 
  
  
 
-**Tag**: <big> 
+**Tag**: \<big> 
 
  
  
@@ -140,7 +140,7 @@ Esta tag enfatiza o conjunto de caracteres ligados a ela não só aumentando seu
  
  
 
-**Tag**: <em> 
+**Tag**: \<em> 
 
  
  
@@ -150,17 +150,17 @@ Outra forma de enfatizar o texto. A diferença é que, neste caso, o texto ficar
  
  
 
-**Tag**: <strong> 
+**Tag**: \<strong> 
 
  
  
 
-Esta tag é semelhante a tag <b>. 
+Esta tag é semelhante a tag \<b>. 
 
  
  
 
-**Tag**:<small> 
+**Tag**: \<small> 
 
  
  
@@ -175,7 +175,7 @@ Em HTML, esta tag faz com que o texto seja apresentado em uma fonte pequena e es
  
  
 
-**Tag**: <strike> 
+**Tag**: \<strike> 
 
  
  
@@ -190,13 +190,13 @@ Esta tag é utilizada quando queremos apresentar um texto todo ele riscado na ho
  
  
 
-**A tag <strike> foi descontinuado no HTML 4.0.1 e não é suportada pelo DTD Strict do XHTML 1.0** 
+**A tag \<strike> foi descontinuado no HTML 4.0.1 e não é suportada pelo DTD Strict do XHTML 1.0** 
 
  
 
  
 
-**Tag**: <font> 
+**Tag**: \<font> 
 
  
  
@@ -217,18 +217,18 @@ O HTML é rico em recursos e nos permite definir as características das fontes 
  
  
 
-<br> 
+\<br> 
 
  
  
 
-Quando desejarmos quebrar uma linha, tal como fazemos em nosso editor de texto, basta utilizar a tag <br>.  
+Quando desejarmos quebrar uma linha, tal como fazemos em nosso editor de texto, basta utilizar a tag \<br>.  
 
  
 
  
 
-<p> 
+\<p> 
 
  
  
@@ -238,12 +238,12 @@ Já esta tag representa um salto maior. Ela simboliza a quebra de parágrafo fei
  
  
 
-**Centralização de Elementos**: <center> 
+**Centralização de Elementos**: \<center> 
 
  
  
 
-Para centralizarmos um texto ou elemento na tela do seu navegador, basta utilizarmos a tag <center>. Ela permite a centralização de forma independente da resolução gráfica apresentada em seu monitor. 
+Para centralizarmos um texto ou elemento na tela do seu navegador, basta utilizarmos a tag \<center>. Ela permite a centralização de forma independente da resolução gráfica apresentada em seu monitor. 
 
  
  
@@ -253,12 +253,12 @@ Para centralizarmos um texto ou elemento na tela do seu navegador, basta utiliza
  
  
 
-Ao utilizarmos uma lista, precisamos definir seu começo e fim e seus itens. Para isso, deveremos trabalhar com algumas tags em bloco, tais como <dd>,<dl> e <dt>. 
+Ao utilizarmos uma lista, precisamos definir seu começo e fim e seus itens. Para isso, deveremos trabalhar com algumas tags em bloco, tais como \<dd>,\<dl> e \<dt>. 
 
  
  
 
-### Tags: <dl>, <dd>, <dt> 
+### Tags: \<dl>, \<dd>, \<dt> 
 
  
  
@@ -268,7 +268,7 @@ Quando necessitamos elencar itens em uma lista.
  
  
 
-Esta tag deve ser utilizada juntamente com a tag <dl> e <dt>.   
+Esta tag deve ser utilizada juntamente com a tag \<dl> e \<dt>.   
 
  
  
@@ -299,11 +299,11 @@ Exemplo:
  
  
 
-Tag: <ol> 
+Tag: \<ol> 
 
   
 
-Para a apresentação de itens ordenados utilizando marcadores numéricos, você deve utilizar a tag <ol> para apresentar uma lista ordenada. Cada item da lista deve ser indicado pela tag <li>, traduzido livremente para lista de itens. 
+Para a apresentação de itens ordenados utilizando marcadores numéricos, você deve utilizar a tag \<ol> para apresentar uma lista ordenada. Cada item da lista deve ser indicado pela tag \<li>, traduzido livremente para lista de itens. 
 
  
  
@@ -332,7 +332,7 @@ Para a apresentação de itens ordenados utilizando marcadores numéricos, você
  
  
 
-Tag: <ul> 
+Tag: \<ul> 
 
  
  
@@ -363,12 +363,12 @@ Não há como verificar ordenação dos dados.
  
  
 
-Tag: <option> 
+Tag: \<option> 
 
  
  
 
-Existe uma maneira interessante de se exibir uma lista não ordenada economizando bastante espaço na tela. Para isso, devemos utilizar a tag <option>, comumente empregada em formulários cujo objetivo é armazenar grandes listas e poupar espaço na apresentação no navegador do usuário. 
+Existe uma maneira interessante de se exibir uma lista não ordenada economizando bastante espaço na tela. Para isso, devemos utilizar a tag \<option>, comumente empregada em formulários cujo objetivo é armazenar grandes listas e poupar espaço na apresentação no navegador do usuário. 
 
  
  
@@ -378,25 +378,25 @@ Existe uma maneira interessante de se exibir uma lista não ordenada economizand
  
  
 
-A tag <embed> permite que você acople objetos externos a sua página como um plug-in. Hoje temos vários sites que oferecem seus objetos codificados nesta tag. Temos o Youtube, Google Video entre outros. 
+A tag \<embed> permite que você acople objetos externos a sua página como um plug-in. Hoje temos vários sites que oferecem seus objetos codificados nesta tag. Temos o Youtube, Google Video entre outros. 
 
  
  
 
 Atributos: 
 
-height – altura  em pixels do objeto 
+ - height \- altura  em pixels do objeto 
 
-src – origem do objeto 
+ - src \- origem do objeto 
 
-type – tipo do objeto 
+ - type \- tipo do objeto 
 
-width – largura em pixels 
+ - width \- largura em pixels 
 
  
  
 
-## CABEÇALHOS (Tag: <h1>,<h2>,<h3>,<h4>,<h5>,<h6>) 
+## CABEÇALHOS (Tag: \<h1>,\<h2>,\<h3>,\<h4>,\<h5>,\<h6>) 
 
  
  
@@ -416,7 +416,7 @@ As tags de h1-h6 foram muito utilizadas no passado para dar ênfase ao tamanho d
  
  
 
-Tag: <hr>  
+Tag: \<hr>  
 
  
  
@@ -426,7 +426,7 @@ Em HTML é fácil criarmos uma linha horizontal que ocupe toda a extensão da p�
  
  
 
-Basta que usemos a tag <hr>, que em uma tradução livre significa linha horizontal. 
+Basta que usemos a tag \<hr>, que em uma tradução livre significa linha horizontal. 
 
  
  
@@ -441,7 +441,7 @@ Este recurso facilita a divisão visual de elementos no corpo da página.
  
  
 
-Tag: <img> 
+Tag: \<img> 
 
  
  
@@ -456,7 +456,7 @@ Esta tag possui os atributos src, onde indicaremos a fonte da imagem, o atributo
  
  
 
-Tag: <map> 
+Tag: \<map> 
 
  
  
@@ -468,15 +468,15 @@ Esta tag é utilizada para criarmos regiões clicáveis em uma imagem do lado do
 
 Atributos: 
 
-name  - nome do mapa 
+ - name  \- nome do mapa 
 
-area  - define uma área clicável 
+ - area  \- define uma área clicável 
 
-shape – define o formato da região clicável 
+ - shape \- define o formato da região clicável 
 
-coords – define as coordenadas x_min, y_min,x_max,y_max 
+ - coords \- define as coordenadas x_min, y_min,x_max,y_max 
 
-alt – informação alternativa 
+ - alt \- informação alternativa 
 
  
  
@@ -486,7 +486,7 @@ alt – informação alternativa
  
  
 
-Tags: <frameset> e <frame> 
+Tags: \<frameset> e \<frame> 
 
  
  
@@ -501,29 +501,29 @@ A tecnologia do frame foi criada com o intuito de dividir a página apresentada 
  
  
 
-Tag: <iframe> 
+Tag: \<iframe> 
 
  
  
 
 Atributos: 
 
-align  - alinhamento – left, right, top, bottom, middle. Descontinuado 
+ - align  \- alinhamento – left, right, top, bottom, middle. Descontinuado 
 
-frameborder – tamanho da borda – 1 e 0 
+ - frameborder \- tamanho da borda – 1 e 0 
 
-height –- estabelece a altura do iframe em pixels  
+ - height \- estabelece a altura do iframe em pixels  
 
-widht – estabelece a largura do iframe em pixels 
+ - widht \- estabelece a largura do iframe em pixels 
 
-longdesc – aponta para um arquivo que contém informações adicionais a respeito daquele iframe 
+ - longdesc \- aponta para um arquivo que contém informações adicionais a respeito daquele iframe 
 
-marginheight – especifica as margens superior e inferior em pixels 
+ - marginheight \- especifica as margens superior e inferior em pixels 
 
-marginwidht – especifica a margem a direita e a esquerda do iframe 
+ - marginwidht \- especifica a margem a direita e a esquerda do iframe 
 
-name – nome do iframe 
+ - name \- nome do iframe 
 
-scrolling – habilita ou não a barra de scroll 
+ - scrolling \- habilita ou não a barra de scroll 
 
-src – indica a URL com o caminho do documento a ser carregado pelo iframe
+ - src \- indica a URL com o caminho do documento a ser carregado pelo iframe
