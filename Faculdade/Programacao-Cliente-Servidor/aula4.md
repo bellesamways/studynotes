@@ -32,28 +32,28 @@ public abstract class ProdutoEntityBean implements EntityBean {
 } 
 ``` 
  
-No fragmento de código, temos o início da definição de um Entity Bean, onde o objeto concreto é gerado pelo servidor de aplicativos, e as classes de entidade apresentam apenas as **propriedades**, definidas a partir de getters e setters **abstratos**, além de alguns métodos de gerência do ciclo de vida, aqui omitidos. O mapeamento do Entity Bean para a tabela deve ser feito com base na sintaxe XML, como no trecho apresentado a seguir, para o servidor **JBoss**. 
- 
+No fragmento de código, temos o início da definição de um Entity Bean, onde o objeto concreto é gerado pelo servidor de aplicativos, e as classes de entidade apresentam apenas as **propriedades**, definidas a partir de getters e setters **abstratos**, além de alguns métodos de gerência do ciclo de vida, aqui omitidos. O mapeamento do Entity Bean para a tabela deve ser feito com base na sintaxe XML, como no trecho apresentado a seguir, para o servidor **JBoss**.
+
 ```java 
 <enterprise-beans> 
-<entity> 
-<ejb-name>ProdutoEntityBean</ejb-name> 
-<table-name>PRODUTO</table-name> 
-<cmp-field> 
-<field-name>codigo</field-name> 
-<column-name>COD_PRODUTO</column-name> 
-</cmp-field> 
-<cmp-field> 
-<field-name>nome</field-name> 
-<column-name>NOME</column-name> 
-</cmp-field> 
-<cmp-field> 
-<field-name>quantidade</field-name> 
-<column-name>QUANTIDADE</column-name> 
-</cmp-field> 
-</entity> 
+  <entity> 
+    <ejb-name>ProdutoEntityBean</ejb-name> 
+    <table-name>PRODUTO</table-name> 
+    <cmp-field> 
+      <field-name>codigo</field-name> 
+      <column-name>COD_PRODUTO</column-name> 
+    </cmp-field> 
+    <cmp-field> 
+      <field-name>nome</field-name> 
+      <column-name>NOME</column-name> 
+    </cmp-field> 
+    <cmp-field> 
+      <field-name>quantidade</field-name> 
+      <column-name>QUANTIDADE</column-name> 
+    </cmp-field> 
+  </entity> 
 </enterprise-beans> 
-``` 
+```
  
 Já no framework **Hibernate**, temos o padrão **DAO**, de forma implícita, com os comandos sendo gerados a partir dos métodos de um gestor de persistência, com base no conjunto de elementos de mapeamento, e os dados presentes nas entidades. 
  
@@ -72,13 +72,13 @@ As entidades, para o **Hibernate**, são apenas classes comuns, sem métodos de 
  
 ```java 
 <hibernate-mapping schema="loja"> 
-<class name="model.Produto" table="PRODUTO"> 
-<id name="codigo" type="int"> 
-<column name="COD_PRODUTO" /> 
-</id> 
-<property name="nome" type="string" column="NOME" /> 
-<property name="quantidade" type="int" column="QUANTIDADE" /> 
-</class> 
+  <class name="model.Produto" table="PRODUTO"> 
+    <id name="codigo" type="int"> 
+      <column name="COD_PRODUTO" /> 
+    </id> 
+    <property name="nome" type="string" column="NOME" /> 
+    <property name="quantidade" type="int" column="QUANTIDADE" /> 
+  </class> 
 </hibernate-mapping> 
 ``` 
  
@@ -103,39 +103,39 @@ Da mesma forma que no Hibernate clássico, para definir uma entidade JPA devemos
 @NamedQuery(name = "Produto.findAll", 
 query = "SELECT p FROM Produto p")}) 
 public class Produto implements Serializable { 
-private static final long serialVersionUID = 1L; 
-@Id 
-@Basic(optional = false) 
-@Column(name = "COD_PRODUTO") 
-private Integer codigo; 
-@Column(name = "QUANTIDADE") 
-private Integer quantidade; 
- 
-public Produto() { 
-} 
-public Produto(Integer codigo) { 
-this.codigo = codigo; 
-} 
-// Os getters e setters das propriedades foram omitidos 
-@Override 
-public int hashCode() { 
-int hash = 0; 
-hash += (codigo != null ? codigo.hashCode() : 0); 
-return hash; 
-} 
-@Override 
-public boolean equals(Object object) { 
-if (object==null||!(object instanceof Produto)) { 
-return false; 
-} 
-Produto other = (Produto) object; 
-return this.codigo!=null && 
-this.codigo.equals(other.codigo); 
-} 
-@Override 
-public String toString() { 
-return "model.Produto[ codigo=" + codigo + " ]"; 
-} 
+	private static final long serialVersionUID = 1L; 
+	@Id 
+	@Basic(optional = false) 
+	@Column(name = "COD_PRODUTO") 
+	private Integer codigo; 
+	@Column(name = "QUANTIDADE") 
+	private Integer quantidade; 
+
+	public Produto() { 
+	} 
+	public Produto(Integer codigo) { 
+		this.codigo = codigo; 
+	} 
+	// Os getters e setters das propriedades foram omitidos 
+	@Override 
+	public int hashCode() { 
+		int hash = 0; 
+		hash += (codigo != null ? codigo.hashCode() : 0); 
+		return hash; 
+	} 
+	@Override 
+	public boolean equals(Object object) { 
+		if (object==null||!(object instanceof Produto)) { 
+			return false; 
+		} 
+		Produto other = (Produto) object; 
+		return this.codigo!=null && 
+			this.codigo.equals(other.codigo); 
+	} 
+	@Override 
+	public String toString() { 
+		return "model.Produto[ codigo=" + codigo + " ]"; 
+	} 
 } 
 ``` 
  
@@ -171,25 +171,25 @@ Além das anotações nas entidades, precisamos de um arquivo de configuração,
 ```xml 
 <?xml version="1.0" encoding="UTF-8"?> 
 <persistence version="2.1" 
-xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
-http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"> 
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence 
+	http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"> 
 <persistence-unit name="ExemploSimplesJPAPU" 
-transaction-type="RESOURCE_LOCAL"> 
+	transaction-type="RESOURCE_LOCAL"> 
 <provider> 
-org.eclipse.persistence.jpa.PersistenceProvider; 
+	org.eclipse.persistence.jpa.PersistenceProvider; 
 </provider> 
 <class>model.Produto</class> 
 <properties> 
-<property name="javax.persistence.jdbc.url" 
-value="jdbc:derby://localhost:1527/bancoJPA"/> 
-<property name="javax.persistence.jdbc.driver" 
-value="org.apache.derby.jdbc.ClientDriver"/> 
-<property name="javax.persistence.jdbc.user" 
-value="bancoJPA"/> 
-<property name="javax.persistence.jdbc.password" 
-value="bancoJPA"/> 
+	<property name="javax.persistence.jdbc.url" 
+		value="jdbc:derby://localhost:1527/bancoJPA"/> 
+	<property name="javax.persistence.jdbc.driver" 
+		value="org.apache.derby.jdbc.ClientDriver"/> 
+	<property name="javax.persistence.jdbc.user" 
+		value="bancoJPA"/> 
+	<property name="javax.persistence.jdbc.password" 
+		value="bancoJPA"/> 
 </properties> 
 </persistence-unit> 
 </persistence> 
@@ -211,18 +211,18 @@ Com as entidades mapeadas e a conexão configurada, podemos efetuar as consultas
  
 ```java 
 public class Principal { 
-public static void main(String[] args) { 
-EntityManagerFactory emf = 
-Persistence.createEntityManagerFactory( 
-"ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-Query query = em.createNamedQuery("Produto.findAll"); 
-List<Produto> lista = query.getResultList(); 
-lista.forEach((e) -> { 
-System.out.println(e.getNome()); 
-}); 
-em.close(); 
-} 
+    public static void main(String[] args) { 
+        EntityManagerFactory emf = 
+            Persistence.createEntityManagerFactory( 
+                    "ExemploSimplesJPAPU"); 
+        EntityManager em = emf.createEntityManager(); 
+        Query query = em.createNamedQuery("Produto.findAll"); 
+        List<Produto> lista = query.getResultList(); 
+        lista.forEach((e) -> { 
+            System.out.println(e.getNome()); 
+        }); 
+        em.close(); 
+    } 
 } 
 ``` 
  
@@ -239,19 +239,19 @@ Agora podemos verificar como é feita a inclusão de um produto em nossa base de
  
 ```java 
 public static void incluir(Produto p){ 
-EntityManagerFactory emf = 
-Persistence.createEntityManagerFactory( 
-"ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-try { 
-em.getTransaction().begin(); 
-em.persist(p); 
-em.getTransaction().commit(); 
-}catch(Exception e){ 
-em.getTransaction().rollback(); 
-}finally{ 
-em.close(); 
-} 
+    EntityManagerFactory emf = 
+        Persistence.createEntityManagerFactory( 
+                "ExemploSimplesJPAPU"); 
+    EntityManager em = emf.createEntityManager(); 
+    try { 
+        em.getTransaction().begin(); 
+        em.persist(p); 
+        em.getTransaction().commit(); 
+    }catch(Exception e){ 
+        em.getTransaction().rollback(); 
+    }finally{ 
+        em.close(); 
+    } 
 } 
 ``` 
  
@@ -265,19 +265,19 @@ Para efetuar a alteração dos dados de um registro, temos um processo muito sim
  
 ```java 
 public static void alterar(Produto p){ 
-EntityManagerFactory emf = 
-Persistence.createEntityManagerFactory( 
-"ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-try { 
-em.getTransaction().begin(); 
-em.merge(p); 
-em.getTransaction().commit(); 
-}catch(Exception e){ 
-em.getTransaction().rollback(); 
-}finally{ 
-em.close(); 
-} 
+    EntityManagerFactory emf = 
+        Persistence.createEntityManagerFactory( 
+                "ExemploSimplesJPAPU"); 
+    EntityManager em = emf.createEntityManager(); 
+    try { 
+        em.getTransaction().begin(); 
+        em.merge(p); 
+        em.getTransaction().commit(); 
+    }catch(Exception e){ 
+        em.getTransaction().rollback(); 
+    }finally{ 
+        em.close(); 
+    } 
 } 
 ``` 
  
@@ -285,19 +285,19 @@ Na exclusão de um registro, inicialmente deve ser feita a busca, com base na cl
  
 ```java 
 public static void excluir(Integer codigo){ 
-EntityManagerFactory emf = 
-Persistence.createEntityManagerFactory( 
-"ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-try { 
-em.getTransaction().begin(); 
-em.remove(em.find(Produto.class, codigo)); 
-em.getTransaction().commit(); 
-}catch(Exception e){ 
-em.getTransaction().rollback(); 
-}finally{ 
-em.close(); 
-} 
+    EntityManagerFactory emf = 
+        Persistence.createEntityManagerFactory( 
+                "ExemploSimplesJPAPU"); 
+    EntityManager em = emf.createEntityManager(); 
+    try { 
+        em.getTransaction().begin(); 
+        em.remove(em.find(Produto.class, codigo)); 
+        em.getTransaction().commit(); 
+    }catch(Exception e){ 
+        em.getTransaction().rollback(); 
+    }finally{ 
+        em.close(); 
+    } 
 } 
 ``` 
  
@@ -370,25 +370,25 @@ No fragmento de código seguinte, temos um exemplo de acesso e utilização de u
  
 ```java 
 protected void processRequest(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-response.setContentType("text/html;charset=UTF-8"); 
-try (PrintWriter out = response.getWriter()) { 
-out.println("<html><body>"); 
-try { 
-InitialContext ctx = new InitialContext(); 
-DataSource dts = (DataSource) ctx.lookup("jdbc/loja"); 
-Connection c1 = dts.getConnection(); 
-Statement st = c1.createStatement(); 
-ResultSet rs = st.executeQuery("SELECT * FROM PRODUTO"); 
-while(rs.next()) 
-out.println(rs.getString("NOME")+" 
-"); 
-c1.close(); 
-} catch (SQLException | NamingException ex) { 
-} 
-out.println(""); 
-} 
+    HttpServletResponse response) 
+    throws ServletException, IOException { 
+    response.setContentType("text/html;charset=UTF-8"); 
+    try (PrintWriter out = response.getWriter()) { 
+        out.println("<html><body>"); 
+        try { 
+            InitialContext ctx = new InitialContext(); 
+            DataSource dts = (DataSource) ctx.lookup("jdbc/loja"); 
+            Connection c1 = dts.getConnection(); 
+            Statement st = c1.createStatement(); 
+            ResultSet rs = st.executeQuery("SELECT * FROM PRODUTO"); 
+            while(rs.next()) 
+                out.println(rs.getString("NOME")+" 
+                        "); 
+                    c1.close(); 
+        } catch (SQLException | NamingException ex) { 
+        } 
+        out.println(""); 
+    } 
 } 
 ``` 
  
@@ -419,7 +419,7 @@ Antes de definir um Session Bean, devemos definir sua interface de acesso, com b
 ```java 
 @Local 
 public interface CalculadoraLocal { 
-int somar(int a, int b); 
+  int somar(int a, int b); 
 } 
 ``` 
  
@@ -428,10 +428,10 @@ Ao criarmos o EJB, ele deverá implementar a interface de acesso, além de ser a
 ```java 
 @Stateless 
 public class Calculadora implements CalculadoraLocal { 
-@Override 
-public int somar(int a, int b) { 
-return a + b; 
-} 
+  @Override 
+  public int somar(int a, int b) { 
+    return a + b; 
+  } 
 } 
 ``` 
  
@@ -445,23 +445,23 @@ Para utilizar um componente do tipo Session Bean a partir de um Servlet, o proce
 @WebServlet(name = "ServletSoma", 
 urlPatterns = {"/ServletSoma"}) 
 public class ServletSoma extends HttpServlet { 
- 
-@EJB 
-CalculadoraLocal facade; 
- 
-protected void doGet(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-response.setContentType("text/html;charset=UTF-8"); 
-try (PrintWriter out = response.getWriter()) { 
-out.println("<html><body>"); 
- 
-out.println("<h1>Servlet ServletSoma: " + 
-facade.somar(2, 3) + "</h1>"); 
-out.println("</body>"); 
-out.println("</html>"); 
-} 
-} 
+
+    @EJB 
+    CalculadoraLocal facade; 
+
+    protected void doGet(HttpServletRequest request, 
+        HttpServletResponse response) 
+        throws ServletException, IOException { 
+        response.setContentType("text/html;charset=UTF-8"); 
+        try (PrintWriter out = response.getWriter()) { 
+            out.println("<html><body>"); 
+
+            out.println("<h1>Servlet ServletSoma: " + 
+                    facade.somar(2, 3) + "</h1>"); 
+            out.println("</body>"); 
+            out.println("</html>"); 
+        } 
+    } 
 } 
 ``` 
  
@@ -503,19 +503,19 @@ propertyValue = "jms/SimpleQueue"),
 propertyValue = "javax.jms.Queue") 
 }) 
 public class Mensageiro001 implements MessageListener { 
- 
-public Mensageiro001() { 
-} 
- 
-@Override 
-public void onMessage(Message message) { 
-try { 
-System.out.println("Mensagem enviada: "+ 
-((TextMessage)message).getText()); 
-} catch (JMSException ex) { 
-System.out.println("Erro: "+ex.getMessage()); 
-} 
-} 
+
+    public Mensageiro001() { 
+    } 
+
+    @Override 
+    public void onMessage(Message message) { 
+        try { 
+            System.out.println("Mensagem enviada: "+ 
+                    ((TextMessage)message).getText()); 
+        } catch (JMSException ex) { 
+            System.out.println("Erro: "+ex.getMessage()); 
+        } 
+    } 
 } 
 ``` 
  
@@ -529,42 +529,42 @@ Algo importante, acerca do MDB, é que ele foi projetado exclusivamente para rec
 @WebServlet(name = "ServletMessage", 
 urlPatterns = {"/ServletMessage"}) 
 public class ServletMessage extends HttpServlet { 
-@Resource(mappedName = "jms/SimpleConnectionFactory") 
-private ConnectionFactory connectionFactory; 
-@Resource(mappedName = "jms/SimpleQueue") 
-private Queue queue; 
- 
-public void putMessage() throws ServletException { 
-try { 
-Connection connection = 
-connectionFactory.createConnection(); 
-Session session = 
-connection.createSession(false, 
-Session.AUTO_ACKNOWLEDGE); 
-MessageProducer messageProducer = 
-session.createProducer(queue); 
-TextMessage message = session.createTextMessage(); 
-message.setText("Teste com MDB"); 
-messageProducer.send(message); 
-} catch (JMSException ex) { 
-throw new ServletException(ex); 
-} 
-} 
- 
-protected void doGet(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-response.setContentType("text/html;charset=UTF-8"); 
-try (PrintWriter out = response.getWriter()) { 
-out.println(""); 
-out.println(""); 
- 
-putMessage(); 
- 
-out.println("<h1>Mensagem Enviada</h1>"); 
-out.println(""); 
-} 
-} 
+    @Resource(mappedName = "jms/SimpleConnectionFactory") 
+    private ConnectionFactory connectionFactory; 
+    @Resource(mappedName = "jms/SimpleQueue") 
+    private Queue queue; 
+
+    public void putMessage() throws ServletException { 
+        try { 
+            Connection connection = 
+                connectionFactory.createConnection(); 
+            Session session = 
+                connection.createSession(false, 
+                        Session.AUTO_ACKNOWLEDGE); 
+            MessageProducer messageProducer = 
+                session.createProducer(queue); 
+            TextMessage message = session.createTextMessage(); 
+            message.setText("Teste com MDB"); 
+            messageProducer.send(message); 
+        } catch (JMSException ex) { 
+            throw new ServletException(ex); 
+        } 
+    } 
+
+    protected void doGet(HttpServletRequest request, 
+        HttpServletResponse response) 
+        throws ServletException, IOException { 
+        response.setContentType("text/html;charset=UTF-8"); 
+        try (PrintWriter out = response.getWriter()) { 
+            out.println(""); 
+            out.println(""); 
+
+            putMessage(); 
+
+            out.println("<h1>Mensagem Enviada</h1>"); 
+            out.println(""); 
+        } 
+    } 
 } 
 ``` 
  
@@ -761,37 +761,37 @@ Considere que a entidade Produto, definida anteriormente, com uso de tecnologia 
 ```java 
 @Local 
 public interface ProdutoGestorLocal { 
-List<Produto> obterTodos(); 
-void incluir(Produto p); 
+    List<Produto> obterTodos(); 
+    void incluir(Produto p); 
 } 
- 
+
 @Stateless 
 public class ProdutoGestor implements ProdutoGestorLocal { 
-@Override 
-public List obterTodos() { 
-EntityManagerFactory emf = Persistence. 
-createEntityManagerFactory("ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-Query query = em.createNamedQuery("Produto.findAll"); 
-List<Produto> lista = query.getResultList(); 
-em.close(); 
-return lista; 
-} 
-@Override 
-public void incluir(Produto p) { 
-EntityManagerFactory emf = Persistence. 
-createEntityManagerFactory("ExemploSimplesJPAPU"); 
-EntityManager em = emf.createEntityManager(); 
-try { 
-em.getTransaction().begin(); 
-em.persist(p); 
-em.getTransaction().commit(); 
-} catch (Exception e) { 
-em.getTransaction().rollback(); 
-} finally { 
-em.close(); 
-} 
-} 
+    @Override 
+    public List obterTodos() { 
+        EntityManagerFactory emf = Persistence. 
+            createEntityManagerFactory("ExemploSimplesJPAPU"); 
+        EntityManager em = emf.createEntityManager(); 
+        Query query = em.createNamedQuery("Produto.findAll"); 
+        List<Produto> lista = query.getResultList(); 
+        em.close(); 
+        return lista; 
+    } 
+    @Override 
+    public void incluir(Produto p) { 
+        EntityManagerFactory emf = Persistence. 
+            createEntityManagerFactory("ExemploSimplesJPAPU"); 
+        EntityManager em = emf.createEntityManager(); 
+        try { 
+            em.getTransaction().begin(); 
+            em.persist(p); 
+            em.getTransaction().commit(); 
+        } catch (Exception e) { 
+            em.getTransaction().rollback(); 
+        } finally { 
+            em.close(); 
+        } 
+    } 
 } 
 ``` 
  
@@ -805,22 +805,22 @@ O objetivo do novo componente será a exibição da listagem dos produtos presen
 @WebServlet(name = "ServletListaProduto", 
 urlPatterns = {"/ServletListaProduto"}) 
 public class ServletListaProduto extends HttpServlet { 
-@EJB 
-ProdutoGestorLocal facade; 
- 
-protected void doGet(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-response.setContentType("text/html;charset=UTF-8"); 
-try (PrintWriter out = response.getWriter()) { 
-out.println("<html><body>"); 
-facade.obterTodos().forEach(p -> { 
-out.println(" 
-" + p.getNome()); 
-}); 
-out.println(""); 
-} 
-} 
+    @EJB 
+    ProdutoGestorLocal facade; 
+
+    protected void doGet(HttpServletRequest request, 
+        HttpServletResponse response) 
+        throws ServletException, IOException { 
+        response.setContentType("text/html;charset=UTF-8"); 
+        try (PrintWriter out = response.getWriter()) { 
+            out.println("<html><body>"); 
+            facade.obterTodos().forEach(p -> { 
+                out.println(" 
+                        " + p.getNome()); 
+            }); 
+            out.println(""); 
+        } 
+    } 
 } 
 ``` 
  
@@ -917,43 +917,43 @@ Teremos a geração das entidades Departamento e Empresa, no pacote model, embor
 @NamedQuery(name = "Departamento.findAll", 
 query = "SELECT d FROM Departamento d")}) 
 public class Departamento implements Serializable { 
-private static final long serialVersionUID = 1L; 
-@Id 
-@TableGenerator(name = "DeptoTabGen", table = "SERIAIS", 
-pkColumnName = "NOME_TABELA", 
-pkColumnValue = "DEPARTAMENTO", 
-valueColumnName = "VALOR_CHAVE") 
-@GeneratedValue(strategy = GenerationType.TABLE, 
-generator = "DeptoTabGen") 
-@Basic(optional = false) 
-@NotNull 
-@Column(name = "CODIGO") 
-private Integer codigo; 
-// O restante do código foi omitido por não ser relevante 
-// para a modificação efetuada 
+    private static final long serialVersionUID = 1L; 
+    @Id 
+    @TableGenerator(name = "DeptoTabGen", table = "SERIAIS", 
+    pkColumnName = "NOME_TABELA", 
+    pkColumnValue = "DEPARTAMENTO", 
+    valueColumnName = "VALOR_CHAVE") 
+    @GeneratedValue(strategy = GenerationType.TABLE, 
+    generator = "DeptoTabGen") 
+    @Basic(optional = false) 
+    @NotNull 
+    @Column(name = "CODIGO") 
+    private Integer codigo; 
+    // O restante do código foi omitido por não ser relevante 
+    // para a modificação efetuada 
 } 
- 
+
 @Entity 
 @Table( name = "EMPRESA" ) 
 @NamedQueries({ 
 @NamedQuery(name = "Empresa.findAll", 
 query = "SELECT e FROM Empresa e")}) 
 public class Empresa implements Serializable { 
-private static final long serialVersionUID = 1L; 
-@Id 
-@TableGenerator(name = "EmpTabGen", table = "SERIAIS", 
-pkColumnName = "NOME_TABELA", 
-pkColumnValue = "EMPRESA", 
-valueColumnName = "VALOR_CHAVE") 
-@GeneratedValue(strategy = GenerationType.TABLE, 
-generator = "EmpTabGen") 
-@Basic(optional = false) 
-@NotNull 
-@Column(name = "CODIGO") 
-private Integer codigo; 
- 
-// O restante do código foi omitido por não ser relevante 
-// para a modificação efetuada 
+    private static final long serialVersionUID = 1L; 
+    @Id 
+    @TableGenerator(name = "EmpTabGen", table = "SERIAIS", 
+    pkColumnName = "NOME_TABELA", 
+    pkColumnValue = "EMPRESA", 
+    valueColumnName = "VALOR_CHAVE") 
+    @GeneratedValue(strategy = GenerationType.TABLE, 
+    generator = "EmpTabGen") 
+    @Basic(optional = false) 
+    @NotNull 
+    @Column(name = "CODIGO") 
+    private Integer codigo; 
+
+    // O restante do código foi omitido por não ser relevante 
+    // para a modificação efetuada 
 } 
 ``` 
  
@@ -973,49 +973,49 @@ Será gerada uma classe abstrata, com o nome AbstractFacade, que concentra todos
  
 ```java 
 public abstract class AbstractFacade { 
-private Class entityClass; 
-public AbstractFacade(Class entityClass) { 
-this.entityClass = entityClass; 
-} 
-protected abstract EntityManager getEntityManager(); 
-public void create(T entity) { 
-getEntityManager().persist(entity); 
-} 
-public void edit(T entity) { 
-getEntityManager().merge(entity); 
-} 
-public void remove(T entity) { 
-getEntityManager().remove(getEntityManager().merge(entity)); 
-} 
-public T find(Object id) { 
-return getEntityManager().find(entityClass, id); 
-} 
-public List findAll() { 
-javax.persistence.criteria.CriteriaQuery cq = 
-getEntityManager().getCriteriaBuilder().createQuery(); 
-return getEntityManager().createQuery(cq).getResultList(); 
-} 
-public List<T> findRange(int[] range) { 
-javax.persistence.criteria.CriteriaQuery cq = 
-getEntityManager().getCriteriaBuilder().createQuery(); 
-cq.select(cq.from(entityClass)); 
-javax.persistence.Query q = 
-getEntityManager().createQuery(cq); 
-q.setMaxResults(range[1] - range[0] + 1); 
-q.setFirstResult(range[0]); 
-return q.getResultList(); 
-} 
-public int count() { 
-javax.persistence.criteria.CriteriaQuery cq = 
-getEntityManager().getCriteriaBuilder().createQuery(); 
-javax.persistence.criteria.Root<T> rt = 
-cq.from(entityClass); 
-cq.select( 
-getEntityManager().getCriteriaBuilder().count(rt)); 
-javax.persistence.Query q = 
-getEntityManager().createQuery(cq); 
-return ((Long) q.getSingleResult()).intValue(); 
-} 
+    private Class entityClass; 
+    public AbstractFacade(Class entityClass) { 
+        this.entityClass = entityClass; 
+    } 
+    protected abstract EntityManager getEntityManager(); 
+    public void create(T entity) { 
+        getEntityManager().persist(entity); 
+    } 
+    public void edit(T entity) { 
+        getEntityManager().merge(entity); 
+    } 
+    public void remove(T entity) { 
+        getEntityManager().remove(getEntityManager().merge(entity)); 
+    } 
+    public T find(Object id) { 
+        return getEntityManager().find(entityClass, id); 
+    } 
+    public List findAll() { 
+        javax.persistence.criteria.CriteriaQuery cq = 
+            getEntityManager().getCriteriaBuilder().createQuery(); 
+        return getEntityManager().createQuery(cq).getResultList(); 
+    } 
+    public List<T> findRange(int[] range) { 
+        javax.persistence.criteria.CriteriaQuery cq = 
+            getEntityManager().getCriteriaBuilder().createQuery(); 
+        cq.select(cq.from(entityClass)); 
+        javax.persistence.Query q = 
+            getEntityManager().createQuery(cq); 
+        q.setMaxResults(range[1] - range[0] + 1); 
+        q.setFirstResult(range[0]); 
+        return q.getResultList(); 
+    } 
+    public int count() { 
+        javax.persistence.criteria.CriteriaQuery cq = 
+            getEntityManager().getCriteriaBuilder().createQuery(); 
+        javax.persistence.criteria.Root<T> rt = 
+            cq.from(entityClass); 
+        cq.select( 
+                getEntityManager().getCriteriaBuilder().count(rt)); 
+        javax.persistence.Query q = 
+            getEntityManager().createQuery(cq); 
+        return ((Long) q.getSingleResult()).intValue(); 
+    } 
 } 
 ``` 
  
@@ -1034,33 +1034,33 @@ Com a definição do modelo funcional genérico, a construção dos Session Bean
 public class DepartamentoFacade extends 
 AbstractFacade<Departamento> implements 
 DepartamentoFacadeLocal { 
-@PersistenceContext(unitName = "CadastroEJB-ejbPU") 
-private EntityManager em; 
- 
-@Override 
-protected EntityManager getEntityManager() { 
-return em; 
+    @PersistenceContext(unitName = "CadastroEJB-ejbPU") 
+    private EntityManager em; 
+
+    @Override 
+    protected EntityManager getEntityManager() { 
+        return em; 
+    } 
+    public DepartamentoFacade() { 
+        super(Departamento.class); 
+    } 
 } 
-public DepartamentoFacade() { 
-super(Departamento.class); 
-} 
-} 
- 
+
 @Stateless 
 public class EmpresaFacade extends 
 AbstractFacade<Empresa> implements 
 EmpresaFacadeLocal { 
-@PersistenceContext(unitName = "CadastroEJB-ejbPU") 
-private EntityManager em; 
- 
-@Override 
-protected EntityManager getEntityManager() { 
-return em; 
-} 
- 
-public EmpresaFacade() { 
-super(Empresa.class); 
-} 
+    @PersistenceContext(unitName = "CadastroEJB-ejbPU") 
+    private EntityManager em; 
+
+    @Override 
+    protected EntityManager getEntityManager() { 
+        return em; 
+    } 
+
+    public EmpresaFacade() { 
+        super(Empresa.class); 
+    } 
 } 
 ``` 
  
@@ -1073,24 +1073,24 @@ Ainda são necessárias as interfaces de acesso ao pool de EJBs, o que deve ser 
 ```java 
 @Local 
 public interface DepartamentoFacadeLocal { 
-void create(Departamento departamento); 
-void edit(Departamento departamento); 
-void remove(Departamento departamento); 
-Departamento find(Object id); 
-List findAll(); 
-List findRange(int[] range); 
-int count(); 
+    void create(Departamento departamento); 
+    void edit(Departamento departamento); 
+    void remove(Departamento departamento); 
+    Departamento find(Object id); 
+    List findAll(); 
+    List findRange(int[] range); 
+    int count(); 
 } 
- 
+
 @Local 
 public interface EmpresaFacadeLocal { 
-void create(Empresa empresa); 
-void edit(Empresa empresa); 
-void remove(Empresa empresa); 
-Empresa find(Object id); 
-List<Empresa> findAll(); 
-List<Empresa> findRange(int[] range); 
-int count(); 
+    void create(Empresa empresa); 
+    void edit(Empresa empresa); 
+    void remove(Empresa empresa); 
+    Empresa find(Object id); 
+    List<Empresa> findAll(); 
+    List<Empresa> findRange(int[] range); 
+    int count(); 
 } 
 ``` 
  
@@ -1105,30 +1105,30 @@ Vamos alterar o atributo jndi-name, no arquivo glassfish-resources.xml, bem como
 ```xml 
 <?xml version="1.0" encoding="UTF-8"?> 
 <DOCTYPE resources ...> 
-<resources> 
-<jdbc-connection-pool ...> 
-<property name="serverName" value="localhost"/> 
-<property name="portNumber" value="1527"/> 
-<property name="databaseName" value="bancoJPA"/> 
-<property name="User" value="bancoJPA"/> 
-<property name="Password" value="bancoJPA"/> 
-<property name="URL" 
-value="jdbc:derby://localhost:1527/bancoJPA"/> 
-<property name="driverClass" 
-value="org.apache.derby.jdbc.ClientDriver"/> 
-</jdbc-connection-pool> 
-<jdbc-resource enabled="true" jndi-name="jdbc/cadastro" object-type="user" 
-pool-name="derby_net_bancoJPA_bancoJPAPool"/> 
-</resources> 
- 
-<?xml version="1.0" encoding="UTF-8"?> 
-<persistence version="1.0" ...> 
-<persistence-unit name="CadastroEJB-ejbPU" transaction-type="JTA"> 
-<jta-data-source> jdbc/cadastro</jta-data-source> 
-<exclude-unlisted-classes>false</exclude-unlisted-classes> 
-<properties/> 
-</persistence-unit> 
-</persistence> 
+    <resources> 
+        <jdbc-connection-pool ...> 
+            <property name="serverName" value="localhost"/> 
+            <property name="portNumber" value="1527"/> 
+            <property name="databaseName" value="bancoJPA"/> 
+            <property name="User" value="bancoJPA"/> 
+            <property name="Password" value="bancoJPA"/> 
+            <property name="URL" 
+                value="jdbc:derby://localhost:1527/bancoJPA"/> 
+            <property name="driverClass" 
+                value="org.apache.derby.jdbc.ClientDriver"/> 
+        </jdbc-connection-pool> 
+        <jdbc-resource enabled="true" jndi-name="jdbc/cadastro" object-type="user" 
+            pool-name="derby_net_bancoJPA_bancoJPAPool"/> 
+    </resources> 
+
+    <?xml version="1.0" encoding="UTF-8"?> 
+    <persistence version="1.0" ...> 
+        <persistence-unit name="CadastroEJB-ejbPU" transaction-type="JTA"> 
+            <jta-data-source> jdbc/cadastro</jta-data-source> 
+            <exclude-unlisted-classes>false</exclude-unlisted-classes> 
+            <properties/> 
+        </persistence-unit> 
+    </persistence> 
 ``` 
  
 Caso ocorra erro na implantação, mesmo após alterar os arquivos, execute o programa asadmin, invocando, em seguida, o comando add-resources, com a passagem do nome completo do arquivo glassfish-resources.xml. 
@@ -1142,12 +1142,12 @@ A construção da camada View ocorrerá no projeto CadastroEJB-war, e será inic
 ```java 
 <%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <html><body> 
-<form action="CadastroFC" method="post"> 
-<input type="hidden" name="acao" value="incEmpExec"/> 
-Razão Social: <input type="text" name="razao_social"/><br/> 
-<input type="submit" value="Cadastrar"/> 
-</form> 
-</body></html> 
+    <form action="CadastroFC" method="post"> 
+      <input type="hidden" name="acao" value="incEmpExec"/> 
+      Razão Social: <input type="text" name="razao_social"/><br/> 
+      <input type="submit" value="Cadastrar"/> 
+    </form> 
+  </body></html> 
 ``` 
  
 Observando o código-fonte, temos apenas um formulário comum, com um parâmetro do tipo hidden guardando o valor de acao, no caso incEmpExec, e um campo de texto para a razão social da empresa. Os dados serão enviados para CadastroFC, um Servlet no padrão Front Controller que iremos criar posteriormente. 
@@ -1159,26 +1159,26 @@ O cadastro de um departamento será mais complexo, pois envolverá a escolha de 
 <%@page import="java.util.List"%> 
 <%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <html> 
-<body> 
-<form action="CadastroFC" method="post"> 
-<input type="hidden" name="acao" value="incDepExec"/> 
-Empresa: 
-<select name="cod_empresa"> 
-<% 
-List<Empresa> lista = (List<Empresa>) 
-request.getAttribute("listaEmp"); 
-for(Empresa e: lista){ 
-%> 
-<option value="<%=e.getCodigo()%>"> 
-<%=e.getRazaoSocial()%> 
-</option> 
-<% } %> 
-</select><br/> 
-Nome: <input type="text" name="nome"/> 
- 
-<input type="submit" value="Cadastrar"/> 
-</form> 
-</body> 
+  <body> 
+    <form action="CadastroFC" method="post"> 
+      <input type="hidden" name="acao" value="incDepExec"/> 
+      Empresa: 
+      <select name="cod_empresa"> 
+        <% 
+          List<Empresa> lista = (List<Empresa>) 
+          request.getAttribute("listaEmp"); 
+          for(Empresa e: lista){ 
+          %> 
+          <option value="<%=e.getCodigo()%>"> 
+            <%=e.getRazaoSocial()%> 
+          </option> 
+        <% } %> 
+      </select><br/> 
+      Nome: <input type="text" name="nome"/> 
+
+      <input type="submit" value="Cadastrar"/> 
+    </form> 
+  </body> 
 </html> 
 ``` 
  
@@ -1191,25 +1191,26 @@ Agora vamos criar o primeiro arquivo para listagem, com o nome ListaEmpresa.jsp.
 <%@page import="java.util.List"%> 
 <%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <html> 
-<body> 
-<a href="CadastroFC?acao=incEmp">Nova Empresa</a> 
-<table border="1" width="100%"> 
-<tr><td>Código</td><td>Razão Social</td><td>Opções</td></tr> 
-<% 
-List<Empresa> lista = (List<Empresa>) 
-request.getAttribute("lista"); 
-for(Empresa e: lista){ 
-%> 
-<tr><td><%=e.getCodigo()%></td> 
-<td><%=e.getRazaoSocial()%> </td> 
-<td> 
-<a href="CadastroFC?acao=excEmpExec&cod=<%=e.getCodigo()%>"> 
-Excluir</a> 
-</td> 
-</tr> 
-<% } %> 
-</table> 
-</body> 
+  <body> 
+    <form action="CadastroFC" method="post"> 
+      <input type="hidden" name="acao" value="incDepExec"/> 
+      Empresa: 
+      <select name="cod_empresa"> 
+        <% 
+          List<Empresa> lista = (List<Empresa>) 
+          request.getAttribute("listaEmp"); 
+          for(Empresa e: lista){ 
+          %> 
+          <option value="<%=e.getCodigo()%>"> 
+          <%=e.getRazaoSocial()%> 
+          </option> 
+        <% } %> 
+      </select><br/> 
+      Nome: <input type="text" name="nome"/> 
+
+      <input type="submit" value="Cadastrar"/> 
+    </form> 
+  </body> 
 </html> 
 ``` 
  
@@ -1224,27 +1225,27 @@ Finalmente, temos a listagem de departamentos, no arquivo ListaDepartamento.jsp.
 <%@page import="java.util.List"%> 
 <%@page contentType="text/html" pageEncoding="UTF-8"%> 
 <html> 
-<body> 
-<a href="CadastroFC?acao=incDep">Novo Departamento</a> 
-<table border="1" width="100%"> 
-<tr><td>Código</td><td>Nome</td><td>Empresa</td> 
-<td>Opções</td></tr> 
-<% 
-List<Departamento> lista = (List<Departamento>) 
-request.getAttribute("lista"); 
-for(Departamento d: lista){ 
-%> 
-<tr><td><%=d.getCodigo()%></td> 
-<td><%=d.getNome()%></td> 
-<td><%=d.getEmpresa().getRazaoSocial()%></td> 
-<td> 
-<a href="CadastroFC?acao=excDepExec&cod=<%=d.getCodigo()%>"> 
-Excluir</a> 
-</td> 
-</tr> 
-<% } %> 
-</table> 
-</body> 
+  <body> 
+    <a href="CadastroFC?acao=incDep">Novo Departamento</a> 
+    <table border="1" width="100%"> 
+      <tr><td>Código</td><td>Nome</td><td>Empresa</td> 
+        <td>Opções</td></tr> 
+      <% 
+          List<Departamento> lista = (List<Departamento>) 
+          request.getAttribute("lista"); 
+          for(Departamento d: lista){ 
+          %> 
+          <tr><td><%=d.getCodigo()%></td> 
+            <td><%=d.getNome()%></td> 
+            <td><%=d.getEmpresa().getRazaoSocial()%></td> 
+            <td> 
+              <a href="CadastroFC?acao=excDepExec&cod=<%=d.getCodigo()%>"> 
+                Excluir</a> 
+            </td> 
+          </tr> 
+          <% } %> 
+    </table> 
+  </body> 
 </html> 
 ``` 
  
@@ -1256,11 +1257,11 @@ Com a modificação de index.html, terminamos a construção das interfaces de u
  
 ```html 
 <html> 
-<body> 
-<a href="CadastroFC?acao=listaDep"> 
-Listagem de Departamentos</a> 
-<a href="CadastroFC?acao=listaEmp"> 
-Listagem de Empresas</a> 
+  <body> 
+    <a href="CadastroFC?acao=listaDep"> 
+    Listagem de Departamentos</a> 
+    <a href="CadastroFC?acao=listaEmp"> 
+    Listagem de Empresas</a> 
 </body> 
 </html> 
 ``` 
@@ -1275,10 +1276,10 @@ Com as interfaces concluídas, devemos iniciar a construção do Front Controlle
 public abstract class Strategy { 
 protected final K facade; 
 public Strategy(K facade) { 
-this.facade = facade; 
+  this.facade = facade; 
 } 
 public abstract String executar(String acao, 
-HttpServletRequest request); 
+  HttpServletRequest request); 
 } 
 ``` 
  
@@ -1288,38 +1289,38 @@ Definimos, em seguida, a estratégia para empresas, herdando da classe Strategy,
  
 ```java 
 public class EmpresaStrategy 
-extends Strategy<EmpresaFacadeLocal> { 
-public EmpresaStrategy(EmpresaFacadeLocal facade) { 
-super(facade); 
-} 
-@Override 
-public String executar(String acao, 
-HttpServletRequest request) { 
-String paginaDestino = "ListaEmpresa.jsp"; 
-switch(acao){ 
-case "listaEmp": 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "excEmpExec": 
-Integer codigo = 
-new Integer(request.getParameter("cod")); 
-facade.remove(facade.find(codigo)); 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "incEmpExec": 
-String razaoSocial = 
-request.getParameter("razao_social"); 
-Empresa empresa = new Empresa(); 
-empresa.setRazaoSocial(razaoSocial); 
-facade.create(empresa); 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "incEmp": 
-paginaDestino = "DadosEmpresa.jsp"; 
-break; 
-} 
-return paginaDestino; 
-} 
+    extends Strategy<EmpresaFacadeLocal> { 
+    public EmpresaStrategy(EmpresaFacadeLocal facade) { 
+        super(facade); 
+    } 
+    @Override 
+    public String executar(String acao, 
+        HttpServletRequest request) { 
+        String paginaDestino = "ListaEmpresa.jsp"; 
+        switch(acao){ 
+            case "listaEmp": 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "excEmpExec": 
+                Integer codigo = 
+                    new Integer(request.getParameter("cod")); 
+                facade.remove(facade.find(codigo)); 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "incEmpExec": 
+                String razaoSocial = 
+                    request.getParameter("razao_social"); 
+                Empresa empresa = new Empresa(); 
+                empresa.setRazaoSocial(razaoSocial); 
+                facade.create(empresa); 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "incEmp": 
+                paginaDestino = "DadosEmpresa.jsp"; 
+                break; 
+        } 
+        return paginaDestino; 
+    } 
 } 
 ``` 
  
@@ -1331,46 +1332,46 @@ Agora podemos definir a classe DepartamentoStrategy, com facade baseado em uma i
  
 ```java 
 public class DepartamentoStrategy 
-extends Strategy<DepartamentoFacadeLocal>{ 
-private final EmpresaFacadeLocal empresaFacade; 
-public DepartamentoStrategy(DepartamentoFacadeLocal facade, 
-EmpresaFacadeLocal empresaFacade) { 
-super(facade); 
-this.empresaFacade = empresaFacade; 
-} 
-@Override 
-public String executar(String acao, 
-HttpServletRequest request) { 
-String paginaDestino = "ListaDepartamento.jsp"; 
-switch(acao){ 
-case "listaDep": 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "excDepExec": 
-Integer codigo = new 
-Integer(request.getParameter("cod")); 
-facade.remove(facade.find(codigo)); 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "incDepExec": 
-String nome = request.getParameter("nome"); 
-Integer codEmpresa = new Integer( 
-request.getParameter("cod_empresa")); 
-Empresa empresa = empresaFacade.find(codEmpresa); 
-Departamento departamento = new Departamento(); 
-departamento.setNome(nome); 
-departamento.setEmpresa(empresa); 
-facade.create(departamento); 
-request.setAttribute("lista", facade.findAll()); 
-break; 
-case "incDep": 
-request.setAttribute("listaEmp", 
-empresaFacade.findAll()); 
-paginaDestino = "DadosDepartamento.jsp"; 
-break; 
-} 
-return paginaDestino; 
-} 
+    extends Strategy<DepartamentoFacadeLocal>{ 
+    private final EmpresaFacadeLocal empresaFacade; 
+    public DepartamentoStrategy(DepartamentoFacadeLocal facade, 
+        EmpresaFacadeLocal empresaFacade) { 
+        super(facade); 
+        this.empresaFacade = empresaFacade; 
+    } 
+    @Override 
+    public String executar(String acao, 
+        HttpServletRequest request) { 
+        String paginaDestino = "ListaDepartamento.jsp"; 
+        switch(acao){ 
+            case "listaDep": 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "excDepExec": 
+                Integer codigo = new 
+                    Integer(request.getParameter("cod")); 
+                facade.remove(facade.find(codigo)); 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "incDepExec": 
+                String nome = request.getParameter("nome"); 
+                Integer codEmpresa = new Integer( 
+                        request.getParameter("cod_empresa")); 
+                Empresa empresa = empresaFacade.find(codEmpresa); 
+                Departamento departamento = new Departamento(); 
+                departamento.setNome(nome); 
+                departamento.setEmpresa(empresa); 
+                facade.create(departamento); 
+                request.setAttribute("lista", facade.findAll()); 
+                break; 
+            case "incDep": 
+                request.setAttribute("listaEmp", 
+                        empresaFacade.findAll()); 
+                paginaDestino = "DadosDepartamento.jsp"; 
+                break; 
+        } 
+        return paginaDestino; 
+    } 
 } 
 ``` 
  
@@ -1383,54 +1384,54 @@ Passo 3: Com as estratégias definidas, podemos executar o último passo na cons
 ```java 
 @WebServlet(name="CadastroFC", urlPatterns={"/CadastroFC"}) 
 public class CadastroFC extends HttpServlet { 
-@EJB 
-EmpresaFacadeLocal empresaFacade; 
-@EJB 
-DepartamentoFacadeLocal departamentoFacade; 
- 
-private final HashMap<String,Strategy> estrategia = 
-new HashMap<>(); 
-private final HashMap<String,String> acoes = new HashMap<>(); 
- 
-@Override 
-public void init() throws ServletException { 
-super.init(); 
-estrategia.put("empresa", new EmpresaStrategy( 
-empresaFacade)); 
-estrategia.put("departamento", new DepartamentoStrategy( 
-departamentoFacade,empresaFacade)); 
-String[] acoesEmpresa = 
-{"listaEmp","incEmp","incEmpExec","excEmpExec"}; 
-for(String acao: acoesEmpresa) 
-acoes.put(acao, "empresa"); 
-String[] acoesDepto = 
-{"listaDep","incDep","incDepExec","excDepExec"}; 
-for(String acao: acoesDepto) 
-acoes.put(acao, "departamento"); 
-} 
- 
-protected void processRequest(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-String acao = request.getParameter("acao"); 
-if(acao==null) 
-throw new ServletException("Parâmetro acao requerido"); 
-Strategy st = estrategia.get(acoes.get(acao)); 
-request.getRequestDispatcher(st.executar(acao, request)). 
-forward(request, response); 
-} 
-@Override 
-protected void doGet(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-processRequest(request, response); 
-} 
-@Override 
-protected void doPost(HttpServletRequest request, 
-HttpServletResponse response) 
-throws ServletException, IOException { 
-processRequest(request, response); 
-} 
+    @EJB 
+    EmpresaFacadeLocal empresaFacade; 
+    @EJB 
+    DepartamentoFacadeLocal departamentoFacade; 
+
+    private final HashMap<String,Strategy> estrategia = 
+        new HashMap<>(); 
+    private final HashMap<String,String> acoes = new HashMap<>(); 
+
+    @Override 
+    public void init() throws ServletException { 
+        super.init(); 
+        estrategia.put("empresa", new EmpresaStrategy( 
+                    empresaFacade)); 
+        estrategia.put("departamento", new DepartamentoStrategy( 
+                    departamentoFacade,empresaFacade)); 
+        String[] acoesEmpresa = 
+        {"listaEmp","incEmp","incEmpExec","excEmpExec"}; 
+        for(String acao: acoesEmpresa) 
+            acoes.put(acao, "empresa"); 
+        String[] acoesDepto = 
+        {"listaDep","incDep","incDepExec","excDepExec"}; 
+        for(String acao: acoesDepto) 
+            acoes.put(acao, "departamento"); 
+    } 
+
+    protected void processRequest(HttpServletRequest request, 
+            HttpServletResponse response) 
+            throws ServletException, IOException { 
+            String acao = request.getParameter("acao"); 
+            if(acao==null) 
+                throw new ServletException("Parâmetro acao requerido"); 
+            Strategy st = estrategia.get(acoes.get(acao)); 
+            request.getRequestDispatcher(st.executar(acao, request)). 
+                forward(request, response); 
+    } 
+    @Override 
+    protected void doGet(HttpServletRequest request, 
+            HttpServletResponse response) 
+        throws ServletException, IOException { 
+        processRequest(request, response); 
+    } 
+    @Override 
+    protected void doPost(HttpServletRequest request, 
+            HttpServletResponse response) 
+        throws ServletException, IOException { 
+        processRequest(request, response); 
+    } 
 } 
 ``` 
  

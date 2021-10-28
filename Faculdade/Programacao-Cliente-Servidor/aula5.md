@@ -71,15 +71,15 @@ Aqui podemos ver o fragmento XML contendo os elementos definidos acima:
  
 ```xml 
 <SOAP-ENV:envelope> 
- 
- 
-<SOAP-ENV:header> </SOAP-ENV:header> 
-<SOAP-ENV:body> 
- 
- 
-<SOAP-ENV:fault> 
-</SOAP-ENV:fault> 
-</SOAP-ENV:body> 
+
+
+    <SOAP-ENV:header> </SOAP-ENV:header> 
+    <SOAP-ENV:body> 
+
+
+        <SOAP-ENV:fault> 
+        </SOAP-ENV:fault> 
+    </SOAP-ENV:body> 
 </SOAP-ENV:envelope> 
 ``` 
  
@@ -92,13 +92,13 @@ Para melhor compreensão, veremos a seguir um exemplo prático de requisição e
 ```xml 
 <?xml version="1.0"?> 
 <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"> 
-<soap:Header> 
-</soap:Header> 
-<soap:Body> 
-<GetModulosTema> 
-<TemaNome>Webservices<TemaNome> 
-</GetModulosTema> 
-</soap:Body> 
+    <soap:Header> 
+    </soap:Header> 
+    <soap:Body> 
+      <GetModulosTema> 
+         <TemaNome>Webservices<TemaNome> 
+      </GetModulosTema> 
+   </soap:Body> 
 </soap:Envelope> 
 ``` 
  
@@ -107,25 +107,25 @@ A seguir, é demonstrado o XML do envelope contendo a resposta do método invoca
 ```xml 
 <?xml version="1.0"?> 
 <soap:Envelope 
-xmlns:soap="http://www.w3.org/2003/05/soap-envelope/" 
-soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding"> 
- 
+    xmlns:soap="http://www.w3.org/2003/05/soap-envelope/" 
+    soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding"> 
+
 <soap:Body> 
-<GetModulosTemaResponse> 
-<Modulos> 
-<Modulo> 
-<Nome>SOAP e REST</Nome> 
-</Modulo> 
-<Modulo> 
-<Nome>Utilização de SOAP XML em JAVA</Nome> 
-</Modulo> 
-<Modulo> 
-<Nome>Utilização de REST JSON em JAVA</Nome> 
-</Modulo> 
-</Modulos> 
-</GetModulosTemaResponse> 
+    <GetModulosTemaResponse> 
+        <Modulos> 
+            <Modulo> 
+                <Nome>SOAP e REST</Nome> 
+            </Modulo> 
+            <Modulo> 
+                <Nome>Utilização de SOAP XML em JAVA</Nome> 
+            </Modulo> 
+            <Modulo> 
+                <Nome>Utilização de REST JSON em JAVA</Nome> 
+            </Modulo> 
+        </Modulos> 
+    </GetModulosTemaResponse> 
 </soap:Body> 
- 
+
 </soap:Envelope> 
 ``` 
  
@@ -175,16 +175,18 @@ Para consumir o serviço, vamos utilizar a seguinte URI: http://www.dominio.com.
 Um possível retorno para essa requisição é visto a seguir: 
  
 ```json 
-{ 
-"Modulos": [{ 
-"Nome": "SOAP e REST" 
-}, { 
-"Nome": "Utilização de SOAP XML em JAVA" 
-}, { 
-"Nome": "Utilização de REST JSON em JAVA" 
-} 
-] 
-} 
+"Modulos":[
+   {
+      "Nome":"SOAP e REST"
+   },
+   {
+      "Nome":"Utilização de SOAP XML em JAVA"
+   },
+   {
+      "Nome":"Utilização de REST JSON em JAVA"
+   }
+]
+}
 ``` 
  
 Como vimos, as informações retornadas pelo Web Service consumido estão no formato JSON. Embora não seja o único tipo de dado disponível para o transporte de informações em REST – ou melhor, em mensagens HTTP, ele é o mais utilizado nessa arquitetura. 
@@ -275,27 +277,27 @@ Passo 5: Nesse ponto, a nossa classe deverá estar desta forma:
  
 ```java 
 package com.aop.disciplinasws; 
- 
+
 import javax.jws.WebService; 
 import javax.jws.WebMethod; 
 import javax.jws.WebParam; 
 import javax.ejb.Stateless; 
- 
+
 @WebService(serviceName = "DisciplinasWS_Provedor") 
 @Stateless() 
 public class DisciplinasWS_Provedor { 
- 
-@WebMethod(operationName = "GetTema") 
-public String GetTema() { 
-//TODO write your implementation code here: 
-return null; 
-} 
- 
-@WebMethod(operationName = "GetModulosTema") 
-public String GetModulosTema(@WebParam(name = "tema") String tema) { 
-//TODO write your implementation code here: 
-return null; 
-} 
+
+  @WebMethod(operationName = "GetTema") 
+  public String GetTema() { 
+      //TODO write your implementation code here: 
+      return null; 
+  } 
+
+  @WebMethod(operationName = "GetModulosTema") 
+  public String GetModulosTema(@WebParam(name = "tema") String tema) { 
+      //TODO write your implementation code here: 
+      return null; 
+  } 
 } 
 ``` 
  
@@ -305,7 +307,7 @@ Substitua ou adapte o seu código para ficar desta forma:
  
 ```java 
 package com.aop.disciplinasws; 
- 
+
 import java.util.ArrayList; 
 import java.util.Arrays; 
 import java.util.HashMap; 
@@ -314,61 +316,61 @@ import javax.jws.WebService;
 import javax.jws.WebMethod; 
 import javax.jws.WebParam; 
 import javax.ejb.Stateless; 
- 
+
 @WebService(serviceName = "DisciplinasWS_Provedor") 
 @Stateless() 
 public class DisciplinasWS_Provedor { 
- 
-//Array contendo os nomes dos temas 
-String[] tema = {"Webservices", "Programação Servidor com Java", "JPA e JEE"}; 
- 
-//HashMap para armazenar os nomes dos módulos, usando como chave o nome do tema 
-Map<String,ArrayList> modulos = new HashMap<>(); 
- 
-@WebMethod(operationName = "GetTema") 
-public String GetTema() { 
-return Arrays.toString(tema); 
-} 
- 
-@WebMethod(operationName = "GetModulosTema") 
-public String GetModulosTema(@WebParam(name = "tema") String tema) { 
- 
-//Criando uma lista de Módulos para cada Tema 
-ArrayList<String> modulo3 = new ArrayList(); 
-modulo3.add("Webserver Tomcat"); 
-modulo3.add("App Server GlassFish"); 
-modulo3.add("Servlet e JSP"); 
- 
-ArrayList<String> modulo4 = new ArrayList(); 
-modulo4.add("Tecnologia JPA"); 
-modulo4.add("Entrepise Java Beans"); 
-modulo4.add("Arquitetura MVC"); 
- 
-ArrayList<String> modulo5 = new ArrayList(); 
-modulo5.add("Conceitos Web Services"); 
-modulo5.add("Utilizando SOAP em Java"); 
-modulo5.add("Utilizando REST em Java"); 
- 
-//Populando o HashMap com os nomes dos módulos, 
-//  usando como chave o nome do tema 
-modulos.put("Programacao Servidor com Java", modulo3); 
-modulos.put("JPA e JEE", modulo4); 
-modulos.put("Webservices", modulo5); 
- 
-String modulosTema = "Módulos: "; 
- 
-if(modulos.containsKey(tema)){ 
-ArrayList<String> listModulos = modulos.get(tema); 
-for (String item: listModulos) { 
-   modulosTema += " - " + item; 
-} 
-return modulosTema; 
-}else{ 
-return "Não encontrou"; 
-} 
- 
-} 
- 
+
+  //Array contendo os nomes dos temas 
+  String[] tema = {"Webservices", "Programação Servidor com Java", "JPA e JEE"}; 
+
+  //HashMap para armazenar os nomes dos módulos, usando como chave o nome do tema 
+  Map<String,ArrayList> modulos = new HashMap<>(); 
+
+  @WebMethod(operationName = "GetTema") 
+  public String GetTema() { 
+      return Arrays.toString(tema); 
+  } 
+
+  @WebMethod(operationName = "GetModulosTema") 
+  public String GetModulosTema(@WebParam(name = "tema") String tema) { 
+
+      //Criando uma lista de Módulos para cada Tema 
+      ArrayList<String> modulo3 = new ArrayList(); 
+      modulo3.add("Webserver Tomcat"); 
+      modulo3.add("App Server GlassFish"); 
+      modulo3.add("Servlet e JSP"); 
+
+      ArrayList<String> modulo4 = new ArrayList(); 
+      modulo4.add("Tecnologia JPA"); 
+      modulo4.add("Entrepise Java Beans"); 
+      modulo4.add("Arquitetura MVC"); 
+
+      ArrayList<String> modulo5 = new ArrayList(); 
+      modulo5.add("Conceitos Web Services"); 
+      modulo5.add("Utilizando SOAP em Java"); 
+      modulo5.add("Utilizando REST em Java"); 
+
+      //Populando o HashMap com os nomes dos módulos, 
+      //  usando como chave o nome do tema 
+      modulos.put("Programacao Servidor com Java", modulo3); 
+      modulos.put("JPA e JEE", modulo4); 
+      modulos.put("Webservices", modulo5); 
+
+      String modulosTema = "Módulos: "; 
+
+      if(modulos.containsKey(tema)){ 
+          ArrayList<String> listModulos = modulos.get(tema); 
+          for (String item: listModulos) { 
+              modulosTema += " - " + item; 
+          } 
+          return modulosTema; 
+      }else{ 
+          return "Não encontrou"; 
+      } 
+
+  } 
+
 } 
 ``` 
  
@@ -410,33 +412,33 @@ Passo 3: Substitua o conteúdo do arquivo “index.jsp” por este abaixo:
  
 ```html 
 <html> 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-Consumindo Web Services SOAP 
-</head> 
-<body> 
-<form name="Test" method="post" action="DisciplinaWSServlet"> 
-Listando os Temas Existentes: 
-<br/> 
-<input name="service_name" value="listar_temas" type="hidden" id="service_name" /> 
-<input type="submit" value="Somar" name="calculadorabutton"> 
-<br/> 
-<p>Listando os Módulos de acordo com o Tema Informado:</p> 
-<br/> 
-<input name="tema_nome" id="tema_nome" /> 
-<br/> 
-<input type="submit" value="Listar Temas" name="formButton"> 
-</form> 
-<br/> 
-<form name="Test" method="post" action="DisciplinaWSServlet"> 
-<h1>Listando os Módulos de acordo com o Tema Informado:</h1> 
-<br/> 
-<input name="tema_nome" id="tema_nome" /> 
-<input name="service_name" value="listar_modulos" type="hidden" id="service_name" /> 
-<br/> 
-<input type="submit" value="Listar Módulos" name="formButton"> 
-</form> 
-</body> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    Consumindo Web Services SOAP 
+  </head> 
+  <body> 
+    <form name="Test" method="post" action="DisciplinaWSServlet"> 
+      Listando os Temas Existentes: 
+      <br/> 
+      <input name="service_name" value="listar_temas" type="hidden" id="service_name" /> 
+      <input type="submit" value="Somar" name="calculadorabutton"> 
+      <br/> 
+      <p>Listando os Módulos de acordo com o Tema Informado:</p> 
+      <br/> 
+      <input name="tema_nome" id="tema_nome" /> 
+      <br/> 
+      <input type="submit" value="Listar Temas" name="formButton"> 
+    </form> 
+    <br/> 
+    <form name="Test" method="post" action="DisciplinaWSServlet"> 
+      <h1>Listando os Módulos de acordo com o Tema Informado:</h1> 
+      <br/> 
+      <input name="tema_nome" id="tema_nome" /> 
+      <input name="service_name" value="listar_modulos" type="hidden" id="service_name" /> 
+      <br/> 
+      <input type="submit" value="Listar Módulos" name="formButton"> 
+    </form> 
+  </body> 
 </html> 
 ``` 
  
@@ -460,7 +462,7 @@ Passo 3: Substitua o conteúdo da classe Servlet, criada no passo anterior, pelo
  
 ```java 
 package com.aop.servlet; 
- 
+
 import java.io.IOException; 
 import java.io.PrintWriter; 
 import javax.servlet.ServletException; 
@@ -469,81 +471,81 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest; 
 import javax.servlet.http.HttpServletResponse; 
 import javax.xml.ws.WebServiceRef; 
- 
+
 @WebServlet(name = "DisciplinaWSServlet", urlPatterns = {"/DisciplinaWSServlet"}) 
 public class DisciplinaWSServlet extends HttpServlet { 
- 
-@WebServiceRef(wsdlLocation = 
-"WEB-INF/wsdl/localhost_8080/DisciplinasWS_Provedor/DisciplinasWS_Provedor.wsdl") 
-private com.aop.disciplinasws_cliente.DisciplinasWSProvedor_Service service; 
- 
-protected void processRequest(HttpServletRequest request, HttpServletResponse response) 
-throws ServletException, IOException { 
-response.setContentType("text/html;charset=UTF-8"); 
-try (PrintWriter out = response.getWriter()) { 
-try { 
-//Criando as instâncias para os métodos dos Web Service 
-// a partir das referências ao provedor adicionadas ao projeto 
-com.aop.disciplinasws_cliente.DisciplinasWSProvedor port = 
-service.getDisciplinasWSProvedorPort(); 
-com.aop.disciplinasws_cliente.DisciplinasWSProvedor port2 = 
-service.getDisciplinasWSProvedorPort(); 
- 
-//Recupera o valor do input hidden, proveniente do formulário 
-String serviceName = request.getParameter("service_name"); 
-String result = null; 
-String nomeTema = null; 
- 
-//Verifica qual serviço ws deverá ser invocado 
-if(serviceName.equals("listar_temas")){ 
-//Armazena na variavel result o retorno do serviço ws 
-result = port.getTema(); 
-}else if(serviceName.equals("listar_modulos")){ 
-//Adiciona à variavel nomeTema o nome do tema inserido no form 
-nomeTema = request.getParameter("tema_nome"); 
-//Armazena na variavel o resultado da invocação do webservice 
-result = port.getModulosTema(nomeTema); 
-} 
- 
-//Imprimindo a página HTML com o resultado do consumo do WS 
-out.println("<!DOCTYPE html>"); 
-out.println("<html>"); 
-out.println("<head>"); 
-out.println("<title>Consumindo Web Services SOAP</title>"); 
-out.println("</head>"); 
-out.println("<body>"); 
-if(serviceName.equals("listar_temas")){ 
-out.println("<h1>Temas existentes</h1>"); 
-}else if(serviceName.equals("listar_modulos")){ 
-out.println("<h1>Lista de Módulos do Tema: " + nomeTema + "</h1>"); 
-} 
-out.println("<p>" + result + "</p>"); 
-out.println("</body>"); 
-out.println("</html>"); 
- 
-} catch (Exception ex) { 
-out.println("exception" + ex); 
-} 
-} 
-} 
- 
-@Override 
-protected void doGet(HttpServletRequest request, HttpServletResponse response) 
-throws ServletException, IOException { 
-processRequest(request, response); 
-} 
- 
-@Override 
-protected void doPost(HttpServletRequest request, HttpServletResponse response) 
-throws ServletException, IOException { 
-processRequest(request, response); 
-} 
- 
-@Override 
-public String getServletInfo() { 
-return "Short description"; 
-} 
- 
+
+    @WebServiceRef(wsdlLocation = 
+    "WEB-INF/wsdl/localhost_8080/DisciplinasWS_Provedor/DisciplinasWS_Provedor.wsdl") 
+        private com.aop.disciplinasws_cliente.DisciplinasWSProvedor_Service service; 
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException { 
+            response.setContentType("text/html;charset=UTF-8"); 
+            try (PrintWriter out = response.getWriter()) { 
+                try { 
+                    //Criando as instâncias para os métodos dos Web Service 
+                    // a partir das referências ao provedor adicionadas ao projeto 
+                    com.aop.disciplinasws_cliente.DisciplinasWSProvedor port = 
+                        service.getDisciplinasWSProvedorPort(); 
+                    com.aop.disciplinasws_cliente.DisciplinasWSProvedor port2 = 
+                        service.getDisciplinasWSProvedorPort(); 
+
+                    //Recupera o valor do input hidden, proveniente do formulário 
+                    String serviceName = request.getParameter("service_name"); 
+                    String result = null; 
+                    String nomeTema = null; 
+
+                    //Verifica qual serviço ws deverá ser invocado 
+                    if(serviceName.equals("listar_temas")){ 
+                        //Armazena na variavel result o retorno do serviço ws 
+                        result = port.getTema(); 
+                    }else if(serviceName.equals("listar_modulos")){ 
+                        //Adiciona à variavel nomeTema o nome do tema inserido no form 
+                        nomeTema = request.getParameter("tema_nome"); 
+                        //Armazena na variavel o resultado da invocação do webservice 
+                        result = port.getModulosTema(nomeTema); 
+                    } 
+
+                    //Imprimindo a página HTML com o resultado do consumo do WS 
+                    out.println("<!DOCTYPE html>"); 
+                    out.println("<html>"); 
+                    out.println("<head>"); 
+                    out.println("<title>Consumindo Web Services SOAP</title>"); 
+                    out.println("</head>"); 
+                    out.println("<body>"); 
+                    if(serviceName.equals("listar_temas")){ 
+                        out.println("<h1>Temas existentes</h1>"); 
+                    }else if(serviceName.equals("listar_modulos")){ 
+                        out.println("<h1>Lista de Módulos do Tema: " + nomeTema + "</h1>"); 
+                    } 
+                    out.println("<p>" + result + "</p>"); 
+                    out.println("</body>"); 
+                    out.println("</html>"); 
+
+                } catch (Exception ex) { 
+                    out.println("exception" + ex); 
+                } 
+            } 
+    } 
+
+    @Override 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) 
+        throws ServletException, IOException { 
+        processRequest(request, response); 
+    } 
+
+    @Override 
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+        throws ServletException, IOException { 
+        processRequest(request, response); 
+    } 
+
+    @Override 
+    public String getServletInfo() { 
+        return "Short description"; 
+    } 
+
 } 
 ``` 
  
@@ -647,11 +649,11 @@ Para finalizar nosso projeto, vamos adicionar um novo recurso no Provedor: Um m�
 @Path("/tema/{tema_id}") //Define a URI do recurso 
 @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON}) 
 public List<Modulo> findByTemaId(@PathParam("tema_id") Integer tema_id) { 
-//Cria uma query selecionando os dados do modulo de acordo com o tema_id informado 
-return em.createQuery( 
-"SELECT m.moduloId, m.moduloNome, m.temaId FROM Modulo m WHERE m.temaId = :temaId") 
-.setParameter("temaId", tema_id) 
-.getResultList(); 
+    //Cria uma query selecionando os dados do modulo de acordo com o tema_id informado 
+    return em.createQuery( 
+            "SELECT m.moduloId, m.moduloNome, m.temaId FROM Modulo m WHERE m.temaId = :temaId") 
+        .setParameter("temaId", tema_id) 
+        .getResultList(); 
 } 
 ``` 
  
