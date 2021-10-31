@@ -9,6 +9,7 @@
 ## Faculdade
 
 - [Administração e Serviços para Internet](Faculdade/Administracao-e-servicos-para-internet/admsi_compilado.md)
+- [Desenvolvimento de Software - Java](Faculdade/Desenvolvimento-de-Software-Java/dev_java_compilado.md)
 - [Engenharia de Software](Faculdade/Engenharia-de-Software/eng_software_compilado.md)
 - [Estrutura de Dados](Faculdade/Estrutura-de-Dados/estrutura_dados_compilado.md)
 - [Gerencia Projetos](Faculdade/Gerencia-Projetos-Compartilhado)
@@ -24,7 +25,7 @@
 - [Sistemas Operacionais](Faculdade\Sistemas-Operacionais\so_compilado.md)
 - [Tecnologia da Informação e Comunicação](Faculdade/Tecnologia-da-Informacao-e-Comunicação/tic_compilado.md)
 
-# O que é o Study Notes?
+## O que é o Study Notes?
 
 Eu tenho costume de fazer resuminhos quando estou estudando algo, isso sempre foi muito útil na hora de consultar alguma coisa. Isso já me ajudou muito e alguns colegas de faculdade aproveitaram disso também.
 
@@ -32,7 +33,7 @@ Então pensei, por que não compartilhar?
 
 Criei esse repositório que depois alimentará um blogzinho com tudo isso, por isso já estou fazendo os resumos em Markdown.
 
-## Para contribuir com issues abertas
+### Para contribuir com issues abertas
 
 - De um fork no repositório
 - Clone o repo localmente
@@ -40,7 +41,7 @@ Criei esse repositório que depois alimentará um blogzinho com tudo isso, por i
 - Commite suas alterações `git commit -am "mensagem breve sobre o que você alterou"`
 - Submeta um PR, colocando no título `Resolve Issue #{id}` e na descrição do PR `Closes #{id}`
 
-## Dúvidas?
+### Dúvidas?
 
 Na pasta `Cursos`, tenho o curso de git e github e o de Markdown. Caso você tenha dúvidas de como utilizá-los, pode consultar ali ou me consultar.
 

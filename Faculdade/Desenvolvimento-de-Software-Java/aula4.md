@@ -170,13 +170,9 @@ A padronização de componentes nas diversas plataformas trouxe muitos benefíci
 Toda biblioteca GUI apresenta componentes visuais padronizados, como:
 
 - Botões: Interação com o usuário a partir da operação de clique do mouse.
-
 - Caixas de texto: Digitação de valores pelo usuário.
-
 - Elementos selecionáveis: Podem ser marcados ou desmarcados com o clique do mouse.
-
 - Listas: Representação de conjuntos de dados, podendo ser retráteis ou não.
-
 - Menus: Conjuntos de listas de ações agrupadas, localizados normalmente na parte superior da tela.
 
 A figura seguinte mostra a maior parte destes componentes, segundo o aspecto visual proporcionado pela biblioteca swing.
@@ -288,16 +284,13 @@ setLayout(new GridLayout(4,2));
 
 ```
 
-
 ![Exemplo Grid](/media/desenvolvimento_de_software_java/aula4/img04_exemplo_grid.png)
 
-Em seguida, começamos a adicionar os componentes ao grid, preenchendo sequencialmente as posições, ou seja, os componentes vão sendo adicionados na primeira linha, e quando não há mais espaço vai para a linha seguinte, repetindo-se o processo sucessivamente. 
+Em seguida, começamos a adicionar os componentes ao grid, preenchendo sequencialmente as posições, ou seja, os componentes vão sendo adicionados na primeira linha, e quando não há mais espaço vai para a linha seguinte, repetindo-se o processo sucessivamente.
 
-Nos momentos em que precisamos adicionar mais de um componente em uma mesma célula, como no caso das caixas de seleção e dos botões de rádio, utilizamos JPanel com organização via GridLayout de 2 linhas por 1 coluna. Os componentes são adicionados ao JPanel, e este é adicionado ao JDialog. 
+Nos momentos em que precisamos adicionar mais de um componente em uma mesma célula, como no caso das caixas de seleção e dos botões de rádio, utilizamos JPanel com organização via GridLayout de 2 linhas por 1 coluna. Os componentes são adicionados ao JPanel, e este é adicionado ao JDialog.
 
- 
-
-```java 
+```java
 
 JPanel jp1 = new JPanel(new GridLayout(2,1)); 
 
@@ -308,30 +301,22 @@ jp1.add(chk2 = new JCheckBox("Versão Digital"));
 // Painel com as caixas de seleção 
 
 add(jp1); 
-``` 
+```
 
- 
+Por fim, os botões de rádio se tornam mutuamente exclusivos apenas se estiverem pertencendo ao mesmo grupo, e por isso precisamos criar um ButtonGroup e adicionar os botões de rádio.
 
-Por fim, os botões de rádio se tornam mutuamente exclusivos apenas se estiverem pertencendo ao mesmo grupo, e por isso precisamos criar um ButtonGroup e adicionar os botões de rádio. 
-
- 
-
-```java 
+```java
 
 ButtonGroup bp = new ButtonGroup(); 
 
 bp.add(rb1); 
 
 bp.add(rb2); 
-``` 
+```
 
- 
+A chamada para a nova janela é feita no método main, ao instanciarmos um objeto do tipo JanelaSimples, definirmos seu posicionamento e suas dimensões, e deixá-lo visível. Embora não tenha influência agora, setar como modal significa que ficará em frente à janela chamadora, em um ambiente de múltiplas janelas, evitando perder o foco.
 
-A chamada para a nova janela é feita no método main, ao instanciarmos um objeto do tipo JanelaSimples, definirmos seu posicionamento e suas dimensões, e deixá-lo visível. Embora não tenha influência agora, setar como modal significa que ficará em frente à janela chamadora, em um ambiente de múltiplas janelas, evitando perder o foco. 
-
- 
-
-```java 
+```java
 
 JanelaSimples j1 = new JanelaSimples(); 
 
@@ -340,45 +325,36 @@ j1.setModal(true);
 j1.setBounds(0,0, 300, 300); 
 
 j1.setVisible(true); 
-``` 
+```
 
+Note que alguns dos componentes ficaram com dimensões um pouco estranhas, algo que pode ser corrigido com um pouco mais de código, mas como o NetBeans permite alterar visualmente este tipo de configuração, seria desnecessário aumentar a complexidade.
 
-Note que alguns dos componentes ficaram com dimensões um pouco estranhas, algo que pode ser corrigido com um pouco mais de código, mas como o NetBeans permite alterar visualmente este tipo de configuração, seria desnecessário aumentar a complexidade. 
+### Utilização de eventos
 
+Agora que já conseguimos criar o design de nosso sistema, devemos nos preocupar com a interatividade dele, e nesse ponto precisaremos entender o conceito e uso de eventos.
 
-### Utilização de eventos 
+Podemos definir evento como uma ação predeterminada que, ao ocorrer, permite iniciar uma ação personalizada, o que certamente será feito através de programação.
 
- 
+Cada linguagem apresenta sua própria versão de resposta a eventos, e no Java utilizamos a implementação de interfaces “ouvintes” para responder aos eventos.
 
-Agora que já conseguimos criar o design de nosso sistema, devemos nos preocupar com a interatividade dele, e nesse ponto precisaremos entender o conceito e uso de eventos. 
+Como existem diversos tipos de eventos disponíveis, devemos nos preocupar apenas com o ouvinte, ou listener, adequado à ação que esperamos do usuário.
 
-Podemos definir evento como uma ação predeterminada que, ao ocorrer, permite iniciar uma ação personalizada, o que certamente será feito através de programação. 
+| Listener            | Métodos                                                          | Parâmetro   |
+| ------------------- | ---------------------------------------------------------------- | ----------- |
+| ActionListener      | actionPerformed                                                  | ActionEvent |
+| FocusListener       | focusGained focusLost                                            | FocusEvent  |
+| KeyListener         | keyPressed keyReleased keyTyped                                  | KeyEvent    |
+| MouseListener       | mouseClicked mouseEntered mouseExited mousePressed mouseReleased | MouseEvent  |
+| MouseMotionListener | mouseDragged mouseMoved                                          | MouseEvent  |
+| TextListener        | textValueChanged                                                 | TextEvent   |
 
- 
+Inicialmente devemos implementar a interface ouvinte desejada na janela, para permitir que os componentes possam adotá-la como ouvinte.
 
-Cada linguagem apresenta sua própria versão de resposta a eventos, e no Java utilizamos a implementação de interfaces “ouvintes” para responder aos eventos. 
+Vamos entender melhor com o seguinte exemplo:
 
-Como existem diversos tipos de eventos disponíveis, devemos nos preocupar apenas com o ouvinte, ou listener, adequado à ação que esperamos do usuário. 
+Vamos considerar uma janela com dois campos de texto e um botão, como no fragmento de código seguinte.
 
-
-| Listener | Métodos | Parâmetro |
-|---|---|---|
-| ActionListener  | actionPerformed  | ActionEvent |
-| FocusListener | focusGained focusLost | FocusEvent |
-|KeyListener | keyPressed keyReleased keyTyped | KeyEvent |
-|MouseListener | mouseClicked mouseEntered mouseExited mousePressed mouseReleased | MouseEvent |
-| MouseMotionListener | mouseDragged mouseMoved | MouseEvent |
-| TextListener | textValueChanged | TextEvent |
-
-Inicialmente devemos implementar a interface ouvinte desejada na janela, para permitir que os componentes possam adotá-la como ouvinte. 
-
-Vamos entender melhor com o seguinte exemplo: 
-
-Vamos considerar uma janela com dois campos de texto e um botão, como no fragmento de código seguinte. 
-
- 
-
-```java 
+```java
 
 public class JanelaSoma extends JFrame { 
 
@@ -386,18 +362,13 @@ private JTextField txt1, txt2;
 
 private JButton btn1; 
 
-``` 
+```
 
-Nós podemos implementar uma funcionalidade na qual o clique sobre o botão irá efetuar a soma dos valores digitados nos dois campos de texto, e apresentar esta soma através de um **JOptionPane**. 
+Nós podemos implementar uma funcionalidade na qual o clique sobre o botão irá efetuar a soma dos valores digitados nos dois campos de texto, e apresentar esta soma através de um **JOptionPane**.
 
- 
-
-```java 
+```java
 
 public class JanelaSoma extends JFrame implements ActionListener{ 
-
- 
- 
 
 @Override 
 
@@ -411,15 +382,13 @@ JOptionPane.showMessageDialog(this, "A soma será "+(i1+i2));
 
 } 
 
-``` 
+```
 
-Note que nossa janela agora implementa a interface **ActionListener**, e o processo é desenvolvido no método **actionPerformed**. Inicialmente são definidos os valores dos inteiros **i1** e **i2** a partir dos textos de **txt1** e **txt2**, e a seguir apresentamos o **JOptionPane** com a soma dos dois. 
+Note que nossa janela agora implementa a interface **ActionListener**, e o processo é desenvolvido no método **actionPerformed**. Inicialmente são definidos os valores dos inteiros **i1** e **i2** a partir dos textos de **txt1** e **txt2**, e a seguir apresentamos o **JOptionPane** com a soma dos dois.
 
-Agora só falta definir o construtor da janela e atrelar o botão que receberá o clique com o método de resposta por meio de **addActionListener**. 
+Agora só falta definir o construtor da janela e atrelar o botão que receberá o clique com o método de resposta por meio de **addActionListener**.
 
- 
-
-```java 
+```java
 
 public JanelaSoma() throws HeadlessException { 
 
@@ -434,13 +403,11 @@ public JanelaSoma() throws HeadlessException {
   btn1.addActionListener(this); 
 
 }
-``` 
+```
 
- Podemos observar, a seguir, o código completo da janela e o seu aspecto executando. 
+ Podemos observar, a seguir, o código completo da janela e o seu aspecto executando.
 
- 
-
-```java 
+```java
 
 import java.awt.FlowLayout; 
 import java.awt.HeadlessException; 
@@ -487,15 +454,13 @@ public class JanelaSoma extends JFrame implements ActionListener{
 
 } 
 
-``` 
+```
 
 ![Resultado Programa JanelaSoma](/media/desenvolvimento_de_software_java/aula4/img05_janela_soma.png)
 
-Uma alternativa a esta forma de trabalho seria criar a resposta localmente e associar direto ao botão, retirando a necessidade da implementação do Listener pelo JFrame. 
+Uma alternativa a esta forma de trabalho seria criar a resposta localmente e associar direto ao botão, retirando a necessidade da implementação do Listener pelo JFrame.
 
- 
-
-```java 
+```java
 
 btn1.addActionListener(new ActionListener() { 
 
@@ -510,94 +475,79 @@ btn1.addActionListener(new ActionListener() {
   } 
 
 }); 
+```
 
-``` 
+Esta segunda forma é muito utilizada por permitir um objeto de resposta a cada componente, ao invés de tratar todos os eventos daquele determinado tipo em um mesmo método.
 
- 
-Esta segunda forma é muito utilizada por permitir um objeto de resposta a cada componente, ao invés de tratar todos os eventos daquele determinado tipo em um mesmo método. 
-
-### Criação de janelas no NetBeans 
+### Criação de janelas no NetBeans
 
 
-Além do editor de código com **syntax highlighting**, que até aqui simplificou muito a nossa tarefa de programar, com a identificação dos diversos tipos de comandos e estruturas por meio de cores, e da complementação automática de código, entre outras ferramentas de auxílio à codificação, o NetBeans traz um ambiente excelente para a criação visual de janelas **swing** e **awt**. 
+Além do editor de código com **syntax highlighting**, que até aqui simplificou muito a nossa tarefa de programar, com a identificação dos diversos tipos de comandos e estruturas por meio de cores, e da complementação automática de código, entre outras ferramentas de auxílio à codificação, o NetBeans traz um ambiente excelente para a criação visual de janelas **swing** e **awt**.
 
-Utilizando este ambiente, e entendendo algumas pequenas mudanças no estilo de código, passaremos a nos preocupar apenas com a codificação das regras de negócio e resposta a eventos em nossos sistemas. 
+Utilizando este ambiente, e entendendo algumas pequenas mudanças no estilo de código, passaremos a nos preocupar apenas com a codificação das regras de negócio e resposta a eventos em nossos sistemas.
 
-Toda a extensa área de código reservada à criação e configuração dos componentes visuais será gerada automaticamente a partir das ações efetuadas no ambiente visual de criação, o que trará grande produtividade ao programador Java para desktop. 
+Toda a extensa área de código reservada à criação e configuração dos componentes visuais será gerada automaticamente a partir das ações efetuadas no ambiente visual de criação, o que trará grande produtividade ao programador Java para desktop.
 
-De início devemos compreender as ferramentas disponíveis, e o NetBeans apresenta: 
+De início devemos compreender as ferramentas disponíveis, e o NetBeans apresenta:
 
-- Editor visual de janelas; 
+- Editor visual de janelas;
+- Paleta de componentes **swing** e **awt**;
+- Editor de propriedades;
+- Visualização hierárquica dos componentes; e
+- Integração direta com o editor de código Java.
 
-- Paleta de componentes **swing** e **awt**; 
+Para acrescentar uma janela do tipo JFrame ao nosso projeto devemos utilizar a opção de menu **Novo Arquivo** (CTRL + N), selecionar **Forms GUI Swing..Form JFrame** na janela que se abrirá e clicar em **Próximo**.
 
-- Editor de propriedades; 
+Na tela seguinte devemos dar um **nome** (Somadora) para nosso JFrame, escolher o **pacote** e clicar em **Finalizar**.
 
-- Visualização hierárquica dos componentes; e 
-
-- Integração direta com o editor de código Java. 
-
-Para acrescentar uma janela do tipo JFrame ao nosso projeto devemos utilizar a opção de menu **Novo Arquivo** (CTRL + N), selecionar **Forms GUI Swing..Form JFrame** na janela que se abrirá e clicar em **Próximo**. 
-
-Na tela seguinte devemos dar um **nome** (Somadora) para nosso JFrame, escolher o **pacote** e clicar em **Finalizar**. 
-
-Estes passos podem ser observados nas duas figuras seguintes. 
+Estes passos podem ser observados nas duas figuras seguintes.
 
 ![Criando uma GUI](/media/desenvolvimento_de_software_java/aula4/img06_criando_gui.png)
 
-Ao finalizar a criação de nosso **JFrame**, o ambiente de edição visual será aberto, e poderemos começar a criar nossa tela com simples operações de clique e arraste. 
+Ao finalizar a criação de nosso **JFrame**, o ambiente de edição visual será aberto, e poderemos começar a criar nossa tela com simples operações de clique e arraste.
 
+Teremos ao centro o **editor visual**, e do lado direito a **paleta de componentes**. Estes componentes podem ser arrastados da paleta para a tela do editor, e depois de posicionados serem configurados no painel de propriedades, que estará também à direita, porém, oculto até que seja selecionada a instância de componente.
 
-Teremos ao centro o **editor visual**, e do lado direito a **paleta de componentes**. Estes componentes podem ser arrastados da paleta para a tela do editor, e depois de posicionados serem configurados no painel de propriedades, que estará também à direita, porém, oculto até que seja selecionada a instância de componente. 
-
-
-As duas figuras seguintes mostram o momento inicial, onde um componente é arrastado para a tela, e o segundo passo, onde suas propriedades são observadas. Para abrir o painel de propriedades devemos clicar na instância, de forma a selecioná-la, e clicar na aba do painel para que ele se expanda. 
+As duas figuras seguintes mostram o momento inicial, onde um componente é arrastado para a tela, e o segundo passo, onde suas propriedades são observadas. Para abrir o painel de propriedades devemos clicar na instância, de forma a selecioná-la, e clicar na aba do painel para que ele se expanda.
 
 ![Editor visual e Paleta de componentes](/media/desenvolvimento_de_software_java/aula4/img07_paleta_componentes.png)
 
- 
-Com isso já podemos criar a nossa janela de forma visual. Iremos precisar de dois componentes **Label**, dois componentes do tipo **Campo de Texto** e um **Botão**. 
+Com isso já podemos criar a nossa janela de forma visual. Iremos precisar de dois componentes **Label**, dois componentes do tipo **Campo de Texto** e um **Botão**.
 
-Eles devem ser posicionados no editor visual, de forma a obter o aspecto da imagem ao lado. 
+Eles devem ser posicionados no editor visual, de forma a obter o aspecto da imagem ao lado.
 
-Em seguida devemos renomear os componentes e configurar a propriedade **text**. 
+Em seguida devemos renomear os componentes e configurar a propriedade **text**.
 
 ![Resultado JFrame](/media/desenvolvimento_de_software_java/aula4/img08_resultado_jframe.png)
 
+O quadro seguinte mostra as mudanças.
 
-O quadro seguinte mostra as mudanças. 
+| Nome Original | Novo Nome   | Valor de text               |
+| ------------- | ----------- | --------------------------- |
+| jLabel1       | lblParcela1 | Parcela 1                   |
+| jLabel2       | lblParcela2 | Parcela 2                   |
+| jTextField1   | txtParcela1 | (vazia – apagar o conteúdo) |
+| jTextField2   | txtParcela2 | (vazia – apagar o conteúdo) |
+| jButton1      | btnSomar    | Somar                       |
 
-| Nome Original | Novo Nome | Valor de text | 
-|---|---|---|
-| jLabel1 | lblParcela1 | Parcela 1 |
-| jLabel2 | lblParcela2 | Parcela 2 | 
-| jTextField1 | txtParcela1 | (vazia – apagar o conteúdo) |
-| jTextField2 | txtParcela2 | (vazia – apagar o conteúdo) | 
-| jButton1 | btnSomar | Somar | 
-
-
-
-Efetuadas as alterações, a hierarquia da tela poderá ser conferida pelo navegador, posicionado no canto inferior esquerdo do ambiente, e a tela estará preparada para a fase de programação. 
+Efetuadas as alterações, a hierarquia da tela poderá ser conferida pelo navegador, posicionado no canto inferior esquerdo do ambiente, e a tela estará preparada para a fase de programação.
 
 ![Hierarquia de componentes](/media/desenvolvimento_de_software_java/aula4/img09_hierarquia.png)
 
-O objetivo da tela será exibir a soma dos valores digitados quando ocorrer o clique sobre o botão. Para tal devemos responder ao evento através do método **actionPerformed**. Porém, no ambiente visual isto é um pouco diferente. 
+O objetivo da tela será exibir a soma dos valores digitados quando ocorrer o clique sobre o botão. Para tal devemos responder ao evento através do método **actionPerformed**. Porém, no ambiente visual isto é um pouco diferente.
 
+Clique com o botão direito do mouse sobre btnSomar e, sobre o menu de contexto que aparecerá, escolha **Eventos..Action..actionPerformed**.
 
-Clique com o botão direito do mouse sobre btnSomar e, sobre o menu de contexto que aparecerá, escolha **Eventos..Action..actionPerformed**. 
-
-Será aberto um método denominado btnSomarActionPerformed, no qual deverá ficar a programação do evento. Note que existem trechos com fundo cinza que não permitem alteração no código, e que a janela mudou da aba **Projeto** para **Código-Fonte**. 
+Será aberto um método denominado btnSomarActionPerformed, no qual deverá ficar a programação do evento. Note que existem trechos com fundo cinza que não permitem alteração no código, e que a janela mudou da aba **Projeto** para **Código-Fonte**.
 
 Estas abas ficam na parte superior do editor visual, e permitem intercambiar entre o código Java e o desenho da janela. 
 
 ![Menu Action Performed](/media/desenvolvimento_de_software_java/aula4/img10_action_performed.png)
 
 
-Agora, tudo que precisamos fazer é programar o que foi planejado no método gerado de forma automática. 
+Agora, tudo que precisamos fazer é programar o que foi planejado no método gerado de forma automática.
 
- 
-
-```java 
+```java
 
 private void btnSomarActionPerformed(java.awt.event.ActionEvent evt){  
 
@@ -608,13 +558,12 @@ private void btnSomarActionPerformed(java.awt.event.ActionEvent evt){
   JOptionPane.showMessageDialog(this,"A soma será: "+(i1+i2)); 
 
 } 
-``` 
+```
 
+Pronto! Agora é só executar o arquivo com `SHIFT+F6`.
 
-Pronto! Agora é só executar o arquivo com `SHIFT+F6`. 
+Note como a programação, com uso deste ambiente de criação visual, é bem mais simples. Porém, essa simplicidade implica em um código final muito maior.
 
-Note como a programação, com uso deste ambiente de criação visual, é bem mais simples. Porém, essa simplicidade implica em um código final muito maior. 
+Se tiver a curiosidade de observar todo o código protegido (com fundo cinza), inclusive os códigos ocultos, que podem ser abertos clicando no sinal de “+” no lado esquerdo do editor, poderá observar a real complexidade do código completo.
 
-Se tiver a curiosidade de observar todo o código protegido (com fundo cinza), inclusive os códigos ocultos, que podem ser abertos clicando no sinal de “+” no lado esquerdo do editor, poderá observar a real complexidade do código completo. 
-
-Mesmo com um código-fonte bem maior, o que é fruto da generalização necessária, o uso desta ferramenta trará grande produtividade para qualquer programador Java desktop. 
+Mesmo com um código-fonte bem maior, o que é fruto da generalização necessária, o uso desta ferramenta trará grande produtividade para qualquer programador Java desktop.
