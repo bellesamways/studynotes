@@ -1,4 +1,6 @@
-# Aula 1 - Apresentando as Estruturas de Dados
+# Estrutura de Dados
+
+## Aula 1 - Apresentando as Estruturas de Dados
 
 Árvore binária: Duas subárvores. A binária tem no máximo grau 2 \
 Grau de uma árvore é definido pelo número de subárvores de um nó. \
@@ -11,6 +13,7 @@ Tudo que requer hierarquia, pode usar árvore.
 **Fila:** segue a regra **FIFO** - first in, first out. **Inserção** de elementos na fila acontece **sempre ao final**. **Remoção** de um elemento sempre acontece no **início**.
 
 Métodos de **pesquisa**: sequencial e binária
+
 * **sequencial**: listas não ordenadas
 * **binária**: listas ordenadas
 
@@ -20,20 +23,23 @@ Métodos de **pesquisa**: sequencial e binária
 * operações podem ser feitas com as listas
 formas de inserção definem o tipo de lista: **pilha, fila**.
 * Listas lineares: sequencial e encadeada.
-    * **sequencial**: dados são armazenados na memória principal de forma **contígua** (matrizes)
-    * **encadeada**: dados armazenados na memória em posições não adjacentes (**não contíguas**)
+  * **sequencial**: dados são armazenados na memória principal de forma **contígua** (matrizes)
+  * **encadeada**: dados armazenados na memória em posições não adjacentes (**não contíguas**)
 
 **Ordenação**: classificação dos dados.
 
 **Pilha**: **inserção** de elementos sempre acontece no **topo** da pilha e a **remoção** também.
+
 * método de acesso: **LIFO** (last in, first out)
 
 **Struct**: conjunto de elementos geralmente agrupados sob uma **lógica** e associados por um **nome**.
+
 * cada elemento da estrutura é chamado de membro ou campo.
 
 **Função**: bloco contendo cabeçalho, início e fim. Serve para executar tarefas menores.
 
 **Lista encadeada:** se caracteriza por não ter seus nós alocados de forma contígua. **Cada nó da lista leva o endereço do próximo nó para não perder o encadeamento.**
+
 * Ponteiro para o primeiro nó
 * do primeiro ao último segue o encadeamento através dos ponteiros presentes em cada nó
 * último elemento aponta para o NULL
@@ -41,6 +47,7 @@ formas de inserção definem o tipo de lista: **pilha, fila**.
 **Tipo de dados abstratos (TDA)**: conjunto de valores e uma coleção de operações que atuam sobre esses valores.
 
 Dimensionando matrizes:
+
 * **tipo nomeMatriz[tamanho];**
 * **tipo nomeMatriz[tamLinha][tamColuna];**
 
@@ -52,16 +59,18 @@ localizar um elemento da matriz: endereço-base + deslocamento * tamanho do tipo
 
 \0 finaliza o vetor de char
 
-# Aula 2 - Funções
+## Aula 2 - Funções
 
 Única função obrigatória é a main.
 
 **Modularização**: melhorar o entendimento do programa, encontrar erros com mais facilidade, simplificar a manutenção, reutilização de código, etc. São "pequenos programas" conhecidos como funções.
 
 ### Função
+
 Uma função é um conjunto de comandos limitado por um par de chaves e precedido por um cabeçalho.
 
 **Definição de função:**
+
 ```
 <tipo de função> nome da função (declarações dos parâmetros) {
     <declaração das variáveis locais>
@@ -78,11 +87,13 @@ Uma função é um conjunto de comandos limitado por um par de chaves e precedid
 * return; ou nada: para função do tipo *void*
 
 **Protótipo de uma função:**
+
 ```
 <tipo de função> nome_da_função (declarações dos parâmetros);
 ```
 
 Podem ser colocadas **antes ou depois** da *main*.
+
 * **Antes**: serão conhecidas pelo compilador antes de serem chamadas, evitando problemas. Isso diminui a legibilidade do programa dependendo do tamanho dele.
 * **Depois**: aumenta a legibilidade, mas cria-se um problema: função é chamada antes da identificação dela pelo compilador. Resolve-se esse problema com os **protótipos** das funções **antes** da *main* e as definições depois da main.
 
@@ -92,10 +103,11 @@ Quando uma função é chamada, o fluxo de controle é direcionado a executar os
 Não podemos desconsiderar o tipo de retorno e os parâmetros caso existam.
 
 **Tipos de funções:**
-1. **Funções sem parâmetros**
 
+1. **Funções sem parâmetros**
     No C++ não é obrigatório o uso de parâmetros em todas as funções. Uma função que não retorna nada é do tipo void, e é hierarquicamente considerado abaixo da main.
     Ela é chamada pelo nome, sem necessitar de comando que a anteceda.
+
     ```
     nomeDaFuncao();
     ```
@@ -108,17 +120,16 @@ Não podemos desconsiderar o tipo de retorno e os parâmetros caso existam.
         ```
         void troca (float &a, float &b);
         ```
+
         1. *Passagem por referência por ponteiros (passagem por nome ou passagem por endereço):* **&** é o endereço e **\*** é o conteúdo do endereço apontado
         2. *Passagem por referência*: referência não é ponteiro, mas ambos manipulam endereço.
 
-
-| Função | Significado |
-| - | - |
-| **void linha(char c, int n);** | Função que recebe dois argumentos por passagem de valor. Um do tipo char e outro do tipo int, mas não retorna nada para função chamadora. |
-| **int descobreIdade(int anoAtual, int anoNas)**; | Função que recebe dois argumentos por passagem de valor. Os dois do tipo inteiro e retorna, para a função chamadora, um valor inteiro.|
-| **float areaRetangulo(float, float);** | Função que recebe dois argumentos reais e retorna, para a função chamada, um valor real. |
-| **void troca(float&, float&)** | Função que recebe dois argumentos que são endereços que armazenam números reais, por passagem por referência. A função não retorna nada para a função chamadora. |
-
+| Função                                           | Significado                                                                                                                                                      |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **void linha(char c, int n);**                   | Função que recebe dois argumentos por passagem de valor. Um do tipo char e outro do tipo int, mas não retorna nada para função chamadora.                        |
+| **int descobreIdade(int anoAtual, int anoNas)**; | Função que recebe dois argumentos por passagem de valor. Os dois do tipo inteiro e retorna, para a função chamadora, um valor inteiro.                           |
+| **float areaRetangulo(float, float);**           | Função que recebe dois argumentos reais e retorna, para a função chamada, um valor real.                                                                         |
+| **void troca(float&, float&)**                   | Função que recebe dois argumentos que são endereços que armazenam números reais, por passagem por referência. A função não retorna nada para a função chamadora. |
 
 Uma função que retorna valor deverá ser chamada através de um comando, não importando se ela tem, ou não, parâmetros. Uma função só poderá retornar um valor!
 
@@ -133,12 +144,13 @@ Bom hábito: *return 0;* ou *return EXIT_SUCESS;*
 
 **Passando uma estrutura de dados homogênea para uma função**
 
-# Aula 3 - Estruturas heterogêneas
+## Aula 3 - Estruturas heterogêneas
 
 **Struct**
 Conjunto de elementos, geralmente, agrupados sob uma lógica e associados por um nome. Esses elementos podem ser variáveis simples, matrizes, outras estruturas e até funções. Por essa definição, podemos concluir que uma estrutura pode ser formada por elementos de tipos diferentes. Cada elemento da estrutura é chamado de membro ou campo.
 
 **Definição**:
+
 ```
 struct <identificador> {
     <tipo do membro> <identificador>;
@@ -155,7 +167,9 @@ com o nome da struct é possível declarar variáveis, inclusive arrays e nem pr
 pode ser definida dentro de uma função sendo local ou antes de todas as funções sendo global.
 
 dois métodos de declarar variáveis:
+
 * declaração é feita depois da definição. se for global, acontece em cada função.
+
     ```
     struct nomeDaEstrutura {
     ...
@@ -169,6 +183,7 @@ dois métodos de declarar variáveis:
     ```
 
 * declaração é feita junta com a definição.
+
     ```
     struct nomeDaEstrutura {
     ...
@@ -210,6 +225,7 @@ Acessando o membro y da variável estrutura b: b. y
 ![atribuindo_valores](/media/estrutura_dados/atribuindo_valores.png)
 
 2º método: Atribuição na hora da definição/declaração das variáveis. Atribuição de uma estrutura a outra estrutura um ponto a favor das estruturas em relação aos vetores.
+
 ```
 struct prod {
 char nomeProd[21];
@@ -230,6 +246,7 @@ Acessando o membro nomeProd da variável estrutura produto2: produto2. nomeProd\
 Acessando o membro valor da variável estrutura produto2: produto2. valor
 
 3º método: Atribuição através da leitura via teclado.
+
 ```
 struct  prod
 {
@@ -239,6 +256,7 @@ struct  prod
 ```
 
 **Construindo um array de estruturas**
+
 ```
 struct <identificador>
 {
@@ -264,6 +282,7 @@ struct alCad
 ```
 
 Como acessar um elemento do array de estrutura
+
 ```
 struct prodCad
 {
@@ -279,6 +298,7 @@ produtos[1].precoVenda
 
 **Estruturas aninhadas**\
 Usar esta estrutura com membro de outra estrutura que iremos definir/declarar.
+
 ```
 struct data {
   int dia, mes, ano;
